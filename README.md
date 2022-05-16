@@ -11,7 +11,7 @@ This is currently a pre-release version. Please provide XenonA7 with feedback on
 ## **Main Features:**
 1. Fully playable triblader class, with a full set of 92 new combat arts to discover
 2. Triblader PVP arena cups
-3. Post-DLC story content (largely imcomplete)
+3. Post-DLC story content (largely incomplete)
 
 
 ## **How to Play:**
