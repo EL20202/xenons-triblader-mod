@@ -1,7 +1,7 @@
 # xenons-triblader-mod
 ![Kindling Triad](https://user-images.githubusercontent.com/105614278/168501697-8dccf971-8564-4166-bbdb-d3c6ec79d870.gif)
 
-Install instructions can be found at the bottom of this page.
+Install instructions can be found at the bottom of this page. The DLC is required for this mod to funciton.
 
 # **PRE-RELEASE VERSION**
 
@@ -16,9 +16,10 @@ This is currently a pre-release version. Please provide XenonA7 with feedback on
 
 ## **How to Play:**
 - With the mod installed, proceeding out of the Newcomer Bridge at the start of the game will take you to a place to select a character, after which you will continue to the Rhombus Dungeon and the rest of the game.
-- Unlock the **Triblader League** arena cup by talking to the Tribladers standing around the **Open PVP Fields** in Rhombus Square. Unlockable after beating the final dungeon in the DLC (Ku'lero Temple). You can load your existing Lea save file to do this.
-- Quick-swap menu added to the Rhombus Arena lobby to change your character at will. Found in the top-right of the lobby.
-- After completing the DLC storyline (to the point of visiting C'tron's house), walk around **Homestedt** and you will get a call from Satoshi. This will begin the post-DLC triblader storyline, although this is largely incomplete right now. This will unlock the arena cups versus Luke and Lukas.
+- The following can be accessed using any existing Lea save file, a new game is not required.
+  - Unlock the **Triblader League** arena cup by talking to the Tribladers standing around the **Open PVP Fields** in Rhombus Square. Unlockable after beating the final dungeon in the DLC (Ku'lero Temple).
+  - Quick-swap menu added to the Rhombus Arena lobby to change your character at will. Look for a flashing sign at the top-right of the lobby.
+  - After completing the DLC storyline (to the point of visiting C'tron's house), walk around **Homestedt** and you will get a call from Satoshi. This will begin the post-DLC triblader storyline, although this is largely incomplete right now. This will unlock the arena cups versus Luke and Lukas.
 
 
 
