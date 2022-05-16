@@ -116,7 +116,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Shock Dash Lv.3b
 - Shock Guard Lv.1	**Overclock**
 - Shock Guard Lv.2	**Glitch Time**
-- Shock Guard Lv.3
+- Shock Guard Lv.3 N/A
 
 ![wave](https://user-images.githubusercontent.com/105614278/168505468-e7f002ac-f5e0-4633-b444-a19dcde8418c.png)
 - Wave Melee Lv.1	**Ki Spin**
