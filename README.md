@@ -158,7 +158,6 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
   - Lea party member
   - Proper new areas, maps, quests, etc for post-DLC triblader adventure
 - Septalancer (aka Heptalancer) new class with sprites, spear attacks, and combat arts
-- Finish the playable Emilie mod
 
 
 ## Install Instructions
