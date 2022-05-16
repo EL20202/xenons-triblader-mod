@@ -16,7 +16,7 @@ This is currently a pre-release version. Please provide XenonA7 with feedback on
 
 ## **How to Play:**
 - With the mod installed, proceeding out of the Newcomer Bridge at the start of the game will take you to a place to select a character, after which you will continue to the Rhombus Dungeon and the rest of the game.
-- The following can be accessed using any existing Lea save file, a new game is not required.
+- The following can be accessed using any existing Lea save file, a new game is not required. It will also work if you are playing as another character.
   - Unlock the **Triblader League** arena cup by talking to the Tribladers standing around the **Open PVP Fields** in Rhombus Square. Unlockable after beating the final dungeon in the DLC (Ku'lero Temple).
   - Quick-swap menu added to the Rhombus Arena lobby to change your character at will. Look for a flashing sign at the top-right of the lobby.
   - After completing the DLC storyline (to the point where you need to visit C'tron's house), walk around **Homestedt** and you will get a call from Satoshi. This will begin the post-DLC triblader storyline, although this is largely incomplete right now. This will unlock the arena cups versus Luke and Lukas. **This will also unlock the mod's dev room, which has some additional random content.**
