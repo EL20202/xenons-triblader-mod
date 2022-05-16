@@ -5,7 +5,7 @@ Install instructions can be found at the bottom of this page. The DLC is require
 
 # **PRE-RELEASE VERSION**
 
-This is currently a pre-release version. Please provide the author XenonA7 with feedback on combat art balance. Also please report any crashes, glitches, or other issues as a result from playing the entire game under a different character configuration. I won't be able to test every quest, cutscene, etc myself so feedback is critical.
+This is currently a pre-release version. Please provide the author, XenonA7, with feedback on combat art balance. Also please report any crashes, glitches, or other issues as a result from playing the entire game under a different character configuration. I won't be able to test every quest, cutscene, etc myself so feedback is critical.
 
 
 ## **Main Features:**
