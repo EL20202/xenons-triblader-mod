@@ -143,6 +143,7 @@ This is currently a pre-release version. Please provide XenonA7 with feedback on
 
 ## **Future Plans/Ideas:**
 - Balance patches and support
+- Rework or replace some of the combat arts that I don't like or are below-average quality
 - Continue writing the modding guide documentation
 - Draw sprites for more common animations, such as floating, kneeShake, opening chests, etc
 - Draw sprites for generic male triblader (more character options)
