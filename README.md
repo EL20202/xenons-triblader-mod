@@ -71,7 +71,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Heat Guard Lv.1b	**Burning Sacrifice**
 - Heat Guard Lv.2a	**Kindling Triad**
 - Heat Guard Lv.2b	**Lava Sweep**
-- Heat Guard Lv.3a
+- Heat Guard Lv.3a  **Vermillion Firestorm**
 - Heat Guard Lv.3b	**Blade of E'nel**
 
 ![cold](https://user-images.githubusercontent.com/105614278/168505452-d0485b21-d090-482d-b493-d72090f12fa7.png)
@@ -102,16 +102,16 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Shock Melee Lv.2a	
 - Shock Melee Lv.2b	**Lightning Rod**
 - Shock Melee Lv.3	**Triforce Slash**
-- Shock Throw Lv.1a
-- Shock Throw Lv.1b	**Lightning Strike**
+- Shock Throw Lv.1a **Lightning Strike**
+- Shock Throw Lv.1b	**Targeted Surge**
 - Shock Throw Lv.2a
 - Shock Throw Lv.2b	**Magnet Prism**
 - Shock Throw Lv.3a	**Magnet Storm**
 - Shock Throw Lv.3b
 - Shock Dash Lv.1a	**Amber Flurry**
 - Shock Dash Lv.1b	**Static Charge**
-- Shock Dash Lv.2a
-- Shock Dash Lv.2b	**First Fractal**
+- Shock Dash Lv.2a  **First Fractal**
+- Shock Dash Lv.2b	**Alternating Charge**
 - Shock Dash Lv.3a	**Thunder Wrath**
 - Shock Dash Lv.3b
 - Shock Guard Lv.1	**Overclock**
@@ -141,18 +141,19 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Wave Guard Lv.3	**Verdant Infection**
 
 
-## **Future Plans/Ideas:**
+## **Future Plans/Ideas, in order of priority:**
 - Balance patches and support
-- Rework or replace some of the combat arts that I don't like or are below-average quality
+- Rework or replace some of the combat arts that I don't like or are below-average quality (Looking at you, Sky Shredder)
+- Graphical overhaul to some combat arts and particle effects that are pretty "meh" right now (Trailblazer needs another look)
 - Continue writing the modding guide documentation
 - Draw sprites for more common animations, such as floating, kneeShake, opening chests, etc
+- PVP enemy AI overhaul, more unique behaviors
 - Draw sprites for generic male triblader (more character options)
 - Draw sprites for Lea holding a sword and doing triblader animations
-- PVP enemy AI overhaul, more unique behaviors
 - Custom challenge maps (later to be contextualized in a cohesive storyline)
-- ArcaneLab support to allow for Spheroknight arts as craftable upgrades for your triblader
+- ArcaneLab support to allow for Spheroknight arts as craftable upgrades for your triblader, using AL's custom art system. I already have animation support and reworked versions of all Susie's arts to work with Lukas or the characters from this mod, but they are not included in the public version.
 
-## **Potential Future Plans/Ideas (Huge scope, I will need to collaborate with others):**
+## **Potential future plans, I will see if anyone wants to collaborate:**
 - An actual written story for a post-DLC triblader adventure starring one of the tribladers as the main character, Lea as side character
   - Lea PVP battle
   - Lea party member
