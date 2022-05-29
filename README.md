@@ -131,9 +131,9 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Wave Dash Lv.1a	**Wave Motion Bomb**
 - Wave Dash Lv.1b	**Warp Decoy**
 - Wave Dash Lv.2a	**Soul Shatter**
-- Wave Dash Lv.2b	**Shadow Swordsman**
+- Wave Dash Lv.2b	**Spectral Swordsman**
 - Wave Dash Lv.3a	**Spiritfall**
-- Wave Dash Lv.3b	**Shadow Legion**
+- Wave Dash Lv.3b	**Spectral Legion**
 - Wave Guard Lv.1a	**Tri turret**
 - Wave Guard Lv.1b	**Pain Buckler**
 - Wave Guard Lv.2a	**Phase Jump**
