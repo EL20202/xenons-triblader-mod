@@ -1,0 +1,77 @@
+{
+  "name": {
+    "en_US": "triblader5"
+  },
+  "realname": {
+    "en_US": "triblader5"
+  },
+  "size": {
+    "x": 16,
+    "y": 16,
+    "z": 24
+  },
+  "shadow": 16,
+  "animSheet": "npc.triblader5",
+  "walkAnimSet": {
+    "normal": {
+      "idle": "idle",
+      "move": "walk",
+      "run": "run"
+    },
+    "sit": {
+      "idle": "sit"
+    }
+  },
+  "walkAnims": "normal",
+  "configs": {
+    "normal": {
+      "relativeVel": 0.5
+    },
+    "running": {
+      "relativeVel": 1
+    },
+    "sit": {
+      "walkAnims": "sit",
+      "relativeVel": 0.5
+    }
+  },
+  "face": {
+    "width": 128,
+    "height": 72,
+    "centerX": 38,
+    "centerY": 54,
+    "src": "avatars-new.png",
+    "parts": [
+      {
+        "torso": {
+          "srcX": 0,
+          "srcY": 80,
+          "width": 128,
+          "height": 72,
+          "destX": 0,
+          "destY": 0
+        }
+      },
+      {
+        "head": {
+          "srcX": 152,
+          "srcY": 99,
+          "width": 80,
+          "height": 85,
+          "destX": 16,
+          "destY": -77
+        }
+      }
+    ],
+    "expressions": {
+      "DEFAULT": {
+        "faces": [
+          [
+            "torso",
+            "head"
+          ]
+        ]
+      }
+    }
+  }
+}

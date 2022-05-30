@@ -1,0 +1,43 @@
+[
+  {
+    "type": "ENTER",
+    "index": "entities"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "EventTrigger",
+      "x": 954,
+      "y": 301,
+      "level": 0,
+      "settings": {
+        "mapId": 264,
+        "event": [
+          {
+            "type": "IF",
+            "condition": "plot.xmod.leaSwitch",
+            "thenStep": [
+              {
+                "type": "CHANGE_VAR_BOOL",
+                "varName": "plot.xmod.leaSwitch",
+                "changeType": "set",
+                "value": false
+              },
+              {
+                "type": "SWITCH_PLAYER_CONFIG",
+                "name": "Lea"
+              }
+            ]
+          }
+        ],
+        "name": "LeaSwitchBack",
+        "eventType": "PARALLEL",
+        "endCondition": "false",
+        "triggerType": "ONCE_PER_ENTRY"
+      }
+    }
+  },
+  {
+    "type": "EXIT"
+  }
+]
