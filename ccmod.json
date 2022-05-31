@@ -1,6 +1,6 @@
 {
 	"id": "xenons-triblader-mod",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"title": {
 		"en_US": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
 		"de_DE": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
@@ -29,6 +29,7 @@
 	"poststart": "poststart.js",
 	"plugin": "plugin.js",
 	"dependencies": {
-		"extendable-severed-heads": "^1.0.0"
+		"extendable-severed-heads": "^1.0.0",
+		"arcane-labs": "0.1.7"
 	}
 }
