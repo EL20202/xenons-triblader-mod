@@ -75,8 +75,8 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Heat Guard Lv.3b	**Blade of E'nel**
 
 ![cold](https://user-images.githubusercontent.com/105614278/168505452-d0485b21-d090-482d-b493-d72090f12fa7.png)
-- Cold Melee Lv.1a	**Snow Sweep**
-- Cold Melee Lv.1b
+- Cold Melee Lv.1a	**Polar Geyser**
+- Cold Melee Lv.1b	**Snow Sweep**
 - Cold Melee Lv.2a	**Snowstorm**
 - Cold Melee Lv.2b
 - Cold Melee Lv.3a	**Frigid Hurricane**

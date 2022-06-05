@@ -24856,7 +24856,7 @@
         "flipLeftFace": false,
         "wait": false,
         "waitSkip": 0,
-        "actionDetached": true,
+        "actionDetached": false,
         "fixPos": false,
         "type": "SHOW_EFFECT",
         "effect": {

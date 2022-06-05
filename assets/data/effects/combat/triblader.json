@@ -19760,6 +19760,70 @@
       {
         "type": "LOOP_END"
       }
+    ],
+    "geyserTriangles": [
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "numParticles": 1,
+        "duration": 0.6,
+        "clockwise": true,
+        "centralAngle": 1,
+        "startAngle": 0,
+        "startDist": 16,
+        "particleRotate": false,
+        "moveDist": 8,
+        "random": true,
+        "keySpline": "EASE_IN_OUT",
+        "moveRotate": 0.15,
+        "inverse": false,
+        "normalMoveDist": 160,
+        "collision": false,
+        "moveWithTarget": 0.2,
+        "pScale": {
+          "init": {
+            "x": 0.10,
+            "y": 0.10
+          }
+        },
+        "anim": "COLD_BIG_TRIANGLE",
+        "angleVary": 1,
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 2,
+        "duration": 0.6,
+        "clockwise": true,
+        "centralAngle": 1,
+        "startAngle": 0,
+        "startDist": 16,
+        "particleRotate": false,
+        "moveDist": 8,
+        "random": true,
+        "keySpline": "EASE_IN_OUT",
+        "moveRotate": 0.1,
+        "inverse": false,
+        "normalMoveDist": 160,
+        "collision": false,
+        "moveWithTarget": 0.2,
+        "pScale": {
+          "init": {
+            "x": 0.05,
+            "y": 0.05
+          }
+        },
+        "anim": "COLD_BIG_TRIANGLE",
+        "angleVary": 1,
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "time": 0.15,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      }
     ]
   }
 }

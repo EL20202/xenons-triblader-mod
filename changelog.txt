@@ -1,3 +1,15 @@
+0.0.4 (06/04/2022)
+- New combat art: Polar Geyser (Cold Melee Lv.1a)
+- Snow Sweep reclassed from Cold Melee Lv.1a to Cold Melee Lv.1b
+- Player Schneider2 file deleted, I am reverting him back to vanilla behavior for now
+- Player triblader2 autoequip data standardized to Schneider standard
+- Map pvp-schneiders.json no longer uses Schneider2
+- Map lab-duel.json no longer uses Schneider2
+- Plyaer Schneider.json and Luke.json created, now these player configs have full moveset access
+- Wild Gambit fire attack (6) changed from spin attack to slash attack
+- Wild Gambit wave attack (7) increased knockback
+- Fixed Chilling Thrust trail effect being set as actionDetached
+
 0.0.3 (06/04/2022)
 - Added changelog to root directory
 - New combat art: Calamity's Advent (Heat Melee Lv.3a) (Usable by PVP enemies)

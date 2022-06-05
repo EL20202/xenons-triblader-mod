@@ -1,8 +1,8 @@
 {
   "DOCTYPE": "PLAYER",
-  "character": "triblader.triblader2",
-  "sheet": "npc.triblader2",
-  "headIdx": 16,
+  "character": "main.luke",
+  "sheet": "npc.luke",
+  "headIdx": 13,
   "class": "TRIBLADER",
   "stats": {
     "hp": {
