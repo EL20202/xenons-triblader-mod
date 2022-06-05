@@ -1,0 +1,32 @@
+0.0.3 (06/04/2022)
+- Added changelog to root directory
+- New combat art: Calamity's Advent (Heat Melee Lv.3a) (Usable by PVP enemies)
+- Fixed heatLaser proxy to allow Vermillion Firestorm to be used at the edge of a ledge
+- Tweaked Vermillion Firestorm gfx and sound effects at the end of the attack
+- Added weather effects to the laser part of Vermillion Firestorm
+- Increased the damage of the crossing beams at the the end of Vermillion Firestorm
+- Removed camera focus from Deploy Shields
+- Deploy Shields now also spawns three shields orbiting the player in addition to the wall
+- FOC penalty for Overclock changed from -15% to -25%
+- Renamed the two action buffs used by Overclock
+- Removed old unused Storm Swords proxies from player json file
+- Added additional new sound effects for Molten Daggers
+- PVP enemies chance to chain subsequent Wave Motion Bomb arts changed from 55% to 65% if SP allows
+- Thunder Wrath now spawns its lightning spawners at BASE instead of BOTTOM, this fixes cases when used off a ledge
+- Added particle effect when shooting Targeted Surge
+- Fixed collision for Wave Mortar so it can't be shot through walls anymore
+- Reworked the inital TACKLE for Flame Turbine. No longer breaks on Driller/Creator boss or bypass shields, also doesn't carry bosses into the air
+- PVP enemy Flame Turbine initial TACKLE will remain as type "BREAK", thus impossible to guard or shield
+- Fixed issues with Flame Turbine by setting zGravityFactor 0 for proxy turbineController
+- Sky Shredder initial TACKLE also changed from "BREAK" to "MASSIVE" to fix issues with bosses
+- Increased the size of the stunning hitbox for Vortex Thrust
+- Renamed the action buff used by Burning Sacrifice and increased ATK buff from +10% to +15%
+- Molten daggers no longer set to repeat sprite animation
+
+
+0.0.2 (05/30/2022)
+- Added temporary dependency on ArcaneLab to resolve headIdx conflicts
+- Removed problematic b.PVP code from prestart.js
+
+0.0.1 (05/29/2022)
+- Initial Pre-Pre-Release, not public

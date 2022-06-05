@@ -57,7 +57,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Heat Melee Lv.1b	**Flame Stab**
 - Heat Melee Lv.2a	**Sunbeam Slash**
 - Heat Melee Lv.2b	**Solar Eruption**
-- Heat Melee Lv.3a
+- Heat Melee Lv.3a	**Calamity's Advent**
 - Heat Melee Lv.3b
 - Heat Throw Lv.1	**Molten Daggers**
 - Heat Throw Lv.2	**Daybreak**

@@ -98,7 +98,7 @@ ig.ACTION_STEP.WAIT_WHILE_AIMING = ig.ActionStepBase.extend({
   }
 });
 
-sc.STAT_CHANGE_SETTINGS["ATTACK-MINUS-1"] = {
+sc.STAT_CHANGE_SETTINGS["ATTACK-MINUS-OVERCLOCK"] = {
   change: sc.STAT_CHANGE_TYPE.STATS,
   type: sc.STAT_PARAM_TYPE.ATTACK,
   value: 0.90,
@@ -107,13 +107,13 @@ sc.STAT_CHANGE_SETTINGS["ATTACK-MINUS-1"] = {
   grade: "stat-rank-down-1"
 };
 
-sc.STAT_CHANGE_SETTINGS["FOCUS-MINUS-1"] = {
+sc.STAT_CHANGE_SETTINGS["FOCUS-MINUS-OVERCLOCK"] = {
   change: sc.STAT_CHANGE_TYPE.STATS,
   type: sc.STAT_PARAM_TYPE.FOCUS,
-  value: 0.85,
+  value: 0.75,
   negative: true,
   icon: "stat-focus",
-  grade: "stat-rank-down-1"
+  grade: "stat-rank-down-2"
 };
 
 sc.STAT_CHANGE_SETTINGS["DEFENSE-0.10"] = {
@@ -140,3 +140,11 @@ sc.STAT_CHANGE_SETTINGS["SPIKE_DMG-0"] = {
     icon: "stat-spike-dmg",
     grade: "stat-rank-down-3"
 };
+
+sc.STAT_CHANGE_SETTINGS["ATTACK-SACRIFICE"] = {
+    change: sc.STAT_CHANGE_TYPE.STATS,
+    type: sc.STAT_PARAM_TYPE.ATTACK,
+    value: 1.15,
+    icon: "stat-attack",
+    grade: "stat-rank-1"
+  };
