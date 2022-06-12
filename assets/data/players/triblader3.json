@@ -1,8 +1,7 @@
 {
   "DOCTYPE": "PLAYER",
-  "character": "main.schneider",
-  "sheet": "npc.schneider",
-  "headIdx": 5,
+  "character": "triblader.triblader3",
+  "sheet": "npc.triblader3",
   "class": "TRIBLADER",
   "stats": {
     "hp": {

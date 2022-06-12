@@ -1,6 +1,7 @@
 import "./js/bgm/custom-bgm.js";
 
 sc.PARTY_OPTIONS.push("triblader2");
+sc.PARTY_OPTIONS.push("triblader3");
 
 sc.Arena.inject({
     init(){
@@ -10,7 +11,6 @@ sc.Arena.inject({
         this.registerCup('Triblader-cup',".\/assets\/data\/arena\/");
     }
 });
-
 
 ig.ACTION_STEP.REMOVE_ALL_PROXIES = ig.ActionStepBase.extend({
     init: function(a) {
@@ -116,18 +116,18 @@ sc.STAT_CHANGE_SETTINGS["FOCUS-MINUS-OVERCLOCK"] = {
   grade: "stat-rank-down-2"
 };
 
-sc.STAT_CHANGE_SETTINGS["DEFENSE-0.10"] = {
+sc.STAT_CHANGE_SETTINGS["DEFENSE-BLADEAURA"] = {
     change: sc.STAT_CHANGE_TYPE.STATS,
     type: sc.STAT_PARAM_TYPE.DEFENSE,
-    value: 1.10,
+    value: 1.20,
     icon: "stat-defense",
     grade: "stat-rank-1"
 };
 
-sc.STAT_CHANGE_SETTINGS["DEFENSE-0.25"] = {
+sc.STAT_CHANGE_SETTINGS["DEFENSE-SHIELDS"] = {
     change: sc.STAT_CHANGE_TYPE.STATS,
     type: sc.STAT_PARAM_TYPE.DEFENSE,
-    value: 1.25,
+    value: 1.35,
     icon: "stat-defense",
     grade: "stat-rank-2"
 };

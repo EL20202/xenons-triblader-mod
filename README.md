@@ -55,10 +55,10 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 ![heat](https://user-images.githubusercontent.com/105614278/168505403-98d388f9-8d53-4d25-8bd2-956ef6a33e4c.png)
 - Heat Melee Lv.1a	**Fire Whirl**
 - Heat Melee Lv.1b	**Flame Stab**
-- Heat Melee Lv.2a	**Sunbeam Slash**
-- Heat Melee Lv.2b	**Solar Eruption**
+- Heat Melee Lv.2a	**Solar Eruption**
+- Heat Melee Lv.2b	**Scorching Rays**
 - Heat Melee Lv.3a	**Calamity's Advent**
-- Heat Melee Lv.3b
+- Heat Melee Lv.3b	
 - Heat Throw Lv.1	**Molten Daggers**
 - Heat Throw Lv.2	**Daybreak**
 - Heat Throw Lv.3	N/A
@@ -71,21 +71,21 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Heat Guard Lv.1b	**Burning Sacrifice**
 - Heat Guard Lv.2a	**Kindling Triad**
 - Heat Guard Lv.2b	**Lava Sweep**
-- Heat Guard Lv.3a  **Vermillion Firestorm**
+- Heat Guard Lv.3a 	**Vermillion Firestorm**
 - Heat Guard Lv.3b	**Blade of E'nel**
 
 ![cold](https://user-images.githubusercontent.com/105614278/168505452-d0485b21-d090-482d-b493-d72090f12fa7.png)
 - Cold Melee Lv.1a	**Polar Geyser**
 - Cold Melee Lv.1b	**Snow Sweep**
-- Cold Melee Lv.2a	**Snowstorm**
-- Cold Melee Lv.2b
+- Cold Melee Lv.2a	**Frost Rupture**
+- Cold Melee Lv.2b	**Snowstorm**
 - Cold Melee Lv.3a	**Frigid Hurricane**
 - Cold Melee Lv.3b
 - Cold Throw Lv.1a	**Sleet Singularity**
 - Cold Throw Lv.1b	**Ice Flak**
 - Cold Throw Lv.2a	**Arctic Blast**
 - Cold Throw Lv.2b	**Hail Bomb**
-- Cold Throw Lv.3
+- Cold Throw Lv.3	**Frost Rays**
 - Cold Dash Lv.1	**Chilling Thrust**
 - Cold Dash Lv.2	**Flash Freeze**
 - Cold Dash Lv.3	N/A
@@ -102,7 +102,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Shock Melee Lv.2a	
 - Shock Melee Lv.2b	**Lightning Rod**
 - Shock Melee Lv.3	**Triforce Slash**
-- Shock Throw Lv.1a **Lightning Strike**
+- Shock Throw Lv.1a	**Lightning Strike**
 - Shock Throw Lv.1b	**Targeted Surge**
 - Shock Throw Lv.2a
 - Shock Throw Lv.2b	**Magnet Prism**
@@ -110,7 +110,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Shock Throw Lv.3b
 - Shock Dash Lv.1a	**Amber Flurry**
 - Shock Dash Lv.1b	**Static Charge**
-- Shock Dash Lv.2a  **First Fractal**
+- Shock Dash Lv.2a	**First Fractal**
 - Shock Dash Lv.2b	**Alternating Charge**
 - Shock Dash Lv.3a	**Thunder Wrath**
 - Shock Dash Lv.3b

@@ -1,3 +1,35 @@
+0.0.5
+- Removed dependency for ArcaneLab
+- All modded headIdx hard-coded values subtracted by 2 (in PVP enemy files)
+- New combat art: Frost Rupture (Cold Melee Lv.2a)
+- New combat art: Frost Rays (Cold Throw Lv.3) (Usable by PVP enemies)
+- Removed now-unused Glacial Harpoon proxies from player json file and from PVP enemies
+- Removed residual flameCataclysm proxies from PVP enemies
+- Removed unused .js files from the root directory
+- Slightly changed the mod icon
+- Added makeshift party/player support for triblader3 (temporary)
+- Changed headIdx.json.patch to contain character paths for severed head IDs
+- headIdx declaration removed from triblader2 and triblader3 player files, this should fix conflicts with other mods
+- Daybreak sprite scaled down to 75% size
+- Solar Eruption can now only be canceled by dashing
+- Wild Gambit extra sound effects for roll 5 and 9
+- Wild Gambit proxy changed to breakType ACTION to avoid the attack continuing when the player is interrupted
+- Wild Gambit now has HEAVY hit stability (still goes to MASSIVE if you roll a 1 so you can't escape the stun)
+- Icicle Slash now has MASSIVE hit stability
+- Polar Geyser now has MEDIUM hit stability on the second half of the attack, and is applied a bit earlier in the sequence
+- Deploy Shields now uses startDistCollide = DROP to prevent a cluster of shields when used against a wall
+- Proxy dropShieldStatic removed collType config
+- Renamed the action buff used by Deploy Shields and increased DEF buff from +25% to +35%
+- Renamed the action buff used by Blade Aura and increased DEF buff from +10% to +20%
+- So'najiz Phalanx now uses startDistCollide = DROP for the clones that spawn in a line, now they won't spawn if a wall is in the way
+- Improved the visual effects of So'najiz Phalanx laser beams
+- Renamed "Sunbeam Slash" to "Scorching Rays"
+- Scorching Rays reclassed from Heat Melee Lv.2a to Heat Melee Lv.2b
+- Solar Eruption reclassed from Heat Melee Lv.2b to Heat Melee Lv.2a
+- Snow Sweep reclassed from Cold Melee Lv.1a to Cold Melee Lv.1b
+- Polar Geyser reclassed from Cold Melee Lv.1a to Cold Melee Lv.1b
+- Snowstorm reclassed from Cold Melee Lv.2a to Cold Melee Lv.2b
+
 0.0.4 (06/04/2022)
 - New combat art: Polar Geyser (Cold Melee Lv.1a)
 - Snow Sweep reclassed from Cold Melee Lv.1a to Cold Melee Lv.1b
@@ -9,6 +41,7 @@
 - Wild Gambit fire attack (6) changed from spin attack to slash attack
 - Wild Gambit wave attack (7) increased knockback
 - Fixed Chilling Thrust trail effect being set as actionDetached
+
 
 0.0.3 (06/04/2022)
 - Added changelog to root directory
@@ -39,6 +72,7 @@
 0.0.2 (05/30/2022)
 - Added temporary dependency on ArcaneLab to resolve headIdx conflicts
 - Removed problematic b.PVP code from prestart.js
+
 
 0.0.1 (05/29/2022)
 - Initial Pre-Pre-Release, not public
