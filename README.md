@@ -38,7 +38,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Neutral Melee Lv.1a	**Wirbelschlitzer**
 - Neutral Melee Lv.1b	**Wild Gambit**
 - Neutral Melee Lv.2a	**Heavy Slash**
-- Neutral Melee Lv.2b
+- Neutral Melee Lv.2b	**Shrapnel Field**
 - Neutral Throw Lv.1a	**Spike Ball**
 - Neutral Throw Lv.1b	**Homing Shards**
 - Neutral Throw Lv.2a	**Rude Buster**
@@ -58,7 +58,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Heat Melee Lv.2a	**Solar Eruption**
 - Heat Melee Lv.2b	**Scorching Rays**
 - Heat Melee Lv.3a	**Calamity's Advent**
-- Heat Melee Lv.3b	
+- Heat Melee Lv.3b	**Sunsteel Strike**
 - Heat Throw Lv.1	**Molten Daggers**
 - Heat Throw Lv.2	**Daybreak**
 - Heat Throw Lv.3	N/A
@@ -85,7 +85,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Cold Throw Lv.1b	**Ice Flak**
 - Cold Throw Lv.2a	**Arctic Blast**
 - Cold Throw Lv.2b	**Hail Bomb**
-- Cold Throw Lv.3	**Frost Rays**
+- Cold Throw Lv.3	**Frozen Rays**
 - Cold Dash Lv.1	**Chilling Thrust**
 - Cold Dash Lv.2	**Flash Freeze**
 - Cold Dash Lv.3	N/A
@@ -104,7 +104,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Shock Melee Lv.3	**Triforce Slash**
 - Shock Throw Lv.1a	**Lightning Strike**
 - Shock Throw Lv.1b	**Targeted Surge**
-- Shock Throw Lv.2a
+- Shock Throw Lv.2a	**Lightning Fork**
 - Shock Throw Lv.2b	**Magnet Prism**
 - Shock Throw Lv.3a	**Magnet Storm**
 - Shock Throw Lv.3b
