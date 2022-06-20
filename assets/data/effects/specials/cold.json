@@ -13391,7 +13391,7 @@
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ],
-    "frostRayShoot": [
+    "frozenRayShoot": [
       {
         "rumbleType": "RANDOM",
         "power": "WEAKER",

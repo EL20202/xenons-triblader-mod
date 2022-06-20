@@ -7,6 +7,12 @@ Install instructions can be found at the bottom of this page. The DLC is require
 
 This is currently a pre-release version. Please provide the author, XenonA7, with feedback on combat art balance. Also please report any crashes, glitches, or other issues as a result from playing the entire game under a different character configuration. I won't be able to test every quest, cutscene, etc myself so feedback is critical.
 
+### **Required Mods**
+1. extendable-severed-heads https://github.com/CCDirectLink/extendable-severed-heads
+
+### **Strongly Recommended Mods**
+1. cc-combat-art-level-extender https://github.com/CCDirectLink/cc-combat-art-level-extender
+2. cc-party-element-effects https://github.com/XenonA7/cc-party-element-effects
 
 ## **Main Features:**
 1. Fully playable triblader class, with a full set of 92 new combat arts to discover
@@ -38,7 +44,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Neutral Melee Lv.1a	**Wirbelschlitzer**
 - Neutral Melee Lv.1b	**Wild Gambit**
 - Neutral Melee Lv.2a	**Heavy Slash**
-- Neutral Melee Lv.2b
+- Neutral Melee Lv.2b	**Shrapnel Field**
 - Neutral Throw Lv.1a	**Spike Ball**
 - Neutral Throw Lv.1b	**Homing Shards**
 - Neutral Throw Lv.2a	**Rude Buster**
@@ -58,7 +64,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Heat Melee Lv.2a	**Solar Eruption**
 - Heat Melee Lv.2b	**Scorching Rays**
 - Heat Melee Lv.3a	**Calamity's Advent**
-- Heat Melee Lv.3b	
+- Heat Melee Lv.3b	**Sunsteel Strike**
 - Heat Throw Lv.1	**Molten Daggers**
 - Heat Throw Lv.2	**Daybreak**
 - Heat Throw Lv.3	N/A
@@ -85,7 +91,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Cold Throw Lv.1b	**Ice Flak**
 - Cold Throw Lv.2a	**Arctic Blast**
 - Cold Throw Lv.2b	**Hail Bomb**
-- Cold Throw Lv.3	**Frost Rays**
+- Cold Throw Lv.3	**Frozen Rays**
 - Cold Dash Lv.1	**Chilling Thrust**
 - Cold Dash Lv.2	**Flash Freeze**
 - Cold Dash Lv.3	N/A
@@ -104,7 +110,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Shock Melee Lv.3	**Triforce Slash**
 - Shock Throw Lv.1a	**Lightning Strike**
 - Shock Throw Lv.1b	**Targeted Surge**
-- Shock Throw Lv.2a
+- Shock Throw Lv.2a	**Lightning Fork**
 - Shock Throw Lv.2b	**Magnet Prism**
 - Shock Throw Lv.3a	**Magnet Storm**
 - Shock Throw Lv.3b

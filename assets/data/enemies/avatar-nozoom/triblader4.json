@@ -2049,19 +2049,20 @@
           "type": "LABEL"
         },
         {
-          "selectType": "TARGET",
-          "hitDir": "AWAY",
-          "align": "BOTTOM",
-          "hitCount": 1,
-          "hitDelay": 0,
-          "type": "DIRECT_HIT",
+          "time": 0.1,
+          "cancelOnHit": true,
+          "collideCancel": 1,
+          "rotateSpeed": 0.0,
+          "orthoDirFactor": 0,
+          "ignoreLastHit": false,
+          "type": "TACKLE",
           "attack": {
             "type": "NONE",
             "element": "HEAT",
             "damageFactor": 0.06,
             "reverse": false,
             "status": 1.05,
-            "guardable": "NEVER",
+            "guardable": "",
             "skillBonus": "RANGED_DMG",
             "limiter": ""
           }
@@ -2095,8 +2096,8 @@
       "stickFaceAlign": false,
       "group": "",
       "size": {
-        "x": 19,
-        "y": 19,
+        "x": 1,
+        "y": 1,
         "z": 4
       },
       "light": "XL",
@@ -2414,7 +2415,7 @@
             "status": 1,
             "reverse": false,
             "spFactor": 0,
-            "guardable": "NEVER"
+            "guardable": ""
           },
           "offset": {
             "x": 0,
@@ -2427,12 +2428,13 @@
           "type": "LABEL"
         },
         {
-          "selectType": "TARGET",
-          "hitDir": "AWAY",
-          "align": "BOTTOM",
-          "hitCount": 1,
-          "hitDelay": 0,
-          "type": "DIRECT_HIT",
+          "time": 0.1,
+          "cancelOnHit": true,
+          "collideCancel": 1,
+          "rotateSpeed": 0.0,
+          "orthoDirFactor": 0,
+          "ignoreLastHit": false,
+          "type": "TACKLE",
           "attack": {
             "type": "NONE",
             "visualType": "LIGHT",
@@ -2440,7 +2442,7 @@
             "damageFactor": 0.40,
             "reverse": false,
             "status": 0.3,
-            "guardable": "NEVER",
+            "guardable": "",
             "skillBonus": "RANGED_DMG",
             "limiter": ""
           }
@@ -2474,8 +2476,8 @@
       "stickFaceAlign": false,
       "group": "",
       "size": {
-        "x": 19,
-        "y": 19,
+        "x": 1,
+        "y": 1,
         "z": 4
       },
       "light": "XL",
@@ -9069,7 +9071,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "combat.triblader",
-            "name": "stabShockLoopFast"
+            "name": "stabShockLoopBasic"
           },
           "offset": {
             "x": 0,
@@ -13101,7 +13103,7 @@
         },
         {
           "time": 10.15,
-          "stopBeforeEdge": true,
+          "stopBeforeEdge": false,
           "collideCancel": 1,
           "type": "MOVE_FORWARD"
         }
@@ -13297,23 +13299,31 @@
     },
     "flameHit": {
       "copyOwnerAnims": false,
-      "breakType": "ACTION",
+      "breakType": "COMBATANT",
       "action": [
         {
-          "time": 1,
-          "missReactTime": 0,
-          "cancelOnHit": true,
-          "collideCancel": 1,
-          "orthoDirFactor": 1,
-          "ignoreLastHit": false,
-          "collideSlip": false,
-          "type": "TACKLE",
+          "align": "BOTTOM",
+          "radius": 32,
+          "yScale": 0,
+          "zHeight": 48,
+          "centralAngle": 1,
+          "duration": 3,
+          "expandRadius": 0,
+          "alwaysFull": true,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "rectangular": false,
+          "repeat": true,
+          "uniformHitDir": false,
+          "fixPos": false,
+          "checkCollision": false,
+          "type": "CIRCLE_ATTACK",
           "attack": {
             "type": "HEAVY",
             "element": "HEAT",
-            "damageFactor": 3.8,
+            "damageFactor": 6.8,
             "reverse": false,
-            "status": 1,
+            "status": 0.5,
             "fly": "MASSIVE+",
             "guardable": "",
             "skillBonus": "",
@@ -13321,7 +13331,18 @@
             "hints": [
               "NO_PUZZLE"
             ]
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
           }
+        },
+        {
+          "time": 10.15,
+          "stopBeforeEdge": false,
+          "collideCancel": 1,
+          "type": "MOVE_FORWARD"
         }
       ],
       "invisible": false,
@@ -13340,7 +13361,7 @@
         "accelSpeed": 5,
         "friction": 1,
         "airFriction": 1,
-        "maxVel": 4000,
+        "maxVel": 2500,
         "zGravityFactor": 0
       },
       "type": "GENERIC"
@@ -13829,7 +13850,7 @@
       "behaviors": [],
       "config": {}
     },
-    "frostRay": {
+    "frozenRay": {
       "faceAnims": {
         "name": "default",
         "shapeType": "Y_FLAT",
@@ -13883,7 +13904,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "combat.triblader",
-            "name": "frostRayTrail"
+            "name": "frozenRayTrail"
           },
           "offset": {
             "x": 0,
@@ -18195,8 +18216,33 @@
         "type": "SET_CLOSE_TEMP_TARGET"
       },
       {
+        "align": "BOTTOM",
+        "centralAngle": 0,
+        "startAngle": 0,
+        "angleVary": 0,
+        "startDist": 18,
+        "startDistCollide": "CLOSER",
+        "random": false,
+        "count": 1,
+        "duration": 0,
+        "clockwise": false,
+        "flipLeftFace": 8,
+        "circularArea": true,
+        "uniformDir": 0,
+        "delay": 0,
+        "repeat": false,
+        "type": "SHOOT_PROXY_RANGE",
         "proxy": "rudeBuster",
-        "type": "SHOOT_PROXY_PLAYER"
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 12
+        }
+      },
+      {
+        "value": false,
+        "immediately": true,
+        "type": "FACE_TO_TARGET"
       },
       {
         "value": 200,
@@ -24036,7 +24082,7 @@
         "type": "SHOW_EFFECT",
         "effect": {
           "sheet": "specials.cold",
-          "name": "frostRayShoot"
+          "name": "frozenRayShoot"
         },
         "offset": {
           "x": 0,
@@ -24060,7 +24106,7 @@
         "delay": 0,
         "repeat": false,
         "type": "SHOOT_PROXY_RANGE",
-        "proxy": "frostRay",
+        "proxy": "frozenRay",
         "offset": {
           "z": 12
         }
@@ -24177,7 +24223,7 @@
         "type": "SHOW_EFFECT",
         "effect": {
           "sheet": "specials.cold",
-          "name": "frostRayShoot"
+          "name": "frozenRayShoot"
         },
         "offset": {
           "x": 0,
@@ -24201,7 +24247,7 @@
         "delay": 0,
         "repeat": false,
         "type": "SHOOT_PROXY_RANGE",
-        "proxy": "frostRay",
+        "proxy": "frozenRay",
         "offset": {
           "z": 12
         }
@@ -24318,7 +24364,7 @@
         "type": "SHOW_EFFECT",
         "effect": {
           "sheet": "specials.cold",
-          "name": "frostRayShoot"
+          "name": "frozenRayShoot"
         },
         "offset": {
           "x": 0,
@@ -24342,7 +24388,7 @@
         "delay": 0,
         "repeat": false,
         "type": "SHOOT_PROXY_RANGE",
-        "proxy": "frostRay",
+        "proxy": "frozenRay",
         "offset": {
           "z": 12
         }

@@ -1,4 +1,26 @@
-0.0.5
+0.0.6 (06/20/2022)
+- New combat art: Shrapnel Field (Neutral Melee Lv.2b)
+- New combat art: Lightning Fork (Shock Throw Lv.2a)
+- New combat art: Sunsteel Strike (Heat Melee Lv.3b)
+- Removed "backups" directory from media\entity\npc
+- Frost Rupture now combos into its final explosion with a stun lock
+- "Frost Rays" renamed to "Frozen Rays"
+- Molten Daggers and Daybreak no longer ignore enemy shields, now do directional damage
+- Adjusted Amber Flurry so that it connects more reliably
+- PVP enemies now maintain a steady angle after shooting Rude Buster
+- Modified sprite for Frost Ray projectile
+- Tweaked particle effects for Flame Stab, deleted stabHeatShort effect
+- Added extra particles to Chilling Thrust, Shadow Spark, First Fractal, Lightning Rod, Triforce Slash, Soul Shatter
+- First Fractal clones now use stabShockLoopBasic effect
+- Tweaked camera behavior for Frost Rupture
+- Re-worded the description for Spiritfall
+- Adjusted spawn position for Rude Buster projectile
+- flameHit proxy (hitbox for heatPierce) logic reworked, should be more reliable now
+- flameHit proxy damage greatly increased, hitbox is now size z = 48 instead of z = 32
+- flamehit, flameHitS, flameHitSWeak all now have stopBeforeEdge = false
+- In the map "training-2v2", replaced triblader3 with triblader4
+
+0.0.5 (06/12/2022)
 - Removed dependency for ArcaneLab
 - All modded headIdx hard-coded values subtracted by 2 (in PVP enemy files)
 - New combat art: Frost Rupture (Cold Melee Lv.2a)
