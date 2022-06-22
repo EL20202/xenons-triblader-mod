@@ -7,6 +7,12 @@ Install instructions can be found at the bottom of this page. The DLC is require
 
 This is currently a pre-release version. Please provide the author, XenonA7, with feedback on combat art balance. Also please report any crashes, glitches, or other issues as a result from playing the entire game under a different character configuration. I won't be able to test every quest, cutscene, etc myself so feedback is critical.
 
+### **Required Mods**
+1. extendable-severed-heads https://github.com/CCDirectLink/extendable-severed-heads
+
+### **Strongly Recommended Mods**
+1. cc-combat-art-level-extender https://github.com/CCDirectLink/cc-combat-art-level-extender
+2. cc-party-element-effects https://github.com/XenonA7/cc-party-element-effects
 
 ## **Main Features:**
 1. Fully playable triblader class, with a full set of 92 new combat arts to discover
