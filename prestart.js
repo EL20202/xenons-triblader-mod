@@ -3,6 +3,22 @@ import "./js/bgm/custom-bgm.js";
 sc.PARTY_OPTIONS.push("triblader2");
 sc.PARTY_OPTIONS.push("triblader3");
 
+ig.EVENT_STEP.START_PVP_BATTLE.inject({
+  init(a) {
+    this.parent(a);
+
+    let b = 110 + sc.pvp.winPoints * 10;
+    b += (sc.party.getPartySize() + 1) * 16;
+    b += a.enemies.length * 16;
+    
+    const combatHudGui = ig.gui.guiHooks.find(ui => 
+      ui.gui instanceof sc.CombatHudGui
+    );
+
+    combatHudGui.gui.upperGui.sub.pvp.setSize(b, 20);
+  }
+});
+
 sc.Arena.inject({
     init(){
         this.parent()
@@ -135,7 +151,7 @@ sc.STAT_CHANGE_SETTINGS["DEFENSE-SHIELDS"] = {
 sc.STAT_CHANGE_SETTINGS["SPIKE_DMG-0"] = {
     change: sc.STAT_CHANGE_TYPE.MODIFIER,
     type: sc.STAT_PARAM_TYPE.SPIKE_DMG,
-    value: -10,
+    value: -20,
     negative: true,
     icon: "stat-spike-dmg",
     grade: "stat-rank-down-3"

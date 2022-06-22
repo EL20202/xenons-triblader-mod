@@ -1,3 +1,21 @@
+0.0.7 (06/22/2022)
+- New combat art: Tower of Tranquility (Cold Guard Lv.3b)
+- Ice Brace damage reduction nerfed from 90% to 85%
+- Stasis Stance damage reduction nerfed from 97.5% to 90%
+- Tower of Tranquility damage reduction is 90%
+- (Nax) fix for PVP scoreboard rendering
+- Triblader-created icicleSmall proxies now sparkle
+- Triblader-created icicleBigDmg proxies now sparkle
+- Cleaned up some music file things
+- Removed unused music files
+- Calamity's Advent explosive daggers should be a bit less prone to shoot through walls
+- Hail Bomb now shoots slightly less proxies while traveling
+- Action buff "SPIKE_DMG-0" factor changed from -10 to -20
+- Pain Buckler absorption healing factor nerfed from 1.5 to 1.2
+- Heavy Slash reduced travel distance
+- Spike Ball added screen shake and sound effect when bouncing on walls'
+- Removed unused effectKeys from Lightning Strike and Triforce Slash proxies
+
 0.0.6 (06/20/2022)
 - New combat art: Shrapnel Field (Neutral Melee Lv.2b)
 - New combat art: Lightning Fork (Shock Throw Lv.2a)

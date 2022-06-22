@@ -39,7 +39,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Neutral Melee Lv.1b	**Wild Gambit**
 - Neutral Melee Lv.2a	**Heavy Slash**
 - Neutral Melee Lv.2b	**Shrapnel Field**
-- Neutral Throw Lv.1a	**Spike Ball**
+- Neutral Throw Lv.1a	**Spike Ball** (Created by Eisus)
 - Neutral Throw Lv.1b	**Homing Shards**
 - Neutral Throw Lv.2a	**Rude Buster**
 - Neutral Throw Lv.2b	**Throwing Knives**
@@ -94,7 +94,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Cold Guard Lv.2a	**Blizzard Slash**
 - Cold Guard Lv.2b	**Stasis Stance**
 - Cold Guard Lv.3a	**Icicle Tomb**
-- Cold Guard Lv.3b
+- Cold Guard Lv.3b	**Tower of Tranquility**
 
 ![shock](https://user-images.githubusercontent.com/105614278/168505459-99dbff01-3261-465e-a470-c381c7133198.png)
 - Shock Melee Lv.1a	**Beekeeper**
@@ -153,7 +153,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Custom challenge maps (later to be contextualized in a cohesive storyline)
 - ArcaneLab support to allow for Spheroknight arts as craftable upgrades for your triblader, using AL's custom art system. I already have animation support and reworked versions of all Susie's arts to work with Lukas or the characters from this mod, but they are not included in the public version.
 
-## **Potential future plans, I will see if anyone wants to collaborate:**
+## **Potential future plans, no promises...**
 - An actual written story for a post-DLC triblader adventure starring one of the tribladers as the main character, Lea as side character
   - Lea PVP battle
   - Lea party member

@@ -5816,8 +5816,29 @@
           "type": "SET_SPEED"
         },
         {
-          "time": 0.3,
-          "type": "WAIT"
+          "minTime": 0,
+          "maxTime": 0.3,
+          "type": "WAIT_RANDOM"
+        },
+        {
+          "duration": -1,
+          "align": "BOTTOM",
+          "rotateFace": -1,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "combat.triblader",
+            "name": "blueSparkleMed"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
         },
         {
           "attribName": "time",
@@ -5983,8 +6004,29 @@
           "type": "SET_SPEED"
         },
         {
-          "time": 0.3,
-          "type": "WAIT"
+          "minTime": 0,
+          "maxTime": 0.3,
+          "type": "WAIT_RANDOM"
+        },
+        {
+          "duration": -1,
+          "align": "BOTTOM",
+          "rotateFace": -1,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "combat.triblader",
+            "name": "blueSparkleSmall"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
         },
         {
           "time": 5,
@@ -17261,7 +17303,7 @@
         "anim": "spinShort"
       },
       {
-        "value": 700,
+        "value": 300,
         "type": "SET_SPEED"
       },
       {
@@ -19200,7 +19242,7 @@
         "centralAngle": 1,
         "angleVary": 0,
         "startDist": 16,
-        "startDistCollide": false,
+        "startDistCollide": "CLOSER",
         "random": true,
         "count": 2,
         "duration": 0.1,
