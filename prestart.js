@@ -29,13 +29,6 @@ ig.EVENT_STEP.START_PVP_BATTLE.inject({
   }
 });
 
-ig.GUI.StatusBar.inject({
-  setPos() {
-    this.parent(arguments);
-    debugger;
-  }
-})
-
 sc.Arena.inject({
     init(){
         this.parent()
