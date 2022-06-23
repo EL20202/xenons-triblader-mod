@@ -16,6 +16,16 @@ ig.EVENT_STEP.START_PVP_BATTLE.inject({
     );
 
     combatHudGui.gui.upperGui.sub.pvp.setSize(b, 20);
+  },
+
+  start(a, b) {
+    this.parent(a, b);
+
+    for (let i = 0; i < this.enemies.length; i++) {
+      let enemy = ig.Event.getEntity(this.enemies[i], b);
+      let ui = enemy.statusGui.subHpHandler;
+      ui.setPos(ui.hook.pos.x, i * 25);
+    };
   }
 });
 
