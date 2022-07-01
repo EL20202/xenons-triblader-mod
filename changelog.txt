@@ -1,3 +1,26 @@
+0.0.8 (07/01/2022)
+- New combat art: Avalanche Assault (Cold Melee Lv.3b)
+- (Nax) fix for PVP enemy healthbars overlap
+- Added y=5 offset to PVP enemy healthbars
+- Added new environment particles called BLUE_TRIANGLES and RED_TRIANGLES
+- The final rounds for the training arena, triblader league cups, and lab duel now use these new effects
+- Improved dialogue options in map training-2v2.json
+- Fixed crash caused by "fly": "NONE" in seven cases
+- Proxy flameNoStun now uses "fly": "LIGHT"
+- Proxy frozenRupture now uses "fly": "MASSIVE++"
+- Proxy turbineStunner stunSteps adjusted
+- Proxy turbineController now spawns at target BOTTOM, not CENTER
+- Increased turn radius for Sunsteel Strike's fireballs
+- Triforce Slash sword strikes changed from "BREAK" to "LIGHT" attack types
+- Triforce Slash stun duration increased to align with the melee combo
+- Fixed Sunsteel Strike granting SP from some of its CIRCLE_ATTACK actions
+- Laser Barrage proxies are now breaktype COMBATANT
+- Wild Gambit roll 5 increased range/spread for lightning strikes
+- Increased the damage dealt by Tower of Tranquility ending attack
+- Improved sound effect composition for ending of Tower of Tranquility
+- Added better description of the healing amount to Tower of Tranquility description
+- Frigid Hurricane reclassed from Cold Melee Lv.3a to Cold Melee Lv.3b
+
 0.0.7 (06/22/2022)
 - New combat art: Tower of Tranquility (Cold Guard Lv.3b)
 - Ice Brace damage reduction nerfed from 90% to 85%

@@ -86,7 +86,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Cold Melee Lv.2a	**Frost Rupture**
 - Cold Melee Lv.2b	**Snowstorm**
 - Cold Melee Lv.3a	**Frigid Hurricane**
-- Cold Melee Lv.3b
+- Cold Melee Lv.3b	**Avalanche Assault**
 - Cold Throw Lv.1a	**Sleet Singularity**
 - Cold Throw Lv.1b	**Ice Flak**
 - Cold Throw Lv.2a	**Arctic Blast**

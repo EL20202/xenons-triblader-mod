@@ -2036,6 +2036,27 @@
         "frames": [
           0
         ]
+      },
+      {
+        "name": "COLD_BIG_TRIANGLE",
+        "pivot": {
+          "x": 48,
+          "y": 47
+        },
+        "sheet": {
+          "src": "media/entity/effects/lighter-particle-big-triangle-sheet.png",
+          "offX": 192,
+          "offY": 0,
+          "width": 96,
+          "height": 80
+        },
+        "guiSprites": true,
+        "renderMode": "lighter",
+        "time": 1,
+        "repeat": true,
+        "frames": [
+          0
+        ]
       }
     ]
   },
@@ -19477,6 +19498,136 @@
         "particleDuration": 0.2,
         "anim": "CIRCLE_SOURCE_HEAT_GUI",
         "type": "PLAY_ANIM"
+      }
+    ],
+    "coldPreAttackAA": [
+      {
+        "volume": 0.35,
+        "global": false,
+        "loop": false,
+        "variance": 0.05,
+        "speed": 1,
+        "sound": "media/sound/boss/gods/holy-short.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "volume": 0.8,
+        "global": false,
+        "loop": false,
+        "sound": "media/sound/battle/shiny-effect.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "volume": 1.2,
+        "global": false,
+        "loop": false,
+        "speed": 2,
+        "sound": "media/sound/scenes/swoosh-rise-short.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "pAlpha": {
+          "init": 0,
+          "start": {
+            "value": 0.8,
+            "spline": "EASE_OUT"
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 3,
+            "y": 3
+          },
+          "start": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "spline": "EASE_IN"
+          }
+        },
+        "pRotate": {
+          "init": 0,
+          "start": {
+            "value": 0.35,
+            "spline": ""
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.45,
+        "angleVary": 1,
+        "cancelable": false,
+        "anim": "COLD_BIG_TRIANGLE",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "numParticles": 3,
+        "duration": 0,
+        "centralAngle": 1,
+        "startAngle": 0.5,
+        "startDist": 12,
+        "particleRotate": true,
+        "moveDist": 128,
+        "keySpline": "EASE_OUT",
+        "moveRotate": 0.3,
+        "rotateWithTime": false,
+        "inverse": false,
+        "collision": false,
+        "pAlpha": {
+          "init": 1
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 2
+          },
+          "start": {
+            "value": {
+              "x": 0,
+              "y": 5
+            },
+            "spline": "EASE_OUT"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.7,
+        "anim": "CIRCLE_SOURCE_COLD_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 3,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 12,
+        "particleRotate": true,
+        "moveDist": 128,
+        "keySpline": "EASE_OUT",
+        "moveRotate": 0.15,
+        "rotateWithTime": false,
+        "inverse": false,
+        "collision": false,
+        "pAlpha": {
+          "init": 1
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 2
+          },
+          "start": {
+            "value": {
+              "x": 0,
+              "y": 2
+            },
+            "spline": "EASE_OUT"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.7,
+        "anim": "CIRCLE_SOURCE_COLD_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ]
   }

@@ -6601,7 +6601,7 @@
     },
     "giantAssLaser": {
       "copyOwnerAnims": false,
-      "breakType": "NEVER",
+      "breakType": "COMBATANT",
       "action": [
         {
           "value": "NONE",
@@ -8410,7 +8410,7 @@
               "type": "CLEAR_EFFECTS"
             },
             {
-              "time": 3,
+              "time": 5.5,
               "type": "WAIT"
             }
           ]
@@ -10659,19 +10659,28 @@
           "attack": {
             "type": "BREAK",
             "element": "HEAT",
+            "fly": "LIGHT",
             "visualType": "LIGHT",
-            "fly": "NONE",
             "damageFactor": 1,
             "reverse": true,
             "stunSteps": [
+              
               {
-                "type": "START_LOCK"
+                "value": 0,
+                "type": "Z_VEL"
               },
               {
-                "accel": 0,
+                "accel": 1,
                 "offZ": 0,
                 "maxTime": 0,
                 "type": "Z_PULL"
+              },
+              {
+                "maxTime": 1.1,
+                "type": "BLOCK_FALL"
+              },
+              {
+                "type": "START_LOCK"
               }
             ],
             "status": 1,
@@ -10681,7 +10690,7 @@
           }
         },
         {
-          "time": 1.1,
+          "time": 1.2,
           "type": "WAIT"
         }
       ],
@@ -21729,7 +21738,7 @@
           },
           {
             "posType": "TARGET",
-            "align": "CENTER",
+            "align": "BOTTOM",
             "type": "SHOOT_PROXY",
             "proxy": "turbineController",
             "offset": {
@@ -26083,8 +26092,8 @@
             "checkCollision": false,
             "type": "CIRCLE_ATTACK",
             "attack": {
-              "type": "BREAK",
-              "fly": "NONE",
+              "type": "LIGHT",
+              "visualType": "MASSIVE",
               "element": "SHOCK",
               "damageFactor": 1.7,
               "spFactor": 0,
@@ -26187,8 +26196,8 @@
             "checkCollision": false,
             "type": "CIRCLE_ATTACK",
             "attack": {
-              "type": "BREAK",
-              "fly": "NONE",
+              "type": "LIGHT",
+              "visualType": "MASSIVE",
               "element": "SHOCK",
               "damageFactor": 1.7,
               "spFactor": 0,
@@ -26342,7 +26351,8 @@
             "checkCollision": false,
             "type": "CIRCLE_ATTACK",
             "attack": {
-              "type": "BREAK",
+              "type": "LIGHT",
+              "visualType": "MASSIVE",
               "element": "SHOCK",
               "damageFactor": 2,
               "spFactor": 0,
