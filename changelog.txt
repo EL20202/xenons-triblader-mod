@@ -1,3 +1,6 @@
+0.0.11 (07/03/2022)
+- Fixed some trigger conditions in assets\data\maps\xtm\char-select\interior.json
+
 0.0.10 (07/03/2022)
 - Changed all "tmp.return" to "map.return" in assets\data\maps\xtm\char-select\interior.json
 
