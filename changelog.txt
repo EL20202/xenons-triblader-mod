@@ -1,3 +1,8 @@
+0.0.9 (07/03/2022)
+- Added new audio for player's match point in Triblader League Round 1
+- Finished assets\data\maps\xtm\char-select\interior.json
+- Added map assets\data\maps\xtm\char-select\basement.json, unfinished state
+
 0.0.8 (07/01/2022)
 - New combat art: Avalanche Assault (Cold Melee Lv.3b)
 - (Nax) fix for PVP enemy healthbars overlap

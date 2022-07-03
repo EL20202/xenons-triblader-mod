@@ -38,7 +38,7 @@ ig.module("impact.feature.bgm.bgm-xtm")
       rubyDelusions: {
         path: "media/bgm/ruby-delusions.ogg",
         loopEnd: 64.018,
-        volume: 0.8,
+        volume: 0.7,
         introPath: "media/bgm/ruby-delusions-i.ogg",
         introEnd: 3.193
       },
@@ -111,7 +111,14 @@ ig.module("impact.feature.bgm.bgm-xtm")
   	    introEnd: 9.849,
   	    loopEnd: 224.515, 
   	    volume: 1.0
-  	  }
+  	  },
+      meanBean: {
+        introPath: "media/bgm/mean-bean-i.ogg",
+        path: "media/bgm/mean-bean.ogg",
+        introEnd: 15.980,
+        loopEnd: 57.542, 
+        volume: 1.0
+      }
     });
 
     ig.merge(ig.BGM_DEFAULT_TRACKS, {
