@@ -1,3 +1,6 @@
+0.0.10 (07/03/2022)
+- Changed all "tmp.return" to "map.return" in assets\data\maps\xtm\char-select\interior.json
+
 0.0.9 (07/03/2022)
 - Added new audio for player's match point in Triblader League Round 1
 - Finished assets\data\maps\xtm\char-select\interior.json
