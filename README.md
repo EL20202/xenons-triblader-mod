@@ -105,15 +105,15 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 ![shock](https://user-images.githubusercontent.com/105614278/168505459-99dbff01-3261-465e-a470-c381c7133198.png)
 - Shock Melee Lv.1a	**Beekeeper**
 - Shock Melee Lv.1b	**Shadow Spark**
-- Shock Melee Lv.2a	
+- Shock Melee Lv.2a	**Faraday Formation**
 - Shock Melee Lv.2b	**Lightning Rod**
 - Shock Melee Lv.3	**Triforce Slash**
 - Shock Throw Lv.1a	**Lightning Strike**
 - Shock Throw Lv.1b	**Targeted Surge**
 - Shock Throw Lv.2a	**Lightning Fork**
 - Shock Throw Lv.2b	**Magnet Prism**
-- Shock Throw Lv.3a	**Magnet Storm**
-- Shock Throw Lv.3b
+- Shock Throw Lv.3a	**Celestial Constellation**
+- Shock Throw Lv.3b	**Magnet Storm**
 - Shock Dash Lv.1a	**Amber Flurry**
 - Shock Dash Lv.1b	**Static Charge**
 - Shock Dash Lv.2a	**First Fractal**

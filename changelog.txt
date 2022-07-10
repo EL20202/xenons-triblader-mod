@@ -1,3 +1,20 @@
+0.0.12 (07/10/2022)
+- New combat art: Celestial Constellation (Shock Throw Lv.3A) (Usable by PVP enemies)
+- New combat art: Faraday Formation (Shock Melee Lv.2A)
+- PVP enemies now use Celestial Constellation instead of Magnet Storm
+- Minor progress on assets\data\maps\xtm\char-select\basement.json
+- Proxy fallingRockMed now has a crosshair on the ground like fallingRockBig
+- Big lightning strikes as a part of Thunder Wrath now use new proxy thunderHeavy
+- Proxy lightningRodBolt changed to MELEE_DMG
+- Wild Gambit slightly quieter beep sound effect
+- Homing Shards reduced recoil distance
+- Added new particle effects to Gleaming Surge
+- All triblader melee "finisher" particle effects changed to cancelable
+- PVP enemy melee finisher particle effects changed to duration 0 (was -1)
+- Wild Gambit roll 4 explosion damage reduced by 25%
+- Re-worded description for Lightning Rod
+
+
 0.0.11 (07/03/2022)
 - Fixed some trigger conditions in assets\data\maps\xtm\char-select\interior.json
 
@@ -47,7 +64,7 @@
 - Action buff "SPIKE_DMG-0" factor changed from -10 to -20
 - Pain Buckler absorption healing factor nerfed from 1.5 to 1.2
 - Heavy Slash reduced travel distance
-- Spike Ball added screen shake and sound effect when bouncing on walls'
+- Spike Ball added screen shake and sound effect when bouncing on walls
 - Removed unused effectKeys from Lightning Strike and Triforce Slash proxies
 
 0.0.6 (06/20/2022)
