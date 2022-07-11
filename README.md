@@ -24,7 +24,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - With the mod installed, proceeding out of the Newcomer Bridge at the start of the game will take you to a place to select a character, after which you will continue to the Rhombus Dungeon and the rest of the game.
 - The following can be accessed using any existing Lea save file, a new game is not required. It will work regardless of what character you are playing as.
   - Unlock the **Triblader League** arena cup by talking to the Tribladers standing around the **Open PVP Fields** in Rhombus Square. Unlockable after beating the final dungeon in the DLC (Ku'lero Temple).
-  - Quick-swap menu added to the Rhombus Arena lobby to change your character at will. Look for a flashing sign at the top-right of the lobby.
+  - Quick-swap menu added to the Rhombus Arena lobby to change your character at will. Look for a flashing sign at the top-right of the lobby. Swapping characters will keep all your progress/stats/inventory, and is seamless. Check your circuit tree to see which Triblader arts you have equipped after swapping.
   - After completing the DLC storyline (to the point where you need to visit C'tron's house), walk around **Homestedt** and you will get a call from Satoshi. This will begin the post-DLC triblader storyline, although this is largely incomplete right now. This will unlock the arena cups versus Luke and Lukas. **This will also unlock the mod's dev room, which has some additional random content.**
 
 
@@ -118,11 +118,11 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Shock Dash Lv.1b	**Static Charge**
 - Shock Dash Lv.2a	**First Fractal**
 - Shock Dash Lv.2b	**Alternating Charge**
-- Shock Dash Lv.3a	**Thunder Wrath**
-- Shock Dash Lv.3b
+- Shock Dash Lv.3a	**Prismatic Meltdown**
+- Shock Dash Lv.3b	**Thunder Wrath**
 - Shock Guard Lv.1	**Overclock**
 - Shock Guard Lv.2	**Glitch Time**
-- Shock Guard Lv.3 N/A
+- Shock Guard Lv.3	N/A
 
 ![wave](https://user-images.githubusercontent.com/105614278/168505468-e7f002ac-f5e0-4633-b444-a19dcde8418c.png)
 - Wave Melee Lv.1	**Ki Spin**
@@ -164,7 +164,7 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
   - Lea PVP battle
   - Lea party member
   - Proper new areas, maps, quests, etc for post-DLC triblader adventure
-- Septalancer (aka Heptalancer) new class with sprites, spear attacks, and combat arts
+- Septalancer (aka Heptalancer) new class with sprites, spear attacks, boomerangs shaped like "7"s, and combat arts. Perhaps as just a party member at first.
 
 
 ## Install Instructions

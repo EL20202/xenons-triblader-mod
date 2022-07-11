@@ -1,6 +1,13 @@
+0.0.13 (07/11/2022)
+- New combat art: Prismatic Meltdown (Shock Dash Lv.3a)
+- Thunder Wrath reclassed from Shock Dash Lv.3a to Shock Dash Lv.3b
+- Faraday Formation now has MASSIVE hit stability during the spinning portion of the attack
+- Changed the pivot point for SHOCK_WAVE_BIG_TRIANGLE from y = 47 to y = 49
+- Tweaked Triblader2 northeast running sprites
+
 0.0.12 (07/10/2022)
-- New combat art: Celestial Constellation (Shock Throw Lv.3A) (Usable by PVP enemies)
-- New combat art: Faraday Formation (Shock Melee Lv.2A)
+- New combat art: Celestial Constellation (Shock Throw Lv.3a) (Usable by PVP enemies)
+- New combat art: Faraday Formation (Shock Melee Lv.2a)
 - PVP enemies now use Celestial Constellation instead of Magnet Storm
 - Minor progress on assets\data\maps\xtm\char-select\basement.json
 - Proxy fallingRockMed now has a crosshair on the ground like fallingRockBig
@@ -13,7 +20,6 @@
 - PVP enemy melee finisher particle effects changed to duration 0 (was -1)
 - Wild Gambit roll 4 explosion damage reduced by 25%
 - Re-worded description for Lightning Rod
-
 
 0.0.11 (07/03/2022)
 - Fixed some trigger conditions in assets\data\maps\xtm\char-select\interior.json
