@@ -1,3 +1,18 @@
+0.0.14 (07/15/2022)
+- Added new map: assets\data\maps\xtm\char-select\beta.json
+- Added new map: assets\data\maps\xtm\bonus\statue-cutscene.json
+- Added character swap prop to Rhombus Arena lobby patch file
+- Added new player configs for triblader4 and triblader5 (special properties)
+   - Triblader4 has increased dash speed
+   - Triblader4 has faster melee attacks
+   - Triblader4 has weaker melee attacks
+   - Triblader5 has steerable dashes
+- Updated animation files for Luke, triblader4, and triblader5
+- Added placeholder spritesheet lukeExtra.png
+- Added missing secondary spritesheet for triblader5
+- Added teleporter to statue-cutscene to Autumn's Rise entrance (temporary)
+- Removed emilie.json player file (animation fixes) due to irrelevance
+
 0.0.13 (07/11/2022)
 - New combat art: Prismatic Meltdown (Shock Dash Lv.3a)
 - Thunder Wrath reclassed from Shock Dash Lv.3a to Shock Dash Lv.3b

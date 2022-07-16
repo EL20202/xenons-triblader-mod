@@ -2,6 +2,8 @@ import "./js/bgm/custom-bgm.js";
 
 sc.PARTY_OPTIONS.push("triblader2");
 sc.PARTY_OPTIONS.push("triblader3");
+sc.PARTY_OPTIONS.push("triblader4");
+sc.PARTY_OPTIONS.push("triblader5");
 
 ig.EVENT_STEP.START_PVP_BATTLE.inject({
   init(a) {
