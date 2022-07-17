@@ -10,7 +10,7 @@
     "creator": {
       "en_US": "XenonA7"
     },
-    "condition": "true",
+    "condition": "plot.xtm.triArenaUnlock",
     "music": "evoEscape",
     "noRush": true,
     "mods": [

@@ -1,3 +1,8 @@
+0.0.15 (07/16/2022)
+- Added proper unlock condition for Triblader League arena cup availible after DLC dungeon completion
+- New map patch file center-nw.json.patch for NPC that unlocks the Triblader League
+- Removed temporary map file dng-top-modded.json
+
 0.0.14 (07/15/2022)
 - Added new map: assets\data\maps\xtm\char-select\beta.json
 - Added new map: assets\data\maps\xtm\bonus\statue-cutscene.json
