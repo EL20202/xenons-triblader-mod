@@ -40,7 +40,7 @@
         "order": 500001,
         "kills": 1,
         "area": "rhombus-sqr",
-        "anim": "levelUpStand",
+        "anim": "battleRun",
         "descriptions": [{
             "text": {
                 "en_US": "A \\c[3]triblader\\c[0] player and fellow member of the \\c[3]First Scholars\\c[0].\nTribladers have many wide-area attacks and lingering projectiles that cause a lot of collateral damage."
@@ -199,7 +199,7 @@
     },
     "avatar-nozoom.triblader2-freq-arts": {
         "name": {
-            "en_US": "Crossworlds Player"
+            "en_US": "Crossworlds Player (Freq. Arts)"
         },
         "track": true,
         "order": 500005,

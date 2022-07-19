@@ -67,8 +67,7 @@
     "MELEE_DMG": 0.18,
     "CRITICAL_DMG": 0.3,
     "ASSAULT": 0.4,
-    "COND_HEALING": 0.28,
-    "ONCE_MORE": 1
+    "COND_HEALING": 0.28
   },
   "credit": 0,
   "exp": 0,

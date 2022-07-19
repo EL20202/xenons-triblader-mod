@@ -15,17 +15,83 @@
         "event": [
           {
             "type": "IF",
-            "condition": "plot.xmod.leaSwitch",
+            "condition": "plot.xtm.swapBack",
             "thenStep": [
               {
                 "type": "CHANGE_VAR_BOOL",
-                "varName": "plot.xmod.leaSwitch",
+                "varName": "plot.xtm.swapBack",
                 "changeType": "set",
                 "value": false
               },
               {
-                "type": "SWITCH_PLAYER_CONFIG",
-                "name": "Lea"
+                "type": "IF",
+                "condition": "plot.xtm.character == 1",
+                "thenStep": [
+                  {
+                    "type": "SWITCH_PLAYER_CONFIG",
+                    "name": "Lea"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "condition": "plot.xtm.character == 2",
+                "thenStep": [
+                  {
+                    "type": "SWITCH_PLAYER_CONFIG",
+                    "name": "Schneider"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "condition": "plot.xtm.character == 3",
+                "thenStep": [
+                  {
+                    "type": "SWITCH_PLAYER_CONFIG",
+                    "name": "Luke"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "condition": "plot.xtm.character == 4",
+                "thenStep": [
+                  {
+                    "type": "SWITCH_PLAYER_CONFIG",
+                    "name": "triblader2"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "condition": "plot.xtm.character == 5",
+                "thenStep": [
+                  {
+                    "type": "SWITCH_PLAYER_CONFIG",
+                    "name": "triblader3"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "condition": "plot.xtm.character == 6",
+                "thenStep": [
+                  {
+                    "type": "SWITCH_PLAYER_CONFIG",
+                    "name": "triblader4"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "condition": "plot.xtm.character == 7",
+                "thenStep": [
+                  {
+                    "type": "SWITCH_PLAYER_CONFIG",
+                    "name": "triblader5"
+                  }
+                ]
               }
             ]
           }

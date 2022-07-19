@@ -1,3 +1,20 @@
+0.0.17 (07/19/2022)
+- Disabled the map \assets\extension\post-game\data\maps\evo-village\interior\city-hall.json, this will not be part of the beta release
+- Added teleporter to Lea's attic to access XTM dev room, unlocks after finishing DLC dungeon
+- Added patch \assets\extension\post-game\data\maps\evo-village\interior\lea-upper.json.patch
+- Added map \assets\data\maps\xtm\bonus\dev.json
+- Bonus maps training-2v2 and statue-cutscene now link back to dev room
+- Added new method of obtaining triblader2 party member in dev room
+- Deleted temporary map \assets\data\maps\autumn\entrance.json
+- Triblader training arena added new logic to support customizable number of PVP rounds
+- Removed all unused "arena-c" maps
+- Renamed plot variable "plot.xmod.leaSwitch" to "plot.xtm.swapBack"
+- Event trigger in Rhombus Arena will now swap player back to their plot.xtm.character config after forced-character cups
+- Updated arena cups descriptions
+- Luke/Lukas PVP enemies no longer have the "Once More" modifier
+- Schneider animation in the enemy encyclopedia changed to battleRun
+- Triblader2 (freq. arts) name updated in enemy encyclopedia
+
 0.0.16 (07/19/2022)
 - Finished map: assets\data\maps\xtm\char-select\basement.json
 - Added variable plot.xtm.character to track player character choice
