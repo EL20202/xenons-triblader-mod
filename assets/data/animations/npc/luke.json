@@ -73,9 +73,9 @@
       "height": 40
     },
     "eating": {
-      "src": "media/entity/npc/luke.png",
-      "offX": 352,
-      "offY": 360,
+      "src": "media/entity/npc/lukeEatFix.png",
+      "offX": 0,
+      "offY": 0,
       "width": 32,
       "height": 40
     },
@@ -1073,13 +1073,7 @@
           "frames": [
             8,
             9,
-            10,
-            11,
-            12,
-            10,
-            11,
-            12,
-            13
+            10
           ]
         },
         {

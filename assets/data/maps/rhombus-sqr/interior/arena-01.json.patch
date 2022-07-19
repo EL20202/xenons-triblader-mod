@@ -100,6 +100,12 @@
                   "type": "SWITCH_PLAYER_CONFIG"
                 },
                 {
+                  "changeType": "set",
+                  "type": "CHANGE_VAR_NUMBER",
+                  "varName": "plot.xtm.character",
+                  "value": 1
+                },
+                {
                   "text": {
                     "en_US": "Character:\\. \\c[3]Lea\\c[0]\n\\!Class:\\. \\c[1]Spheromancer\\c[0]\n\\!Special attributes:\\. None"
                   },
@@ -116,6 +122,12 @@
                 {
                   "name": "Schneider",
                   "type": "SWITCH_PLAYER_CONFIG"
+                },
+                {
+                  "changeType": "set",
+                  "type": "CHANGE_VAR_NUMBER",
+                  "varName": "plot.xtm.character",
+                  "value": 2
                 },
                 {
                   "text": {
@@ -136,6 +148,12 @@
                   "type": "SWITCH_PLAYER_CONFIG"
                 },
                 {
+                  "changeType": "set",
+                  "type": "CHANGE_VAR_NUMBER",
+                  "varName": "plot.xtm.character",
+                  "value": 3
+                },
+                {
                   "text": {
                     "en_US": "Character:\\. \\c[3]Luke\\c[0]\n\\!Class:\\. \\c[2]Triblader\\c[0]\n\\!Special attributes:\\. None"
                   },
@@ -152,6 +170,12 @@
                 {
                   "name": "triblader2",
                   "type": "SWITCH_PLAYER_CONFIG"
+                },
+                {
+                  "changeType": "set",
+                  "type": "CHANGE_VAR_NUMBER",
+                  "varName": "plot.xtm.character",
+                  "value": 4
                 },
                 {
                   "text": {
@@ -172,6 +196,12 @@
                   "type": "SWITCH_PLAYER_CONFIG"
                 },
                 {
+                  "changeType": "set",
+                  "type": "CHANGE_VAR_NUMBER",
+                  "varName": "plot.xtm.character",
+                  "value": 5
+                },
+                {
                   "text": {
                     "en_US": "Character:\\. \\c[3]Triblader3\\c[0]\n\\!Class:\\. \\c[2]Triblader\\c[0]\n\\!Special attributes:\\. None"
                   },
@@ -190,6 +220,12 @@
                   "type": "SWITCH_PLAYER_CONFIG"
                 },
                 {
+                  "changeType": "set",
+                  "type": "CHANGE_VAR_NUMBER",
+                  "varName": "plot.xtm.character",
+                  "value": 6
+                },
+                {
                   "text": {
                     "en_US": "Character:\\. \\c[3]Triblader4\\c[0]\n\\!Class:\\. \\c[2]Triblader\\c[0]\n\\!Special attributes:\\.\n\\c[2]+ Melee speed\\c[0]\n\\.\\c[2]+ Dash speed\\c[0]\n\\.\\c[1]- Standard melee damage\\c[0]"
                   },
@@ -206,6 +242,12 @@
                 {
                   "name": "triblader5",
                   "type": "SWITCH_PLAYER_CONFIG"
+                },
+                {
+                  "changeType": "set",
+                  "type": "CHANGE_VAR_NUMBER",
+                  "varName": "plot.xtm.character",
+                  "value": 7
                 },
                 {
                   "text": {

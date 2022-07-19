@@ -1,3 +1,20 @@
+0.0.16 (07/19/2022)
+- Finished map: assets\data\maps\xtm\char-select\basement.json
+- Added variable plot.xtm.character to track player character choice
+- Rhombus Arena character change hologram now updates this variable when used
+- Added spritesheets lukeEatFix.png and schneiderEatFix.png
+- Fixed a vanilla graphical issue with Luke/Schneider eating animation sprites being off-center
+- Changed frame data for Luke/Schneider itemEffect animations
+- Added spritesheet assets\media\map\xtm-lab.png
+- Added prop sheet assets\data\props\xtm-lab.json
+- Triblader training arena default enemy level is higher if the player enters the map with a party member
+- Triblader training arena added music change for player match point if using BGM choice 9
+- Reduced wait time at the end of the statue cutscene
+- Changed area to heat-area for interior.json map
+- Modified assets\data\effects\area\arid.json with new effect switchARChargeVisible
+- Modified assets\data\effects\area\arid.json with new effect switchActivateNoOffset
+- Teleporter at the end of beta.json map is no longer slow
+
 0.0.15 (07/16/2022)
 - Added proper unlock condition for Triblader League arena cup availible after DLC dungeon completion
 - New map patch file center-nw.json.patch for NPC that unlocks the Triblader League
