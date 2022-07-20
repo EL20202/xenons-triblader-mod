@@ -1,7 +1,7 @@
 # xenons-triblader-mod
 ![Kindling Triad](https://user-images.githubusercontent.com/105614278/168501697-8dccf971-8564-4166-bbdb-d3c6ec79d870.gif)
 
-Install instructions can be found at the bottom of this page. The DLC is required for this mod to funciton.
+Install instructions can be found at the bottom of this page. The DLC is required for this mod to funciton. This mod is also aimed at those who have already experienced Crosscode and its DLC to completion.
 
 # **PRE-RELEASE VERSION**
 
