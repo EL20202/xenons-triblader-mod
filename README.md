@@ -1,11 +1,11 @@
 # xenons-triblader-mod
 ![Kindling Triad](https://user-images.githubusercontent.com/105614278/168501697-8dccf971-8564-4166-bbdb-d3c6ec79d870.gif)
 
-Install instructions can be found at the bottom of this page. The DLC is required for this mod to funciton.
+Install instructions can be found at the bottom of this page. The DLC is required for this mod to funciton. This mod is also aimed at those who have already experienced Crosscode and its DLC to completion.
 
 # **PRE-RELEASE VERSION**
 
-This is currently a pre-release version. Please provide the author, XenonA7, with feedback on combat art balance. Also please report any crashes, glitches, or other issues as a result from playing the entire game under a different character configuration. I won't be able to test every quest, cutscene, etc myself so feedback is critical.
+This is currently a pre-release version. Please provide the author, XenonA7, with feedback on combat art balance. Also please report any crashes, glitches, or other issues as a result from playing the entire game under a different character configuration. I won't be able to test every quest, cutscene, etc myself so feedback is critical. Please give feedback at the Discord linked below.
 
 ### **Required Mods**
 1. extendable-severed-heads https://github.com/CCDirectLink/extendable-severed-heads
@@ -14,18 +14,22 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 1. cc-combat-art-level-extender https://github.com/CCDirectLink/cc-combat-art-level-extender
 2. cc-party-element-effects https://github.com/XenonA7/cc-party-element-effects
 
+### **Discord Server**
+https://discord.gg/CsfUk9vpFq
+
 ## **Main Features:**
 1. Fully playable triblader class, with a full set of 92 new combat arts to discover
 2. Triblader PVP arena cups
-3. Post-DLC story content (largely incomplete)
+3. Party member and updated Schneider/Luke movesets
+4. Highly customizable practice arena for triblader PVP
 
 
 ## **How to Play:**
 - With the mod installed, proceeding out of the Newcomer Bridge at the start of the game will take you to a place to select a character, after which you will continue to the Rhombus Dungeon and the rest of the game.
 - The following can be accessed using any existing Lea save file, a new game is not required. It will work regardless of what character you are playing as.
-  - Unlock the **Triblader League** arena cup by talking to the Tribladers standing around the **Open PVP Fields** in Rhombus Square. Unlockable after beating the final dungeon in the DLC (Ku'lero Temple).
-  - Quick-swap menu added to the Rhombus Arena lobby to change your character at will. Look for a flashing sign at the top-right of the lobby. Swapping characters will keep all your progress/stats/inventory, and is seamless. Check your circuit tree to see which Triblader arts you have equipped after swapping.
-  - After completing the DLC storyline (to the point where you need to visit C'tron's house), walk around **Homestedt** and you will get a call from Satoshi. This will begin the post-DLC triblader storyline, although this is largely incomplete right now. This will unlock the arena cups versus Luke and Lukas. **This will also unlock the mod's dev room, which has some additional random content.**
+  * Unlock the **Triblader League** arena cup by talking to the Tribladers standing around the **Open PVP Fields** in Rhombus Square. Unlockable after beating the final dungeon in the DLC (Ku'lero Temple).
+  * Quick-swap menu added to the Rhombus Arena lobby to change your character at will. Look for a flashing sign at the top-right of the lobby. Swapping characters will keep all your progress/stats/inventory, and is seamless. Check your circuit tree to see which Triblader arts you have equipped after swapping.
+  * The mod's dev room is located in **Lea's Attic** after completing the DLC dungeon (Ku'lero Temple). Here you will find a new party member and a training arena for a very customizable duel.
 
 
 
@@ -167,5 +171,38 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Septalancer (aka Heptalancer) new class with sprites, spear attacks, boomerangs shaped like "7"s, and combat arts. Perhaps as just a party member at first.
 
 
-## Install Instructions
-This section is unfinished
+# Install Instructions
+1. Back up your save files **\AppData\Local\CrossCode**
+
+
+## Install CCLoader
+CClaoder is a mod loader required to install mods on Crosscode.
+
+1. Download CCloader from https://github.com/CCDirectLink/CCLoader/releases  
+![image](https://user-images.githubusercontent.com/105614278/179910752-49fb02fd-87d4-43fb-8853-c1794925c223.png)
+2. Extract the files  
+![image](https://user-images.githubusercontent.com/105614278/179910853-0a511c33-a559-4e85-82ee-83e210ee3d83.png)
+3. Locate these files from the extracted directory  
+![image](https://user-images.githubusercontent.com/105614278/179910937-8c62ce97-f062-41c0-90b0-685c483e3de9.png)
+4. Copy the files into your Crosscode game directory  
+![image](https://user-images.githubusercontent.com/105614278/179911026-a895f1f7-7dfa-406a-8e94-8d4fc9e5bc62.png)
+5. Launch the game to verify it is installed. You will see the CCLoader version in the bottom-right of the screen.  
+![image](https://user-images.githubusercontent.com/105614278/179911121-3f74421f-251a-462a-8172-aae6314d840f.png)
+
+## Install Mods
+1. Download and extract XTM and its dependencies, along with recommended mods if desired  
+(XTM Releases) https://github.com/XenonA7/xenons-triblader-mod/releases  
+(Required) extendable-severed-heads: https://github.com/CCDirectLink/extendable-severed-heads/releases  
+(Recommended) cc-combat-art-level-extender: https://github.com/CCDirectLink/cc-combat-art-level-extender/releases  
+(Recommended) cc-party-element-effects: https://github.com/XenonA7/cc-party-element-effects/releases  
+
+2. Place extracted mod folders inside **\CrossCode\assets\mods**  
+![image](https://user-images.githubusercontent.com/105614278/179912844-b0ac6c4e-4a03-4a97-a3fc-22eb7d1a4bce.png)  
+
+Note that if you click on any of these installed mods, there should be a file called **package.json** or **ccmod.json** directly inside those folders. If not, CCLoader won't be able to find the mods.
+
+3. Launch the game. Go into the options menu and there will be a new tab with a hammer icon for mods (CCLoader adds this). It should look like this:  
+![image](https://user-images.githubusercontent.com/105614278/179913184-8603fbe7-9cf6-4437-9ef7-e89b4930cb5c.png)  
+
+In this case, you are good to go. Note that XTM is compatible with ArcaneLab and Autumn's Genesis and other mods. There is an old list of other Crosscode mods located here: https://c2dl.info/cc/mods
+
