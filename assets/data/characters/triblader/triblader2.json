@@ -37,28 +37,18 @@
   },
   "face": {
     "width": 128,
-    "height": 72,
-    "centerX": 38,
-    "centerY": 54,
-    "src": "avatars-new.png",
+    "height": 149,
+    "centerX": 45,
+    "centerY": 52,
+    "src": "tribladerF.png",
     "parts": [
       {
-        "torso": {
+        "normal": {
           "srcX": 0,
-          "srcY": 80,
+          "srcY": 0,
           "width": 128,
-          "height": 72,
-          "destX": 7,
-          "destY": 77
-        }
-      },
-      {
-        "head": {
-          "srcX": 152,
-          "srcY": 99,
-          "width": 80,
-          "height": 85,
-          "destX": 7,
+          "height": 149,
+          "destX": 0,
           "destY": 0
         }
       }
@@ -67,8 +57,7 @@
       "DEFAULT": {
         "faces": [
           [
-            "torso",
-            "head"
+            "normal"
           ]
         ]
       }

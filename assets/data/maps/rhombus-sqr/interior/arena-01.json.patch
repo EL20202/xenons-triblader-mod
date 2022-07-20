@@ -106,6 +106,36 @@
   {
     "type": "ADD_ARRAY_ELEMENT",
     "content": {
+      "type": "EventTrigger",
+      "x": 954,
+      "y": 320,
+      "level": 0,
+      "settings": {
+        "mapId": 265,
+        "event": [
+          {
+            "type": "IF",
+            "condition": "!plot.xtm.character >= 1",
+            "thenStep": [
+              {
+                "changeType": "set",
+                "type": "CHANGE_VAR_NUMBER",
+                "varName": "plot.xtm.character",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "name": "characterInitOnce",
+        "eventType": "PARALLEL",
+        "endCondition": "false",
+        "triggerType": "ONCE"
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
       "type": "Prop",
       "x": 1227,
       "y": 419,

@@ -9,5 +9,16 @@
   },
   {
     "type": "EXIT"
+  },
+  {
+    "type": "ENTER",
+    "index": "commonEvents"
+  },
+  {
+    "type": "INCLUDE",
+    "src": "patches/data/triblader2-events.json"
+  },
+  {
+    "type": "EXIT"
   }
 ]

@@ -1,3 +1,13 @@
+0.0.18 (07/19/2022)
+- Implemented some dialogue for triblader2 party member, now fully functional with menus
+- Fixed portraits for triblader character files
+- Added new eventTrigger to arena-01.json.patch to handle non-XTM save files (undefined plot.xtm.character will be set to 1)
+- Minor dialogue tweaks to outdoors.json, interior.json, basement.json, and dev.json
+- Re-worded PERMA_TASK entries for outdoors.json, interior.json, basement.json, and beta.json
+- Added triblader2-events.json for party member dialogue
+- database.json.patch now includes triblader2-events.json
+
+
 0.0.17 (07/19/2022)
 - Disabled the map \assets\extension\post-game\data\maps\evo-village\interior\city-hall.json, this will not be part of the beta release
 - Added teleporter to Lea's attic to access XTM dev room, unlocks after finishing DLC dungeon
