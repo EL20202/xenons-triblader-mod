@@ -5,7 +5,7 @@ Install instructions can be found at the bottom of this page. The DLC is require
 
 # **PRE-RELEASE VERSION**
 
-This is currently a pre-release version. Please provide the author, XenonA7, with feedback on combat art balance. Also please report any crashes, glitches, or other issues as a result from playing the entire game under a different character configuration. I won't be able to test every quest, cutscene, etc myself so feedback is critical.
+This is currently a pre-release version. Please provide the author, XenonA7, with feedback on combat art balance. Also please report any crashes, glitches, or other issues as a result from playing the entire game under a different character configuration. I won't be able to test every quest, cutscene, etc myself so feedback is critical. Please give feedback at the Discord linked below.
 
 ### **Required Mods**
 1. extendable-severed-heads https://github.com/CCDirectLink/extendable-severed-heads
@@ -13,6 +13,9 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 ### **Strongly Recommended Mods**
 1. cc-combat-art-level-extender https://github.com/CCDirectLink/cc-combat-art-level-extender
 2. cc-party-element-effects https://github.com/XenonA7/cc-party-element-effects
+
+### **Discord Server**
+https://discord.gg/CsfUk9vpFq
 
 ## **Main Features:**
 1. Fully playable triblader class, with a full set of 92 new combat arts to discover
@@ -186,4 +189,19 @@ CClaoder is a mod loader required to install mods on Crosscode.
 ![image](https://user-images.githubusercontent.com/105614278/179911121-3f74421f-251a-462a-8172-aae6314d840f.png)
 
 ## Install Mods
+1. Download and extract XTM and its dependencies, along with recommended mods if desired  
+(XTM Releases) https://github.com/XenonA7/xenons-triblader-mod/releases  
+(Required) extendable-severed-heads: https://github.com/CCDirectLink/extendable-severed-heads/releases  
+(Recommended) cc-combat-art-level-extender: https://github.com/CCDirectLink/cc-combat-art-level-extender/releases  
+(Recommended) cc-party-element-effects: https://github.com/XenonA7/cc-party-element-effects/releases  
+
+2. Place extracted mod folders inside **\CrossCode\assets\mods**  
+![image](https://user-images.githubusercontent.com/105614278/179912844-b0ac6c4e-4a03-4a97-a3fc-22eb7d1a4bce.png)  
+
+Note that if you click on any of these installed mods, there should be a file called **package.json** or **ccmod.json** directly inside those folders. If not, CCLoader won't be able to find the mods.
+
+3. Launch the game. Go into the options menu and there will be a new tab with a hammer icon for mods (CCLoader adds this). It should look like this:  
+![image](https://user-images.githubusercontent.com/105614278/179913184-8603fbe7-9cf6-4437-9ef7-e89b4930cb5c.png)  
+
+In this case, you are good to go. Note that XTM is compatible with ArcaneLab and Autumn's Genesis and other mods. There is an old list of other Crosscode mods located here: https://c2dl.info/cc/mods
 
