@@ -167,5 +167,23 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 - Septalancer (aka Heptalancer) new class with sprites, spear attacks, boomerangs shaped like "7"s, and combat arts. Perhaps as just a party member at first.
 
 
-## Install Instructions
-This section is unfinished
+# Install Instructions
+1. Back up your save files **\AppData\Local\CrossCode**
+
+
+## Install CCLoader
+CClaoder is a mod loader required to install mods on Crosscode.
+
+1. Download CCloader from https://github.com/CCDirectLink/CCLoader/releases  
+![image](https://user-images.githubusercontent.com/105614278/179910752-49fb02fd-87d4-43fb-8853-c1794925c223.png)
+2. Extract the files  
+![image](https://user-images.githubusercontent.com/105614278/179910853-0a511c33-a559-4e85-82ee-83e210ee3d83.png)
+3. Locate these files from the extracted directory  
+![image](https://user-images.githubusercontent.com/105614278/179910937-8c62ce97-f062-41c0-90b0-685c483e3de9.png)
+4. Copy the files into your Crosscode game directory  
+![image](https://user-images.githubusercontent.com/105614278/179911026-a895f1f7-7dfa-406a-8e94-8d4fc9e5bc62.png)
+5. Launch the game to verify it is installed. You will see the CCLoader version in the bottom-right of the screen.  
+![image](https://user-images.githubusercontent.com/105614278/179911121-3f74421f-251a-462a-8172-aae6314d840f.png)
+
+## Install Mods
+
