@@ -20,7 +20,8 @@ https://discord.gg/CsfUk9vpFq
 ## **Main Features:**
 1. Fully playable triblader class, with a full set of 92 new combat arts to discover
 2. Triblader PVP arena cups
-3. Post-DLC story content (largely incomplete)
+3. Party member and updated Schneider/Luke movesets
+4. Highly customizable practice arena for triblader PVP
 
 
 ## **How to Play:**
