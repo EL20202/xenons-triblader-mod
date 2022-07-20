@@ -23,9 +23,9 @@ This is currently a pre-release version. Please provide the author, XenonA7, wit
 ## **How to Play:**
 - With the mod installed, proceeding out of the Newcomer Bridge at the start of the game will take you to a place to select a character, after which you will continue to the Rhombus Dungeon and the rest of the game.
 - The following can be accessed using any existing Lea save file, a new game is not required. It will work regardless of what character you are playing as.
-  - Unlock the **Triblader League** arena cup by talking to the Tribladers standing around the **Open PVP Fields** in Rhombus Square. Unlockable after beating the final dungeon in the DLC (Ku'lero Temple).
-  - Quick-swap menu added to the Rhombus Arena lobby to change your character at will. Look for a flashing sign at the top-right of the lobby. Swapping characters will keep all your progress/stats/inventory, and is seamless. Check your circuit tree to see which Triblader arts you have equipped after swapping.
-  - After completing the DLC storyline (to the point where you need to visit C'tron's house), walk around **Homestedt** and you will get a call from Satoshi. This will begin the post-DLC triblader storyline, although this is largely incomplete right now. This will unlock the arena cups versus Luke and Lukas. **This will also unlock the mod's dev room, which has some additional random content.**
+  * Unlock the **Triblader League** arena cup by talking to the Tribladers standing around the **Open PVP Fields** in Rhombus Square. Unlockable after beating the final dungeon in the DLC (Ku'lero Temple).
+  * Quick-swap menu added to the Rhombus Arena lobby to change your character at will. Look for a flashing sign at the top-right of the lobby. Swapping characters will keep all your progress/stats/inventory, and is seamless. Check your circuit tree to see which Triblader arts you have equipped after swapping.
+  * The mod's dev room is located in **Lea's Attic** after completing the DLC dungeon (Ku'lero Temple). Here you will find a new party member and a training arena for a very customizable duel.
 
 
 
