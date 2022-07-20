@@ -163,13 +163,6 @@ https://discord.gg/CsfUk9vpFq
 - Custom challenge maps (later to be contextualized in a cohesive storyline)
 - ArcaneLab support to allow for Spheroknight arts as craftable upgrades for your triblader, using AL's custom art system. I already have animation support and reworked versions of all Susie's arts to work with Lukas or the characters from this mod, but they are not included in the public version.
 
-## **Potential future plans, no promises...**
-- An actual written story for a post-DLC triblader adventure starring one of the tribladers as the main character, Lea as side character
-  - Lea PVP battle
-  - Lea party member
-  - Proper new areas, maps, quests, etc for post-DLC triblader adventure
-- Septalancer (aka Heptalancer) new class with sprites, spear attacks, boomerangs shaped like "7"s, and combat arts. Perhaps as just a party member at first.
-
 
 # Install Instructions
 1. Back up your save files **\AppData\Local\CrossCode**
