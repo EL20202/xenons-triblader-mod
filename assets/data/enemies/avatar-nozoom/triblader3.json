@@ -2677,7 +2677,7 @@
                 "type": "BLOCK_XY"
               }
             ],
-            "guardable": "NEVER",
+            "guardable": "",
             "skillBonus": "RANGED_DMG"
           }
         },
@@ -2710,14 +2710,6 @@
       "noLightGlow": true,
       "type": "GENERIC",
       "group": "",
-      "attack": {
-        "type": "HEAVY",
-        "element": "SHOCK",
-        "damageFactor": 1,
-        "reverse": true,
-        "guardable": "NEVER",
-        "skillBonus": "RANGED_DMG"
-      },
       "timeBoni": null,
       "behaviors": [],
       "config": {
@@ -6994,7 +6986,7 @@
           "hitCount": 1,
           "hitDelay": 0,
           "attack": {
-            "type": "BREAK",
+            "type": "MASSIVE",
             "element": "WAVE",
             "visualType": "HEAVY",
             "guardable": "NEVER",
@@ -7007,7 +6999,8 @@
               {
                 "type": "BLOCK_XY"
               }
-            ]
+            ],
+            "limiter": "NO_DAMAGE"
           }
         },
         {
@@ -7046,9 +7039,9 @@
                 "type": "START_LOCK"
               }
             ],
-            "guardable": "",
+            "guardable": "NEVER",
             "skillBonus": "MELEE_DMG",
-            "limiter": ""
+            "limiter": "NO_DAMAGE"
           },
           "offset": {
             "x": 0,
@@ -17110,7 +17103,8 @@
               ],
               "guardable": "NEVER",
               "hitInvincible": true,
-              "skillBonus": "RANGED_DMG"
+              "skillBonus": "RANGED_DMG",
+              "limiter": "NO_DAMAGE"
             }
           },
           {
@@ -20138,7 +20132,8 @@
               "status": 1,
               "guardable": "NEVER",
               "hitInvincible": true,
-              "skillBonus": "RANGED_DMG"
+              "skillBonus": "RANGED_DMG",
+              "limiter": "NO_DAMAGE"
             }
           },
           {
@@ -20311,7 +20306,7 @@
             "attack": {
               "type": "MASSIVE",
               "element": "HEAT",
-              "damageFactor": 5.5,
+              "damageFactor": 6,
               "fly": "MASSIVE++",
               "spFactor": 0,
               "status": 0.4,
@@ -29517,7 +29512,8 @@
               "status": 1,
               "guardable": "NEVER",
               "hitInvincible": true,
-              "skillBonus": "RANGED_DMG"
+              "skillBonus": "RANGED_DMG",
+              "limiter": "NO_DAMAGE"
             }
           },
           {
@@ -29619,11 +29615,16 @@
               "type": "MASSIVE",
               "element": "WAVE",
               "damageFactor": 1.5,
-              "fly": "MASSIVE+",
+              "fly": "MASSIVE++",
               "reverse": false,
               "status": 0,
               "guardable": "",
-              "skillBonus": "MELEE_DMG"
+              "skillBonus": "MELEE_DMG",
+              "stunSteps": [
+                {
+                  "type": "END_LOCK"
+                }
+              ]
             }
           },
           {

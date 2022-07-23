@@ -1,3 +1,23 @@
+0.1.1 (07/23/2022)
+- Re-organized prestart.js into individual files located in the js directory
+- Added invisible wall to prevent player ability to jump out of bounds in outdoors.json on the right side
+- Added NO_PUZZLE tag to gambitProxy, neutralExplosionSmall, flameNoStun, icicleSubHitNoFly, thunderSmallWeak
+- Soul Shatter:
+   * Fixed via enemy TEMP_INFLUENCE and MASSIVE strength, no longer interrupts bosses
+   * No longer sends enemies up in the air if they guard the hit (unintentional consequence of redesign)
+   * Now adds a "neutralization" shield to enemies during the "shatter" portion of the attack to account for this
+   * Final hit is now FROM_ABOVE and no longer ignores shields and no longer inflicts mark
+   * Now has a new issue where PVP enemies hit by it sometimes shrug it off unintentionally
+   * I decided to keep the CLEAR_EFFECTS applied to the target. This solves some graphical issues but causes some others, and vice versa.
+- Removed the "NEVER" guardable property from Lightning Strike on players and PVP enemies
+- Added the "NO_DAMAGE" limiter to the "NEVER" guardable DIRECT_HIT at the start of Recoil Slash, Kindling Triad, Laser Barrage, Verdant Infection
+- Recoil Slash main attack damage factor increased from 5.5 to 6
+- Removed the "NEVER" guardable property from the main attack of Recoil Slash (players only)
+- Verdant Infection increased knockback on initial parry hit
+- Verdant Infection parry hit now has END_LOCK stun step
+- Added "NO_DAMAGE" limiter to some unguardable DIRECT_HIT steps in proxy waveTimeBombExploder
+- Removed the "NEVER" guardable property from Vitality Curse and Vitality Spring (players only)
+
 0.1.0 (07/20/2022)
 - First public beta release!
 - Updated install instructions in README
