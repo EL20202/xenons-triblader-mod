@@ -1,4 +1,4 @@
-# xenons-triblader-mod
+# Xenon's Triblader Mod
 ![Kindling Triad](https://user-images.githubusercontent.com/105614278/168501697-8dccf971-8564-4166-bbdb-d3c6ec79d870.gif)
 
 Install instructions can be found at the bottom of this page. The DLC is required for this mod to funciton. This mod is also aimed at those who have already experienced Crosscode and its DLC to completion.
@@ -199,3 +199,10 @@ Note that if you click on any of these installed mods, there should be a file ca
 
 In this case, you are good to go. Note that XTM is compatible with ArcaneLab and Autumn's Genesis and other mods. There is an old list of other Crosscode mods located here: https://c2dl.info/cc/mods
 
+# How to Update to a New Version
+1. Delete your old folder entirely.  
+![image](https://user-images.githubusercontent.com/105614278/180620611-e05635f6-16c4-406f-9689-7bbbed2d4cd5.png)  
+
+2. Install the new version where the old one used to be  
+
+* You can't just override the old version because if a new version removes old files or renames certain files then overriding will mess it up.
