@@ -8,11 +8,14 @@ Install instructions can be found at the bottom of this page. The DLC is require
 This is currently a pre-release version. Please provide the author, XenonA7, with feedback on combat art balance. Also please report any crashes, glitches, or other issues as a result from playing the entire game under a different character configuration. I won't be able to test every quest, cutscene, etc myself so feedback is critical. Please give feedback at the Discord linked below.
 
 ### **Required Mods**
-1. extendable-severed-heads https://github.com/CCDirectLink/extendable-severed-heads
+1. extendable-severed-heads https://github.com/CCDirectLink/extendable-severed-heads  
+   * Required for mods that add extra characters
 
-### **Strongly Recommended Mods**
-1. cc-combat-art-level-extender https://github.com/CCDirectLink/cc-combat-art-level-extender
-2. cc-party-element-effects https://github.com/XenonA7/cc-party-element-effects
+### **Recommended Mods**
+1. cc-combat-art-level-extender https://github.com/CCDirectLink/cc-combat-art-level-extender  
+   * Allows party members to use up to Lv.3 arts if you have mods that define higher-level arts for them. This will make your late-game Triblader party members use powerful attacks from XTM.  
+3. cc-party-element-effects https://github.com/XenonA7/cc-party-element-effects  
+   * A small fix that makes party members show the "element swap" particle effect when they switch elements. This does not happen without the mod.
 
 ### **Discord Server**
 https://discord.gg/CsfUk9vpFq
