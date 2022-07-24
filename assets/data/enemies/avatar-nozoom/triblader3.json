@@ -1069,7 +1069,7 @@
           "ignoreLastHit": false,
           "type": "TACKLE",
           "attack": {
-            "type": "MASSIVE",
+            "type": "MEDIUM",
             "element": "WAVE",
             "damageFactor": 1,
             "guardable": "",

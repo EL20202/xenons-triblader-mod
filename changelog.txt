@@ -1,3 +1,11 @@
+0.1.2 (07/24/2022)
+- Vitality Curse initial hit downsized to MEDIUM strength from MASSIVE
+- Fixed Prismatic Meltdown not working on enemies with environmental collision such as the whale boss
+- Blade Aura defense buff changed from +20% to +30%
+- Deploy Shields defense buff changed from +35% to +50%
+- Triangle Strategy arena cup platinum requires 110,000 points now since I can consistently get that score
+
+
 0.1.1 (07/23/2022)
 - Re-organized prestart.js into individual files located in the js directory
 - Added invisible wall to prevent player ability to jump out of bounds in outdoors.json on the right side

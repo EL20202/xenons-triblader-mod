@@ -19,17 +19,17 @@ sc.STAT_CHANGE_SETTINGS["FOCUS-MINUS-OVERCLOCK"] = {
 sc.STAT_CHANGE_SETTINGS["DEFENSE-BLADEAURA"] = {
   change: sc.STAT_CHANGE_TYPE.STATS,
   type: sc.STAT_PARAM_TYPE.DEFENSE,
-  value: 1.20,
+  value: 1.30,
   icon: "stat-defense",
-  grade: "stat-rank-1"
+  grade: "stat-rank-2"
 };
 
 sc.STAT_CHANGE_SETTINGS["DEFENSE-SHIELDS"] = {
   change: sc.STAT_CHANGE_TYPE.STATS,
   type: sc.STAT_PARAM_TYPE.DEFENSE,
-  value: 1.35,
+  value: 1.50,
   icon: "stat-defense",
-  grade: "stat-rank-2"
+  grade: "stat-rank-3"
 };
 
 sc.STAT_CHANGE_SETTINGS["SPIKE_DMG-0"] = {

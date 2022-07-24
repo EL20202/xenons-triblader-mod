@@ -820,7 +820,7 @@
           "ignoreLastHit": false,
           "type": "TACKLE",
           "attack": {
-            "type": "MASSIVE",
+            "type": "MEDIUM",
             "element": "WAVE",
             "damageFactor": 1,
             "guardable": "",
@@ -26823,6 +26823,20 @@
           "type": "SET_POI_TEMP_TARGET"
         },
         {
+          "poiFilter": {
+            "group": "meltdownTargetGroup",
+            "type": "PROXY"
+          },
+          "distance": 600,
+          "type": "SET_POI_TEMP_TARGET"
+        },
+
+
+
+
+
+
+        {
           "withElse": true,
           "type": "IF",
           "condition": "entity.hasTmpTarget",
@@ -26879,8 +26893,8 @@
               }
             },
             {
-              "maxTime": 3,
-              "type": "WAIT_UNTIL_TARGET_DEFEATED"
+              "time": 3,
+              "type": "WAIT"
             },
             {
               "group": "meltdownTargetGroup",
@@ -27183,6 +27197,14 @@
               }
             ],
             "type": "ACTIVE_ENEMIES"
+          },
+          "distance": 600,
+          "type": "SET_POI_TEMP_TARGET"
+        },
+        {
+          "poiFilter": {
+            "group": "meltdownTargetGroup",
+            "type": "PROXY"
           },
           "distance": 600,
           "type": "SET_POI_TEMP_TARGET"
@@ -30341,7 +30363,7 @@
           "en_US": "Blade Aura"
         },
         "description": {
-          "en_US": "Surrounds you with a spinning blade that damages enemies that get too close. Increase of \\c[3]+20%\\c[0] Defense while active."
+          "en_US": "Surrounds you with a spinning blade that damages enemies that get too close. Increase of \\c[3]+30%\\c[0] Defense while active."
         },
         "dmgType": "RANGED",
         "stunType": "",
@@ -30393,7 +30415,7 @@
           "en_US": "Deploy Shields"
         },
         "description": {
-          "en_US": "Places temporary static and orbiting shields to block weak projectiles. Also increases your defense by \\c[3]+35%\\c[0] while active."
+          "en_US": "Places temporary static and orbiting shields to block weak projectiles. Also increases your defense by \\c[3]+50%\\c[0] while active."
         },
         "dmgType": "RANGED",
         "stunType": "",
