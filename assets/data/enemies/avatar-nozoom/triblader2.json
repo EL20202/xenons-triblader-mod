@@ -3226,7 +3226,10 @@
                 "spFactor": 0,
                 "reverse": false,
                 "guardable": "",
-                "skillBonus": "MELEE_DMG"
+                "skillBonus": "MELEE_DMG",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
               },
               "offset": {
                 "x": 0,
@@ -3317,7 +3320,10 @@
                 "spFactor": 0,
                 "reverse": false,
                 "guardable": "",
-                "skillBonus": "MELEE_DMG"
+                "skillBonus": "MELEE_DMG",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
               },
               "offset": {
                 "x": 0,
@@ -3408,7 +3414,10 @@
                 "spFactor": 0,
                 "reverse": false,
                 "guardable": "",
-                "skillBonus": "MELEE_DMG"
+                "skillBonus": "MELEE_DMG",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
               },
               "offset": {
                 "x": 0,
@@ -3498,7 +3507,10 @@
                 "spFactor": 0,
                 "reverse": false,
                 "guardable": "",
-                "skillBonus": "MELEE_DMG"
+                "skillBonus": "MELEE_DMG",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
               },
               "offset": {
                 "x": 0,
@@ -4563,7 +4575,10 @@
             "damageFactor": 2.8,
             "reverse": false,
             "guardable": "",
-            "skillBonus": "MELEE_DMG"
+            "skillBonus": "MELEE_DMG",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -4809,7 +4824,10 @@
             "spFactor": 0,
             "reverse": false,
             "guardable": "",
-            "skillBonus": "MELEE_DMG"
+            "skillBonus": "MELEE_DMG",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -4900,7 +4918,10 @@
             "spFactor": 0,
             "reverse": false,
             "guardable": "",
-            "skillBonus": "MELEE_DMG"
+            "skillBonus": "MELEE_DMG",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -4991,7 +5012,10 @@
             "spFactor": 0,
             "reverse": false,
             "guardable": "",
-            "skillBonus": "MELEE_DMG"
+            "skillBonus": "MELEE_DMG",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -5081,7 +5105,10 @@
             "spFactor": 0,
             "reverse": false,
             "guardable": "",
-            "skillBonus": "MELEE_DMG"
+            "skillBonus": "MELEE_DMG",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -5370,7 +5397,7 @@
           "yScale": 0,
           "zHeight": 24,
           "centralAngle": 1,
-          "duration": 0.1,
+          "duration": 0.2,
           "expandRadius": 0,
           "alwaysFull": true,
           "clockwise": false,
@@ -5386,10 +5413,13 @@
             "element": "WAVE",
             "fly": "MASSIVE++",
             "reverse": false,
-            "status": 1,
+            "status": 0,
             "guardable": "",
             "skillBonus": "",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -6478,7 +6508,10 @@
             "status": 2,
             "guardable": "",
             "skillBonus": "RANGED_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -6548,7 +6581,7 @@
         "reverse": true,
         "status": 1.0,
         "guardable": "",
-        "skillBonus": "",
+        "skillBonus": "MELEE_DMG",
         "limiter": ""
       },
       "timeBoni": null,
@@ -6986,10 +7019,11 @@
           "hitCount": 1,
           "hitDelay": 0,
           "attack": {
-            "type": "MASSIVE",
+            "type": "BREAK",
             "element": "WAVE",
             "visualType": "HEAVY",
             "guardable": "NEVER",
+            "hitInvincible": true,
             "damageFactor": 1,
             "spFactor": 0,
             "stunSteps": [
@@ -7040,7 +7074,7 @@
               }
             ],
             "guardable": "NEVER",
-            "skillBonus": "MELEE_DMG",
+            "skillBonus": "",
             "limiter": "NO_DAMAGE"
           },
           "offset": {
@@ -7201,8 +7235,11 @@
               }
             ],
             "guardable": "",
-            "skillBonus": "MELEE_DMG",
-            "limiter": ""
+            "skillBonus": "",
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -7257,8 +7294,11 @@
               }
             ],
             "guardable": "",
-            "skillBonus": "MELEE_DMG",
-            "limiter": ""
+            "skillBonus": "",
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -7405,7 +7445,10 @@
                 "status": 0.6,
                 "guardable": "FROM_ABOVE",
                 "skillBonus": "RANGED_DMG",
-                "limiter": ""
+                "limiter": "",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
               },
               "offset": {
                 "x": 0,
@@ -7477,7 +7520,10 @@
             "status": 0.6,
             "guardable": "FROM_ABOVE",
             "skillBonus": "RANGED_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -9341,7 +9387,6 @@
           "time": 0.2,
           "type": "WAIT"
         },
-
         {
           "type": "CLEAR_EFFECTS"
         },
@@ -9367,7 +9412,6 @@
           "align": "BOTTOM",
           "type": "PUSH_PULL_FORCE"
         },
-
         {
           "duration": 0,
           "target": "SELF",
@@ -9409,9 +9453,6 @@
             "z": 0
           }
         },
-
-
-
         {
           "align": "BOTTOM",
           "dir": {
@@ -9444,7 +9485,6 @@
           "time": 0.5,
           "type": "WAIT"
         },
-
         {
           "align": "BOTTOM",
           "radius": 24,
@@ -9478,13 +9518,10 @@
             "z": 0
           }
         },
-
-
         {
           "value": 80,
           "type": "SET_SPEED"
         },
-
         {
           "time": 4,
           "stopBeforeEdge": false,
@@ -9561,8 +9598,6 @@
         "collType": "IGNORE"
       }
     },
-
-
     "cc_orbiter": {
       "copyOwnerAnims": false,
       "animation": {
@@ -9586,7 +9621,6 @@
           "time": 0.01,
           "type": "WAIT"
         },
-
         {
           "searchType": "CLOSE_RANGE",
           "distance": 250,
@@ -9694,8 +9728,6 @@
                 "z": 0
               }
             },
-
-            
             {
               "target": "PROXY_SRC",
               "distance": 80,
@@ -9708,7 +9740,6 @@
               "collision": false,
               "type": "STICKY_CIRCLE_AROUND"
             }
-
           ],
           "elseStep": [
             {
@@ -9786,7 +9817,6 @@
                 "z": 0
               }
             },
-
             {
               "target": "PROXY_SRC",
               "distance": 80,
@@ -9801,7 +9831,6 @@
             }
           ]
         },
-        
         {
           "type": "CLEAR_EFFECTS"
         },
@@ -9818,8 +9847,6 @@
             "z": 0
           }
         }
-
-
       ],
       "invisible": false,
       "hp": 0,
@@ -9845,11 +9872,6 @@
         "collType": "IGNORE"
       }
     },
-
-
-
-
-
     "turbineStunner": {
       "copyOwnerAnims": false,
       "breakType": "NEVER",
@@ -9876,7 +9898,6 @@
             "damageFactor": 1,
             "reverse": true,
             "stunSteps": [
-              
               {
                 "value": 0,
                 "type": "Z_VEL"
@@ -10559,7 +10580,10 @@
             "status": 0.35,
             "guardable": "",
             "skillBonus": "RANGED_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -10714,7 +10738,7 @@
               "CHARGED"
             ],
             "guardable": "",
-            "skillBonus": "RANGED_DMG"
+            "skillBonus": ""
           },
           "hit": [
             {
@@ -10778,10 +10802,11 @@
             "reverse": false,
             "spFactor": 0,
             "hints": [
-              "CHARGED"
+              "CHARGED",
+              "NO_PUZZLE"
             ],
             "guardable": "",
-            "skillBonus": "RANGED_DMG"
+            "skillBonus": ""
           },
           "offset": {
             "x": 0,
@@ -18837,6 +18862,10 @@
         "type": "CLEAR_EFFECTS"
       },
       {
+        "value": -1,
+        "type": "SET_WEIGHT"
+      },
+      {
         "wait": false,
         "viaWalkConfig": false,
         "type": "SHOW_ANIMATION",
@@ -26542,8 +26571,6 @@
         "immediately": true,
         "type": "FACE_TO_TARGET"
       },
-
-
       {
         "type": "SET_ATTRIB_BOOL",
         "name": "ccClockwise",
@@ -26908,10 +26935,6 @@
         "time": 0.65,
         "type": "WAIT"
       }
-
-
-
-
     ],
     "_Shock_Dash1": [
       {
@@ -28319,6 +28342,9 @@
           "fly": "HEAVY",
           "status": 0,
           "guardable": "",
+          "hints": [
+            "NO_PUZZLE"
+          ],
           "skillBonus": "MELEE_DMG",
           "stunSteps": [
             {
@@ -28553,6 +28579,9 @@
           "spFactor": 0,
           "status": 1.2,
           "guardable": "",
+          "hints": [
+            "NO_PUZZLE"
+          ],
           "skillBonus": "MELEE_DMG",
           "stunSteps": [
             {
@@ -28803,6 +28832,8 @@
                 "baseFactor": 0.25,
                 "range": 1,
                 "stableOverride": "MASSIVE",
+                "hitResist": "MASSIVE",
+                "strength": "BLOCK_ALL",
                 "duration": 0.4
               }
             }
@@ -29226,8 +29257,11 @@
           "reverse": false,
           "status": 1,
           "guardable": "",
-          "skillBonus": "RANGED_DMG",
-          "limiter": ""
+          "skillBonus": "MELEE_DMG",
+          "limiter": "",
+          "hints": [
+            "NO_PUZZLE"
+          ]
         },
         "offset": {
           "x": 0,
@@ -29509,10 +29543,10 @@
                   "type": "START_LOCK"
                 }
               ],
-              "status": 1,
+              "status": 0,
               "guardable": "NEVER",
               "hitInvincible": true,
-              "skillBonus": "RANGED_DMG",
+              "skillBonus": "MELEE_DMG",
               "limiter": "NO_DAMAGE"
             }
           },
@@ -30297,7 +30331,7 @@
         "centralAngle": 0,
         "startAngle": 0.5,
         "angleVary": 0,
-        "startDist": 80,
+        "startDist": 40,
         "startDistCollide": "CLOSER",
         "random": false,
         "duration": 0,

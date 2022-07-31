@@ -1,3 +1,53 @@
+0.1.3 (07/30/2022)
+## New Content ##
+- Added new bonus map accessible from dev room: \maps\xtm\bonus\guild-war.json
+- New bullet sprite for Essence Enchantment proxies
+## Changes ##
+- Added formal dependency on post-game DLC in ccmod.json
+- Assigned proper modded NPC portrait reference in dev.json for all Triblader2 interactions
+- PVP enemy version of Verdant Infection now has unguardable, BREAK, and hitInvincible for the non-damaging stunning DIRECT_HIT when the bomb goes off
+- Re-organized custom-action-steps.js into a module
+- Pain Buckler techShield (after blocking) now has BLOCK_ALL strength
+- Tweaked navigation logic for So'najiz Phalanx clones prior to shooting the final lasers
+## Fixes ##
+- Fixed a crash experienced by controller users when using Pain Buckler
+- Fixed "bastion" shield upgrade not working for tribladers by fixing GUARD and PERFECT_GUARD json syntax
+- Fixed dmgType, stunType, status descriptions for wave arts
+- Fixed match point BGM in Triblader training arena restarting on player loss
+- Spectral Legion dash explosion now spawns much closer to user
+- Wave art skillBonus corrections
+   - Phase Jump landing impact now correctly categorized as MELEE_DMG skillBonus
+   - Spiritfall now correctly uses RANGED_DMG skillBonus for falling proxies
+   - Wave Mortar now uses RANGED_DMG skillBonus
+   - Wave Motion Bomb removed skillBonus
+   - Verdant Infection initial melee attack now has MELEE_DMG skillBonus and no longer inflicts status
+   - Verdant Infection explosion removed skillBonus
+   - Ki Thrust proxies now have MELEE_DMG skillBonus
+   - Vortex Thrust proxies now have MELEE_DMG skillBonus
+- Puzzle elements no longer interact with:
+   - Vitality Spring lingering hitbox
+   - Wave Mortar
+   - Arcing Fae
+   - Ether Bomb explosion damage
+   - Phase Jump landing impact
+   - Phase Jump projectiles
+   - Verdant Infection explosion
+   - Wave Motion Bomb explosion
+   - Spectral Swordsman clone melee attacks
+   - Spiritfall falling proxies
+   - Spectral Legion dash explosion
+   - Spectral Legion clone melee attacks
+   - Vortex Thrust 
+## Balance ##
+- Lava Sweep now sets user's weight at -1 so they can't be shoved around during the attack
+- Soul Shatter damage reduced by ~40%
+- Soul Shatter no longer inflicts mark at all
+- Vitality Spring capped at 2 active proxies (throwing a 3rd will despawn the oldest one)
+- Spectral Legion dash explosion active frames increased and no longer inflicts status
+- Pain Buckler absorb factor changed from 1.2 to 0.5
+- Ki Spin proxies inflict a greater amount of status
+
+
 0.1.2 (07/24/2022)
 - Vitality Curse initial hit downsized to MEDIUM strength from MASSIVE
 - Fixed Prismatic Meltdown not working on enemies with environmental collision such as the whale boss
