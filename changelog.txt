@@ -1,3 +1,88 @@
+0.1.4 (08/10/2022)
+## New Content ##
+- Added Triblader2/3/4/5 animations for opening chests
+- Lea placeholders for block push/pull animations
+- New ball effect sheets used by Triblader charged VRPs, trail is now rendered below VRP for all players/pvp enemies
+- Added effects boldPre2Tri and boldPreLight for all thunder bolt effects
+- Added a switch in the dev room to "promote growth"
+## Changes ##
+- Created separate files for Triblader 2/3/4/5 portraits
+- Re-arranged triblader2/3/4/5extra.png spritesheet and added more lea placeholders
+- Updated triblader2/3/4/5.json animation sheet to reflect updated spritesheet
+- Replaced annoying lily pads with a jump panel in Triblader Training Arena
+- Dialogue tweaks for pvp-triblader-league-a
+- Edited description for Snow Sweep
+- Snowballs shot by Frigid Hurricane now have startDistCollide = DROP
+- Tweaks to Ice Flak effects
+- PVP enemies slightly improved Frozen Ray target leading
+- Ice chunks spawned at the end of Tower of Tranquility now have startDistCollide = DROP
+- Ki Spin waveDustShort proxies startDistCollide changed from NONE to CLOSER
+- Hail Bomb
+   - Hitbox size reduced from 24x24 to 16x16
+   - Now emits from point closer to player
+   - Reduced in visual size
+   - Shoots less icicles while traveling
+   - Icicles shot while traveling startDistCollide changed from CLOSER to DROP
+   - Ground icicles on hit now spawn with startDistCollide DROP
+   - Effect snowflakeBombPre reduced in visual size
+   - Proxy icicleHugeInstant reduced in visual/hitbox size
+   - Added triangle particles when the icicle appears
+   - Screen flash intensity reduced
+   - Final explosion reduced in hitbox/visual size
+## Fixes ##
+- Fixed cases where enemies could remain invisible at the end of PVP rounds
+- Added event steps to "show" (effect that sets alpha=1) all enemies, party members, and player to the end of all PVP rounds/duels in the mod
+- Fixed dmgType, stunType, status descriptions for cold arts
+- Cold art skillBonus corrections for all hitboxes and proxies
+- Hover animation properly plays when interacting with wave map teleporters, such as in Zir'vitar Temple
+- Fixed an animation quirk with So'najiz Phalanx
+- center-nw.json.patch now uses correct portrait assignments
+- pvp-triblader-league-a.json now uses correct portrait assignments
+- training-2v2.json now uses correct portrait assignments
+- Fixed a small animaiton issue at the end of Flash Freeze
+- Fixed Hail Bomb able to shoot point-blank through narrow fences
+- Fixed Hail Bomb incorrect skillBonus
+- Fixed incorrect spritesheet reference for big snowflake particle
+- Proxy iceStoneSmallSlow removed skillBonus properties
+- Puzzle elements no longer interact with:
+   - Proxy iceStoneSmallGeyser
+   - Proxy frozenRupture
+   - Proxy avalancheProxy
+   - Proxy fallingRockBig
+   - Proxy fallingRockMed
+   - Proxy iceStoneSmallSlow
+   - Proxy iceStoneSmall
+   - Proxy iceStoneMedium
+   - Tower of Tranquility falling spin attack
+   - Tower of Tranquility final landing impact
+- Puzzle elements can now interact with:
+   - Frost Rupture melee hits
+   - Vortex Thrust sword hitbox
+   - Vortex Thrust final hit
+   - Phase Jump landing hitbox
+- Added the attribute "checkCollision" for the following (fixes ability to hit through walls):
+   - All standard melee attacks
+   - Proxy polarGeyser
+   - Polar Geyser final sword swing
+   - Snow Sweep both swings
+   - Frost Rupture melee hits
+   - Avalanche Assault initial explosion
+   - Frigid Hurricane final slash
+   - Frozen Rays melee hitboxes
+   - Blizzard Slash second spin hitbox
+   - Icicle Tomb melee sweep
+   - Ki Spin melee attack
+   - Phase Jump landing hitbox
+## Balance ##
+   - Vortex Thrust final hit reduced forward travel distance
+   - Polar Geyser's proxy now locks enemies just like Sphere Saw
+   - Polar Geyser's proxy hit strength increased from LIGHT to MEDIUM
+   - Polar Geyser final hit damage increased, covers more ground, increased knockback
+   - Snow Sweep no longer inflicts status
+   - Snow Sweep second hit damage increased
+   - Ice Flak greatly buffed by removing the "dud" mechanic
+   - Proxy iceStoneSmallSlow no longer inflicts status
+
 0.1.3 (07/30/2022)
 ## New Content ##
 - Added new bonus map accessible from dev room: \maps\xtm\bonus\guild-war.json
@@ -37,7 +122,7 @@
    - Spiritfall falling proxies
    - Spectral Legion dash explosion
    - Spectral Legion clone melee attacks
-   - Vortex Thrust 
+   - Vortex Thrust melee hitboxes
 ## Balance ##
 - Lava Sweep now sets user's weight at -1 so they can't be shoved around during the attack
 - Soul Shatter damage reduced by ~40%

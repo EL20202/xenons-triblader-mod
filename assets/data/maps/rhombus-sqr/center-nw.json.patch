@@ -134,7 +134,7 @@
               "quest": [
                 {
                   "person": {
-                    "person": "cross-worlds.triblader-female-purple",
+                    "person": "triblader.triblader2",
                     "expression": "DEFAULT"
                   },
                   "type": "ADD_MSG_PERSON",
@@ -150,7 +150,7 @@
                 },
                 {
                   "person": {
-                    "person": "cross-worlds.triblader-female-purple",
+                    "person": "triblader.triblader2",
                     "expression": "DEFAULT"
                   },
                   "message": {
@@ -170,7 +170,7 @@
                 },
                 {
                   "person": {
-                    "person": "cross-worlds.triblader-female-purple",
+                    "person": "triblader.triblader2",
                     "expression": "DEFAULT"
                   },
                   "message": {
@@ -238,7 +238,7 @@
                 },
                 {
                   "person": {
-                    "person": "cross-worlds.triblader-female-purple",
+                    "person": "triblader.triblader2",
                     "expression": "DEFAULT"
                   },
                   "type": "ADD_MSG_PERSON",
@@ -246,7 +246,7 @@
                 },
                 {
                   "person": {
-                    "person": "cross-worlds.triblader-female-purple",
+                    "person": "triblader.triblader2",
                     "expression": "DEFAULT"
                   },
                   "message": {
@@ -256,7 +256,7 @@
                 },
                 {
                   "person": {
-                    "person": "cross-worlds.triblader-female-purple",
+                    "person": "triblader.triblader2",
                     "expression": "DEFAULT"
                   },
                   "message": {
@@ -312,7 +312,7 @@
                 },
                 {
                   "person": {
-                    "person": "cross-worlds.triblader-female-purple",
+                    "person": "triblader.triblader2",
                     "expression": "DEFAULT"
                   },
                   "type": "ADD_MSG_PERSON",
@@ -328,7 +328,7 @@
                 },
                 {
                   "person": {
-                    "person": "cross-worlds.triblader-female-purple",
+                    "person": "triblader.triblader2",
                     "expression": "DEFAULT"
                   },
                   "message": {
@@ -338,7 +338,7 @@
                 },
                 {
                   "person": {
-                    "person": "cross-worlds.triblader-female-purple",
+                    "person": "triblader.triblader2",
                     "expression": "DEFAULT"
                   },
                   "message": {

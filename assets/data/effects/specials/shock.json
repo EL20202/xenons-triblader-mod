@@ -428,6 +428,25 @@
         ]
       },
       {
+        "name": "SHOCKWAVE_B_SHOCK_TRIANGLE",
+        "pivot": {
+          "x": 48,
+          "y": 49
+        },
+        "sheet": {
+          "src": "media/entity/effects/lighter-particle-big-triangle-sheet.png",
+          "offX": 288,
+          "offY": 0,
+          "width": 96,
+          "height": 80
+        },
+        "renderMode": "lighter",
+        "time": 0.4,
+        "frames": [
+          0
+        ]
+      },
+      {
         "name": "SHOCKWAVE_S_SHOCK",
         "sheet": {
           "src": "media/entity/effects/lighter-particle.png",
@@ -537,6 +556,7 @@
           0
         ]
       },
+      
       {
         "name": "BULLET_SHOCK",
         "sheet": {
@@ -12737,6 +12757,100 @@
       },
       {
         "type": "LOOP_END"
+      }
+    ],
+    "boldPre2Tri": [
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "pAlpha": {
+          "init": 0,
+          "start": {
+            "value": 1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1.2,
+            "y": 1.2
+          },
+          "start": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": 0,
+          "start": {
+            "value": 0.09,
+            "spline": ""
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.35,
+        "angleVary": 1,
+        "anim": "SHOCKWAVE_B_SHOCK_TRIANGLE",
+        "type": "PLAY_ANIM"
+      }
+    ],
+    "boldPreLight": [
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "pAlpha": {
+          "init": 0.5,
+          "end": {
+            "value": 0,
+            "time": 0.3,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.3,
+            "y": 0.3
+          },
+          "start": {
+            "value": {
+              "x": 1.5,
+              "y": 1.5
+            },
+            "spline": ""
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.3,
+        "anim": "SHOCKWAVE",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "numParticles": 5,
+        "duration": 0.15,
+        "centralAngle": 1,
+        "startDist": 12,
+        "random": true,
+        "particleRotate": true,
+        "moveDist": 20,
+        "moveVariance": 4,
+        "keySpline": "EASE_OUT",
+        "moveRotate": 0,
+        "inverse": true,
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.15,
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.25,
+        "anim": "SHOCK_DOT1",
+        "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ]
   }

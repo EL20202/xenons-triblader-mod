@@ -458,7 +458,7 @@
       "behaviors": []
     },
     "chargedHeat": {
-      "effects": "ball-heat",
+      "effects": "ball-heat-xtm",
       "speed": 600,
       "maxBounce": 3,
       "timer": 1.5,
@@ -499,7 +499,7 @@
       "behaviors": []
     },
     "chargedCold": {
-      "effects": "ball-cold",
+      "effects": "ball-cold-xtm",
       "speed": 600,
       "maxBounce": 3,
       "timer": 1.5,
@@ -540,7 +540,7 @@
       "behaviors": []
     },
     "chargedShock": {
-      "effects": "ball-shock",
+      "effects": "ball-shock-xtm",
       "speed": 600,
       "maxBounce": 3,
       "timer": 1.5,
@@ -581,7 +581,7 @@
       "behaviors": []
     },
     "chargedWave": {
-      "effects": "ball-wave",
+      "effects": "ball-wave-xtm",
       "speed": 600,
       "maxBounce": 3,
       "timer": 1.5,
@@ -4013,7 +4013,10 @@
         "status": 0.8,
         "guardable": "",
         "skillBonus": "RANGED_DMG",
-        "limiter": ""
+        "limiter": "",
+        "hints": [
+          "NO_PUZZLE"
+        ]
       },
       "zVel": {
         "base": 150,
@@ -4068,7 +4071,10 @@
         "status": 0.8,
         "guardable": "",
         "skillBonus": "RANGED_DMG",
-        "limiter": ""
+        "limiter": "",
+        "hints": [
+          "NO_PUZZLE"
+        ]
       },
       "zVel": {
         "base": 150,
@@ -6841,7 +6847,7 @@
       "behaviors": []
     },
     "chargedWaveClone": {
-      "effects": "ball-wave",
+      "effects": "ball-wave-xtm",
       "speed": 600,
       "maxBounce": 3,
       "timer": 1.5,
@@ -8899,7 +8905,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre"
+            "name": "boldPreLight"
           },
           "offset": {
             "x": 0,
@@ -8934,7 +8940,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre2"
+            "name": "boldPre2Tri"
           },
           "offset": {
             "x": 0,
@@ -10052,7 +10058,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre"
+            "name": "boldPreLight"
           },
           "offset": {
             "x": 0,
@@ -10076,7 +10082,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre2"
+            "name": "boldPre2Tri"
           },
           "offset": {
             "x": 0,
@@ -10633,7 +10639,7 @@
           "centralAngle": 1,
           "angleVary": 0,
           "startDist": 64,
-          "startDistCollide": "CLOSER",
+          "startDistCollide": "DROP",
           "random": true,
           "count": 48,
           "duration": 1,
@@ -11817,7 +11823,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre"
+            "name": "boldPreLight"
           },
           "offset": {
             "x": 0,
@@ -11841,7 +11847,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre2"
+            "name": "boldPre2Tri"
           },
           "offset": {
             "x": 0,
@@ -12059,7 +12065,7 @@
               "type": "SHOW_EFFECT",
               "effect": {
                 "sheet": "specials.shock",
-                "name": "boldPre2"
+                "name": "boldPre2Tri"
               },
               "offset": {
                 "x": 0,
@@ -12153,7 +12159,7 @@
               "type": "SHOW_EFFECT",
               "effect": {
                 "sheet": "specials.shock",
-                "name": "boldPre2"
+                "name": "boldPre2Tri"
               },
               "offset": {
                 "x": 0,
@@ -12233,7 +12239,7 @@
               "type": "SHOW_EFFECT",
               "effect": {
                 "sheet": "specials.shock",
-                "name": "boldPre2"
+                "name": "boldPre2Tri"
               },
               "offset": {
                 "x": 0,
@@ -17827,6 +17833,12 @@
               ]
             },
             {
+              "wait": false,
+              "viaWalkConfig": false,
+              "type": "SHOW_ANIMATION",
+              "anim": "battleIdle"
+            },
+            {
               "minTime": 0,
               "maxTime": 0.5,
               "type": "WAIT_RANDOM"
@@ -18561,12 +18573,59 @@
           "attack": {
             "type": "MEDIUM",
             "element": "COLD",
-            "damageFactor": 1,
+            "damageFactor": 0.2,
             "reverse": false,
             "guardable": "",
             "skillBonus": "RANGED_DMG"
           },
-          "hit": [],
+          "hit": [
+            {
+              "type": "CLEAR_EFFECTS"
+            },
+            {
+              "align": "BOTTOM",
+              "centralAngle": 0.5,
+              "angleVary": 0,
+              "startDist": 8,
+              "startDistCollide": "CLOSER",
+              "random": false,
+              "count": 4,
+              "duration": 0,
+              "clockwise": true,
+              "flipLeftFace": 8,
+              "circularArea": false,
+              "uniformDir": 1,
+              "delay": 0,
+              "repeat": false,
+              "type": "SHOOT_PROXY_RANGE",
+              "proxy": "iceSpecialSmallMed",
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 12
+              }
+            },
+            {
+              "duration": 0,
+              "align": "CENTER",
+              "rotateFace": 0,
+              "flipLeftFace": false,
+              "wait": false,
+              "waitSkip": 0,
+              "actionDetached": false,
+              "fixPos": false,
+              "type": "SHOW_EFFECT",
+              "effect": {
+                "sheet": "specials.icicles",
+                "name": "icicleExplodeSmall"
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            }
+          ],
           "missed": [
             {
               "type": "CLEAR_EFFECTS"
@@ -18589,8 +18648,28 @@
               "fixPos": false,
               "type": "SHOW_EFFECT",
               "effect": {
+                "sheet": "specials.icicles",
+                "name": "icicleExplodeSmall"
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            },
+            {
+              "duration": 0,
+              "align": "CENTER",
+              "rotateFace": 0,
+              "flipLeftFace": false,
+              "wait": false,
+              "waitSkip": 0,
+              "actionDetached": false,
+              "fixPos": false,
+              "type": "SHOW_EFFECT",
+              "effect": {
                 "sheet": "specials.cold",
-                "name": "coldExplodeSmallNoRumble"
+                "name": "snowBallLandSmall"
               },
               "offset": {
                 "x": 0,
@@ -18724,10 +18803,13 @@
         "element": "COLD",
         "damageFactor": 0.6,
         "reverse": false,
-        "status": 0.8,
+        "status": 0,
         "guardable": "",
         "skillBonus": "RANGED_DMG",
-        "limiter": ""
+        "limiter": "",
+        "hints": [
+          "NO_PUZZLE"
+        ]
       },
       "zVel": {
         "base": 80,
@@ -21123,8 +21205,8 @@
           "align": "BOTTOM",
           "centralAngle": 1,
           "startAngle": 0,
-          "startDist": 24,
-          "startDistCollide": "CLOSER",
+          "startDist": 8,
+          "startDistCollide": "DROP",
           "random": false,
           "clockwise": false,
           "flipLeftFace": 0,
@@ -21133,7 +21215,7 @@
           "delay": 0,
           "repeat": true,
           "duration": 1,
-          "count": 10,
+          "count": 5,
           "type": "SHOOT_PROXY_RANGE",
           "proxy": "iceSpecialSmallWeak",
           "offset": {
@@ -21146,8 +21228,8 @@
           "align": "BOTTOM",
           "centralAngle": 1,
           "startAngle": 0.33,
-          "startDist": 24,
-          "startDistCollide": "CLOSER",
+          "startDist": 8,
+          "startDistCollide": "DROP",
           "random": false,
           "clockwise": false,
           "flipLeftFace": 0,
@@ -21156,7 +21238,7 @@
           "delay": 0,
           "repeat": true,
           "duration": 1,
-          "count": 10,
+          "count": 5,
           "type": "SHOOT_PROXY_RANGE",
           "proxy": "iceSpecialSmallWeak",
           "offset": {
@@ -21169,8 +21251,8 @@
           "align": "BOTTOM",
           "centralAngle": 1,
           "startAngle": 0.66,
-          "startDist": 24,
-          "startDistCollide": "CLOSER",
+          "startDist": 8,
+          "startDistCollide": "DROP",
           "random": false,
           "clockwise": false,
           "flipLeftFace": 0,
@@ -21179,7 +21261,7 @@
           "delay": 0,
           "repeat": true,
           "duration": 1,
-          "count": 10,
+          "count": 5,
           "type": "SHOOT_PROXY_RANGE",
           "proxy": "iceSpecialSmallWeak",
           "offset": {
@@ -21228,7 +21310,7 @@
           "centralAngle": 1,
           "angleVary": 0,
           "startDist": 48,
-          "startDistCollide": "CLOSER",
+          "startDistCollide": "DROP",
           "random": false,
           "count": 8,
           "duration": 0,
@@ -21341,7 +21423,7 @@
         },
         {
           "align": "BOTTOM",
-          "radius": 128,
+          "radius": 100,
           "yScale": 0,
           "zHeight": 0,
           "centralAngle": 1,
@@ -21370,10 +21452,9 @@
               }
             ],
             "guardable": "",
-            "skillBonus": "MELEE_DMG",
+            "skillBonus": "RANGED_DMG",
             "limiter": ""
           },
-          "skillBonus": "MELEE_DMG",
           "offset": {
             "x": 0,
             "y": 0,
@@ -21390,8 +21471,8 @@
       "stickToSource": "NONE",
       "stickFaceAlign": false,
       "size": {
-        "x": 32,
-        "y": 32,
+        "x": 16,
+        "y": 16,
         "z": 16
       },
       "speed": 140,
@@ -21502,7 +21583,7 @@
           "align": "BOTTOM",
           "radius": 48,
           "yScale": 0,
-          "zHeight": 96,
+          "zHeight": 72,
           "centralAngle": 1,
           "duration": 0.1,
           "expandRadius": 0,
@@ -21526,7 +21607,7 @@
               "NO_PUZZLE"
             ],
             "guardable": "",
-            "skillBonus": "MELEE_DMG",
+            "skillBonus": "RANGED_DMG",
             "limiter": "",
             "stunSteps": [
               {
@@ -21585,7 +21666,27 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.icicles",
-            "name": "hugeAppear"
+            "name": "hugeAppearHailBomb"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": 0.2,
+          "align": "BOTTOM",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": true,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "combat.triblader",
+            "name": "hailBombTriangles"
           },
           "offset": {
             "x": 0,
@@ -22530,7 +22631,7 @@
               "type": "SHOW_EFFECT",
               "effect": {
                 "sheet": "specials.shock",
-                "name": "boldPre2"
+                "name": "boldPre2Tri"
               },
               "offset": {
                 "x": 0,
@@ -23531,14 +23632,22 @@
           "checkCollision": true,
           "type": "CIRCLE_ATTACK",
           "attack": {
-            "type": "LIGHT",
+            "type": "MEDIUM",
             "element": "COLD",
-            "damageFactor": 0.25,
+            "damageFactor": 0.24,
             "reverse": true,
             "status": 1,
             "guardable": "",
             "skillBonus": "MELEE_DMG",
-            "limiter": ""
+            "limiter": "",
+            "stunSteps": [
+              {
+                "type": "START_LOCK"
+              },
+              {
+                "type": "BLOCK_XY"
+              }
+            ]
           },
           "offset": {
             "x": 0,
@@ -23555,10 +23664,6 @@
         },
         {
           "type": "CLEAR_EFFECTS"
-        },
-        {
-          "time": 0.5,
-          "type": "WAIT"
         }
       ],
       "invisible": false,
@@ -23606,7 +23711,10 @@
         "status": 0.8,
         "guardable": "",
         "skillBonus": "MELEE_DMG",
-        "limiter": ""
+        "limiter": "",
+        "hints": [
+          "NO_PUZZLE"
+        ]
       },
       "zVel": {
         "base": 450,
@@ -23759,6 +23867,9 @@
               {
                 "type": "END_LOCK"
               }
+            ],
+            "hints": [
+              "NO_PUZZLE"
             ]
           },
           "offset": {
@@ -25362,6 +25473,9 @@
               {
                 "type": "END_LOCK"
               }
+            ],
+            "hints": [
+              "NO_PUZZLE"
             ]
           },
           "offset": {
@@ -25549,7 +25663,10 @@
             "reverse": false,
             "guardable": "",
             "skillBonus": "RANGED_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -25673,7 +25790,10 @@
             "reverse": false,
             "guardable": "",
             "skillBonus": "RANGED_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -25855,7 +25975,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre"
+            "name": "boldPreLight"
           },
           "offset": {
             "x": 0,
@@ -27994,7 +28114,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -28088,7 +28208,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -28183,7 +28303,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -32182,7 +32302,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -32276,7 +32396,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -32371,7 +32491,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -38653,7 +38773,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -38747,7 +38867,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -38842,7 +38962,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -38941,7 +39061,7 @@
           "en_US": "Blast enemies with a spontaneous eruption of ice chunks before slashing them away."
         },
         "dmgType": "MELEE",
-        "stunType": "INTERRUPT",
+        "stunType": "LOCK",
         "status": true,
         "steps": [
           {
@@ -39089,17 +39209,22 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MASSIVE",
               "element": "COLD",
-              "damageFactor": 2.2,
-              "fly": "MASSIVE",
+              "damageFactor": 2.9,
+              "fly": "MASSIVE+",
               "spFactor": 0,
               "reverse": false,
               "guardable": "",
-              "skillBonus": "MELEE_DMG"
+              "skillBonus": "MELEE_DMG",
+              "stunSteps": [
+                {
+                  "type": "END_LOCK"
+                }
+              ]
             },
             "offset": {
               "x": 0,
@@ -39128,7 +39253,7 @@
             }
           },
           {
-            "value": 300,
+            "value": 400,
             "type": "SET_SPEED"
           },
           {
@@ -39163,11 +39288,11 @@
           "en_US": "Snow Sweep"
         },
         "description": {
-          "en_US": "Two powerful icy sword slashes that can hit multiple enemies in front of you."
+          "en_US": "Two wide icy sword slashes that can hit multiple enemies in front of you."
         },
         "dmgType": "MELEE",
         "stunType": "INTERRUPT",
-        "status": true,
+        "status": false,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -39257,7 +39382,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -39266,7 +39391,7 @@
               "damageFactor": 1.5,
               "spFactor": 0,
               "reverse": true,
-              "status": 0.6,
+              "status": 0,
               "guardable": "",
               "skillBonus": "MELEE_DMG",
               "stunSteps": [
@@ -39354,23 +39479,18 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
               "fly": "MASSIVE+",
               "element": "COLD",
-              "damageFactor": 2.0,
+              "damageFactor": 2.6,
               "spFactor": 0,
               "reverse": false,
-              "status": 0.6,
+              "status": 0,
               "guardable": "",
-              "skillBonus": "MELEE_DMG",
-              "stunSteps": [
-                {
-                  "type": "END_LOCK"
-                }
-              ]
+              "skillBonus": "MELEE_DMG"
             },
             "offset": {
               "x": 0,
@@ -39397,8 +39517,8 @@
           "en_US": "Hit a single enemy with a short-range combo to knock them into a powerful icicle rupture."
         },
         "dmgType": "MELEE",
-        "stunType": "",
-        "status": false,
+        "stunType": "LOCK",
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -39504,7 +39624,7 @@
             "repeat": false,
             "uniformHitDir": true,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MASSIVE",
@@ -39518,9 +39638,6 @@
                 }
               ],
               "status": 0.75,
-              "hints": [
-                "NO_PUZZLE"
-              ],
               "guardable": "",
               "skillBonus": "MELEE_DMG",
               "limiter": ""
@@ -39586,7 +39703,7 @@
             "repeat": false,
             "uniformHitDir": true,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MASSIVE",
@@ -39600,9 +39717,6 @@
                 }
               ],
               "status": 0.75,
-              "hints": [
-                "NO_PUZZLE"
-              ],
               "guardable": "",
               "skillBonus": "MELEE_DMG",
               "limiter": ""
@@ -39916,7 +40030,7 @@
         },
         "dmgType": "MELEE",
         "stunType": "",
-        "status": false,
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -40116,9 +40230,9 @@
         "description": {
           "en_US": "Draw in enemies before lunging forward, striking a single enemy with a powerful icicle rupture and avalanche."
         },
-        "dmgType": "MELEE",
-        "stunType": "",
-        "status": false,
+        "dmgType": "MIXED",
+        "stunType": "LOCK",
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -40453,7 +40567,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -40754,8 +40868,8 @@
           "en_US": "Engulf enemies in a swirling hurricane before finishing with a powerful slash. Can also hit flying enemies."
         },
         "dmgType": "MELEE",
-        "stunType": "",
-        "status": false,
+        "stunType": "LOCK",
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -40921,7 +41035,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MASSIVE",
@@ -40984,8 +41098,8 @@
           "en_US": "Lunge through enemies with an icy blade, leaving behind a trail of frozen stars."
         },
         "dmgType": "MELEE",
-        "stunType": "",
-        "status": false,
+        "stunType": "INTERRUPT",
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -41491,6 +41605,12 @@
                 "time": 0.4,
                 "stopBeforeEdge": false,
                 "type": "MOVE_BACKWARD"
+              },
+              {
+                "type": "WAIT_UNTIL_ON_GROUND"
+              },
+              {
+                "type": "CLEAR_ANIMATION"
               }
             ]
           },
@@ -41559,11 +41679,11 @@
           "en_US": "Ice Flak"
         },
         "description": {
-          "en_US": "Throw snowflakes that travel a short distance before exploding into bursts of hail. Direct hits will result in a dud. If enemies are nearby when it bursts, the hail shards will be directed at them."
+          "en_US": "Throw snowflakes that explode into multiple hailstones aimed at nearby enemies."
         },
         "dmgType": "RANGED",
         "stunType": "",
-        "status": false,
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -41888,9 +42008,9 @@
         "description": {
           "en_US": "Throws a powerful snowflake bomb that showers an area in icy hail before exploding on contact."
         },
-        "dmgType": "",
+        "dmgType": "RANGED",
         "stunType": "",
-        "status": false,
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -41909,20 +42029,7 @@
           },
           {
             "align": "BOTTOM",
-            "centralAngle": 0,
-            "angleVary": 0,
-            "startDist": 16,
-            "startDistCollide": "CLOSER",
-            "random": false,
-            "clockwise": false,
-            "flipLeftFace": 0,
-            "circularArea": false,
-            "uniformDir": 0,
-            "delay": 0,
-            "repeat": false,
-            "duration": 0,
-            "count": 1,
-            "type": "SHOOT_PROXY_RANGE",
+            "type": "SHOOT_PROXY",
             "proxy": "hailBomb",
             "offset": {
               "x": 0,
@@ -41953,8 +42060,8 @@
           "en_US": "Swing your sword to shoot three powerful frost rays that pierce all enemies."
         },
         "dmgType": "RANGED",
-        "stunType": "",
-        "status": false,
+        "stunType": "INTERRUPT",
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -42094,7 +42201,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -42229,7 +42336,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -42364,7 +42471,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -42491,7 +42598,7 @@
           "langUid": 117,
           "zh_TW": "在你的前方召喚出數根冰柱，阻擋敵人的射擊。<<A<<[CHANGED 2018/03/14]"
         },
-        "dmgType": "RANGED",
+        "dmgType": "MELEE",
         "stunType": "INTERRUPT",
         "status": true,
         "steps": [
@@ -42636,8 +42743,8 @@
         "description": {
           "en_US": "Instantly encase yourself in ice, negating huge amounts of damage for a short time."
         },
-        "dmgType": "",
-        "stunType": "INTERRUPT",
+        "dmgType": "NONE",
+        "stunType": "",
         "status": false,
         "steps": [
           {
@@ -42650,10 +42757,10 @@
             }
           },
           {
-            "volume": 1.3,
+            "volume": 1.6,
             "global": false,
             "loop": false,
-            "speed": 0.6,
+            "speed": 0.7,
             "variance": 0.1,
             "sound": "media/sound/battle/ice-freeze.ogg",
             "type": "PLAY_SOUND"
@@ -42876,9 +42983,9 @@
           "en_US": "Blizzard Slash"
         },
         "description": {
-          "en_US": "A barrage of icicles and hailstones are unleased in a flurry of slashes."
+          "en_US": "A barrage of icicles and hailstones are unleased in a flurry of slashes over a wide area."
         },
-        "dmgType": "RANGED",
+        "dmgType": "MELEE",
         "stunType": "INTERRUPT",
         "status": true,
         "steps": [
@@ -43075,7 +43182,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "attack": {
               "type": "MASSIVE",
               "element": "COLD",
@@ -43268,7 +43375,7 @@
           "en_US": "Quickly encase yourself in ice for longer, negating even more damage and healing \\c[2]+25%\\c[0] of your maximum HP while frozen."
         },
         "dmgType": "",
-        "stunType": "INTERRUPT",
+        "stunType": "",
         "status": false,
         "steps": [
           {
@@ -43652,8 +43759,8 @@
           "en_US": "Summon a field of powerful icicles to impale enemies in the area."
         },
         "dmgType": "MELEE",
-        "stunType": "",
-        "status": false,
+        "stunType": "LOCK",
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -43897,7 +44004,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "attack": {
               "type": "MASSIVE",
               "element": "COLD",
@@ -44640,6 +44747,9 @@
               "skillBonus": "MELEE_DMG",
               "limiter": ""
             },
+            "hints": [
+              "NO_PUZZLE"
+            ],
             "offset": {
               "x": 0,
               "y": 0,
@@ -44714,7 +44824,7 @@
             "centralAngle": 1,
             "startAngle": 0.5,
             "angleVary": 0,
-            "startDistCollide": "CLOSER",
+            "startDistCollide": "DROP",
             "startDist": 16,
             "random": true,
             "count": 6,
@@ -44738,7 +44848,7 @@
             "centralAngle": 1,
             "startAngle": 0.5,
             "angleVary": 0,
-            "startDistCollide": "CLOSER",
+            "startDistCollide": "DROP",
             "startDist": 32,
             "random": true,
             "count": 6,
@@ -44762,7 +44872,7 @@
             "centralAngle": 1,
             "startAngle": 0.5,
             "angleVary": 0,
-            "startDistCollide": "CLOSER",
+            "startDistCollide": "DROP",
             "startDist": 48,
             "random": true,
             "count": 6,
@@ -44786,7 +44896,7 @@
             "centralAngle": 1,
             "startAngle": 0.5,
             "angleVary": 0,
-            "startDistCollide": "CLOSER",
+            "startDistCollide": "DROP",
             "startDist": 60,
             "random": true,
             "count": 6,
@@ -44817,7 +44927,7 @@
             "type": "SHOW_EFFECT",
             "effect": {
               "sheet": "specials.cold",
-              "name": "coldExplode"
+              "name": "coldExplodeBig"
             },
             "offset": {
               "x": 0,
@@ -44896,11 +45006,13 @@
                   "type": "END_LOCK"
                 }
               ],
+              "hints": [
+                "NO_PUZZLE"
+              ],
               "guardable": "",
               "skillBonus": "MELEE_DMG",
               "limiter": ""
             },
-            "skillBonus": "MELEE_DMG",
             "offset": {
               "x": 0,
               "y": 0,
@@ -44952,7 +45064,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -45046,7 +45158,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -45141,7 +45253,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -51595,7 +51707,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -51689,7 +51801,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -51784,7 +51896,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -51926,7 +52038,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -51958,7 +52070,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MASSIVE",
@@ -52020,7 +52132,7 @@
             "centralAngle": 1,
             "angleVary": 0,
             "startDist": 16,
-            "startDistCollide": "NONE",
+            "startDistCollide": "CLOSER",
             "random": true,
             "duration": 0.4,
             "clockwise": false,
@@ -52245,9 +52357,6 @@
               "status": 0,
               "guardable": "",
               "skillBonus": "MELEE_DMG",
-              "hints": [
-                "NO_PUZZLE"
-              ],
               "stunSteps": [
                 {
                   "type": "START_LOCK"
@@ -52477,9 +52586,6 @@
               "element": "WAVE",
               "damageFactor": 4,
               "fly": "MASSIVE+++",
-              "hints": [
-                "NO_PUZZLE"
-              ],
               "reverse": false,
               "spFactor": 0,
               "status": 1.2,
@@ -52496,6 +52602,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.90,
+            "type": "SET_RELATIVE_SPEED"
           },
           {
             "time": 0.08,
@@ -53830,7 +53940,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MASSIVE",
@@ -53841,10 +53951,7 @@
               "status": 1,
               "guardable": "",
               "skillBonus": "MELEE_DMG",
-              "limiter": "",
-              "hints": [
-                "NO_PUZZLE"
-              ]
+              "limiter": ""
             },
             "offset": {
               "x": 0,

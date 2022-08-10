@@ -683,7 +683,7 @@
       "behaviors": []
     },
     "chargedHeat": {
-      "effects": "ball-heat",
+      "effects": "ball-heat-xtm",
       "speed": 600,
       "maxBounce": 3,
       "timer": 1.5,
@@ -724,7 +724,7 @@
       "behaviors": []
     },
     "chargedCold": {
-      "effects": "ball-cold",
+      "effects": "ball-cold-xtm",
       "speed": 600,
       "maxBounce": 3,
       "timer": 1.5,
@@ -765,7 +765,7 @@
       "behaviors": []
     },
     "chargedShock": {
-      "effects": "ball-shock",
+      "effects": "ball-shock-xtm",
       "speed": 600,
       "maxBounce": 3,
       "timer": 1.5,
@@ -806,7 +806,7 @@
       "behaviors": []
     },
     "chargedWave": {
-      "effects": "ball-wave",
+      "effects": "ball-wave-xtm",
       "speed": 600,
       "maxBounce": 3,
       "timer": 1.5,
@@ -5327,7 +5327,7 @@
       "behaviors": []
     },
     "chargedWaveClone": {
-      "effects": "ball-wave",
+      "effects": "ball-wave-xtm",
       "speed": 600,
       "maxBounce": 3,
       "timer": 1.5,
@@ -7862,7 +7862,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre"
+            "name": "boldPreLight"
           },
           "offset": {
             "x": 0,
@@ -7886,7 +7886,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre2"
+            "name": "boldPre2Tri"
           },
           "offset": {
             "x": 0,
@@ -8036,7 +8036,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre"
+            "name": "boldPreLight"
           },
           "offset": {
             "x": 0,
@@ -8071,7 +8071,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre2"
+            "name": "boldPre2Tri"
           },
           "offset": {
             "x": 0,
@@ -8954,7 +8954,7 @@
           "centralAngle": 1,
           "angleVary": 0,
           "startDist": 64,
-          "startDistCollide": "CLOSER",
+          "startDistCollide": "DROP",
           "random": true,
           "count": 48,
           "duration": 1,
@@ -9337,7 +9337,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "boldPre"
+            "name": "boldPreLight"
           },
           "offset": {
             "x": 0,
@@ -21517,7 +21517,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "MEDIUM",
@@ -21526,7 +21526,7 @@
           "damageFactor": 1.5,
           "spFactor": 0,
           "reverse": true,
-          "status": 0.6,
+          "status": 0,
           "guardable": "",
           "skillBonus": "MELEE_DMG",
           "stunSteps": [
@@ -21614,16 +21614,16 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "MEDIUM",
           "fly": "MASSIVE+",
           "element": "COLD",
-          "damageFactor": 2.0,
+          "damageFactor": 2.6,
           "spFactor": 0,
           "reverse": false,
-          "status": 0.6,
+          "status": 0,
           "guardable": "",
           "skillBonus": "MELEE_DMG",
           "stunSteps": [
@@ -22557,7 +22557,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "attack": {
           "type": "MASSIVE",
           "element": "COLD",
@@ -23013,7 +23013,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "attack": {
           "type": "MASSIVE",
           "element": "COLD",
@@ -23544,7 +23544,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "MEDIUM",
@@ -23629,7 +23629,7 @@
         "type": "MOVE_FORWARD"
       },
       {
-        "projectileSpeed": 600,
+        "projectileSpeed": 500,
         "type": "SET_FACE_TARGET_PREDICT"
       },
       {
@@ -23685,7 +23685,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "MEDIUM",
@@ -23770,7 +23770,7 @@
         "type": "MOVE_FORWARD"
       },
       {
-        "projectileSpeed": 600,
+        "projectileSpeed": 400,
         "type": "SET_FACE_TARGET_PREDICT"
       },
       {
@@ -23826,7 +23826,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "MEDIUM",
@@ -24472,6 +24472,12 @@
             "time": 0.4,
             "stopBeforeEdge": false,
             "type": "MOVE_BACKWARD"
+          },
+          {
+            "type": "WAIT_UNTIL_ON_GROUND"
+          },
+          {
+            "type": "CLEAR_ANIMATION"
           },
           {
             "type": "SET_ENEMY_STATE",
@@ -28005,7 +28011,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "HEAVY",
@@ -28037,7 +28043,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "MASSIVE",
@@ -28099,7 +28105,7 @@
         "centralAngle": 1,
         "angleVary": 0,
         "startDist": 16,
-        "startDistCollide": "NONE",
+        "startDistCollide": "CLOSER",
         "random": true,
         "duration": 0.4,
         "clockwise": false,
@@ -28342,9 +28348,6 @@
           "fly": "HEAVY",
           "status": 0,
           "guardable": "",
-          "hints": [
-            "NO_PUZZLE"
-          ],
           "skillBonus": "MELEE_DMG",
           "stunSteps": [
             {
@@ -28579,9 +28582,6 @@
           "spFactor": 0,
           "status": 1.2,
           "guardable": "",
-          "hints": [
-            "NO_PUZZLE"
-          ],
           "skillBonus": "MELEE_DMG",
           "stunSteps": [
             {
@@ -28594,6 +28594,10 @@
           "y": 0,
           "z": 0
         }
+      },
+      {
+        "value": 0.90,
+        "type": "SET_RELATIVE_SPEED"
       },
       {
         "time": 0.08,
@@ -29247,7 +29251,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "MASSIVE",
@@ -29258,10 +29262,7 @@
           "status": 1,
           "guardable": "",
           "skillBonus": "MELEE_DMG",
-          "limiter": "",
-          "hints": [
-            "NO_PUZZLE"
-          ]
+          "limiter": ""
         },
         "offset": {
           "x": 0,
@@ -31341,7 +31342,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -31474,7 +31475,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -31608,7 +31609,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -31741,7 +31742,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -31850,7 +31851,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -31983,7 +31984,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -32117,7 +32118,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -32250,7 +32251,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -32359,7 +32360,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -32492,7 +32493,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -32626,7 +32627,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -32759,7 +32760,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -32868,7 +32869,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -33001,7 +33002,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -33135,7 +33136,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -33268,7 +33269,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -33377,7 +33378,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -33510,7 +33511,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -33644,7 +33645,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MEDIUM",
@@ -33777,7 +33778,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",

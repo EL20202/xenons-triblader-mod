@@ -12685,10 +12685,10 @@
     ],
     "hailBombSweep": [
       {
-        "color": "#88aaff",
-        "fadeIn": 0,
+        "color": "#3E4E75",
+        "fadeIn": 0.1,
         "fadeOut": 0.4,
-        "duration": 0.3,
+        "duration": 0.2,
         "type": "SCREEN_FLASH"
       },
       {
@@ -12713,7 +12713,7 @@
         "clockwise": true,
         "centralAngle": 1.5,
         "startAngle": -0.25,
-        "startDist": 48,
+        "startDist": 28,
         "particleRotate": true,
         "offset": {
           "x": 0,
@@ -12744,8 +12744,8 @@
           },
           "start": {
             "value": {
-              "x": 1.5,
-              "y": 1.5
+              "x": 1.2,
+              "y": 1.2
             },
             "spline": ""
           }
@@ -12760,7 +12760,7 @@
         "clockwise": true,
         "centralAngle": 1.5,
         "startAngle": -0.25,
-        "startDist": 48,
+        "startDist": 32,
         "particleRotate": true,
         "offset": {
           "x": 0,
@@ -12772,7 +12772,7 @@
           "y": 0,
           "z": 0
         },
-        "moveDist": 64,
+        "moveDist": 48,
         "keySpline": "EASE",
         "inverse": false,
         "collision": false,
@@ -12791,8 +12791,8 @@
           },
           "start": {
             "value": {
-              "x": 2,
-              "y": 2
+              "x": 1.5,
+              "y": 1.5
             },
             "spline": ""
           }
@@ -12833,7 +12833,7 @@
         "numParticles": 32,
         "duration": 0.3,
         "centralAngle": 1,
-        "startDist": 160,
+        "startDist": 120,
         "random": true,
         "moveDist": 48,
         "moveVariance": 16,

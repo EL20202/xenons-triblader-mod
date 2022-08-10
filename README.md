@@ -202,6 +202,8 @@ Note that if you click on any of these installed mods, there should be a file ca
 
 In this case, you are good to go. Note that XTM is compatible with ArcaneLab and Autumn's Genesis and other mods. There is an old list of other Crosscode mods located here: https://c2dl.info/cc/mods
 
+If your mods don't appear here, make sure you don't have "folders inside folders". The mod folders need **package.json** or **ccmod.json** directly inside in order to be recognized.
+
 # How to Update to a New Version
 1. Delete your old folder entirely.  
 ![image](https://user-images.githubusercontent.com/105614278/180620611-e05635f6-16c4-406f-9689-7bbbed2d4cd5.png)  
