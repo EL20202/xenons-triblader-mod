@@ -20,11 +20,12 @@
 		"ko_KR": "Playable Tribladers, PVP, and more!"
 	},
 	"icons": {
-   	 	"24": "icon.png"
-  	},
+		"24": "icon.png"
+	},
 	"prestart": "prestart.js",
 	"dependencies": {
 		"extendable-severed-heads": "^1.0.0",
-		"post-game": "^1.4.2"
+		"crosscode": ">=1.4.0",
+		"post-game": ">=1.4.0"
 	}
 }
