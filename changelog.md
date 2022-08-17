@@ -1,3 +1,11 @@
+0.1.5 (08/17/2022)
+## Changes
+- Updated the nav map for triangle strategy
+## Fixes
+- Fixed issue where some users experienced missing dependencies despite them being present
+- Corrected typo
+- (meta) Corrected changelog filetype for repo
+
 0.1.4 (08/10/2022)
 ## New Content ##
 - Added Triblader2/3/4/5 animations for opening chests
