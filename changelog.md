@@ -1,33 +1,10 @@
-0.2.0 (08/20/2022)
-## New Content ##
-- Added colored portraits for Triblader2/3/4/5 (likely to be revised in the future)
-- New map: Training Island
-   - Highly customizable PVP arena located in dev room
-- New 1v1 training arena map that can be accessed from the 2v2 arena
-- Added a coordinated enemy action on player match point in Triangle Strategy
-- Added text labels to the level up/down switches in triblader training arena
-- Added a new type of OneTimeSwitch called "default2" which is able to be hidden without remaining active
-## Changes ##
-- Removed some unused sprite assets from the files
-- Modded Shizuka enemy now works based off of player points and should unlock higher-tier strats on all maps
-- Vermillion Firestorm now slightly pulls enemies inwards during the laser phase
-   - PVP enemies have WALK_ESCAPE strength, player has EASY_ESCAPE strength
-- Dialogue tweaks to Triblader Training Arena 2v2
-- Slight dialogue tweaks to rhombus-sqr/center-nw.json.patch
-- Ki Spin particle effect changed to be less intense
-- Added confirmation to Triblader2 party joining in dev room
-- Reduced and standardized all dialogue pauses in all XTM intro maps
-- Dialogue tweaks to basement.json and interior.json maps
-## Fixes ##
-- Ice Brace, Stasis Stance, Tower of Tranquility now properly set Pin Body factor to zero while active
-   - This introduces a bug where pin body will remain at zero afterwards until map reload
-- Fixed PVP enemy Vermillion Firestorm cross lasers coming out at random angles
-- Removed unused variable "tmp.musicCutscene" from training arenas
-- Added the SET_SLIP_THROUGH property after pvp rounds to prevent awkward navigation collisions for all Rhombus Arena duels
-- Fixed incorrect variable type for map.battleMusic in triblader training arenas
-- Fixed modded apollo-4 and shizuka granting exp
-## Balance ##
-- Rude Buster explosion changed from MASSIVE to HEAVY strength
+0.1.5 (08/17/2022)
+## Changes
+- Updated the nav map for triangle strategy
+## Fixes
+- Fixed issue where some users experienced missing dependencies despite them being present
+- Corrected typo
+- (meta) Corrected changelog filetype for repo
 
 0.1.4 (08/10/2022)
 ## New Content ##

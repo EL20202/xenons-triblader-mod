@@ -1,6 +1,6 @@
 {
 	"id": "xenons-triblader-mod",
-	"version": "0.2.0",
+	"version": "0.1.5",
 	"title": {
 		"en_US": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
 		"de_DE": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
@@ -20,11 +20,12 @@
 		"ko_KR": "Playable Tribladers, PVP, and more!"
 	},
 	"icons": {
-   	 	"24": "icon.png"
-  	},
+		"24": "icon.png"
+	},
 	"prestart": "prestart.js",
 	"dependencies": {
 		"extendable-severed-heads": "^1.0.0",
-		"post-game": "^1.4.2"
+		"crosscode": ">=1.4.0",
+		"post-game": ">=1.4.0"
 	}
 }
