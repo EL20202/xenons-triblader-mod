@@ -342,7 +342,7 @@
                     "expression": "DEFAULT"
                   },
                   "message": {
-                    "en_US": "Feel free to come duel against me and my friends."
+                    "en_US": "Feel free to come duel!\\. There are plenty of players also looking for matches there."
                   },
                   "type": "SHOW_MSG"
                 },

@@ -105,8 +105,8 @@ ig.module("game.feature.combat.xtm-combat-action-steps").requires("game.feature.
       }
     }),
     init: function (a) {
-      this.value =
-        a.value
+      assertContent(a, "value");
+      this.value = a.value
     },
     run: function (a) {
       a.spikeDmg.tmpFactor = this.value;

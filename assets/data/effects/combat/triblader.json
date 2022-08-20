@@ -14321,7 +14321,7 @@
         "type": "LIGHT"
       },
       {
-        "numParticles": 3,
+        "numParticles": 2,
         "duration": 0.15,
         "centralAngle": 1,
         "startDist": 8,
@@ -14335,12 +14335,25 @@
         "moveDist": 80,
         "keySpline": "EASE_OUT",
         "collision": false,
+        "pScale": {
+          "init": {
+            "x": 1.0,
+            "y": 1.0
+          },
+          "start": {
+            "value": {
+              "x": 0.3,
+              "y": 0.3
+            },
+            "spline": ""
+          }
+        },
         "moveWithTarget": 1,
         "anim": "WAVE_EXPLODE",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "numParticles": 6,
+        "numParticles": 4,
         "duration": 0.15,
         "centralAngle": 1,
         "startDist": 16,
@@ -14356,7 +14369,7 @@
         "useTargetAngle": false,
         "keepAngleSync": false,
         "pAlpha": {
-          "init": 1,
+          "init": 0.85,
           "end": {
             "value": 0,
             "time": 0.5,
@@ -14370,15 +14383,16 @@
           },
           "start": {
             "value": {
-              "x": 1.8,
-              "y": 1.8
+              "x": 1.5,
+              "y": 1.5
             },
             "spline": ""
           }
         },
         "moveWithTarget": 1,
+        "angleVary": 1,
         "particleDuration": 0.5,
-        "anim": "SHOCKWAVE_B_WAVE",
+        "anim": "WAVE_BIG_TRIANGLE",
         "type": "PLAY_ANIM"
       }
     ],

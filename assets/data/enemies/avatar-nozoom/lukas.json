@@ -1542,7 +1542,7 @@
           "checkCollision": true,
           "type": "CIRCLE_ATTACK",
           "attack": {
-            "type": "MASSIVE",
+            "type": "HEAVY",
             "element": "NEUTRAL",
             "damageFactor": 5,
             "fly": "MASSIVE+",
@@ -19343,8 +19343,13 @@
         "type": "ADD_SLOW_MOTION"
       },
       {
+        "value": false,
+        "immediately": true,
+        "type": "FACE_TO_TARGET"
+      },
+      {
         "face": "SOUTH",
-        "rotate": false,
+        "rotate": true,
         "rotateSpeed": 3,
         "type": "SET_FACE"
       },
@@ -19417,6 +19422,17 @@
       {
         "time": 1,
         "type": "WAIT"
+      },
+      {
+        "strength": "WALK_ESCAPE",
+        "pull": true,
+        "radius": 200,
+        "fadeRadius": 0,
+        "minRadius": 0,
+        "zHeight": 100,
+        "duration": 1.75,
+        "align": "BOTTOM",
+        "type": "PUSH_PULL_FORCE"
       },
       {
         "duration": -1,

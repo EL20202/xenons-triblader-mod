@@ -70,7 +70,7 @@
     "COND_HEALING": 0.28
   },
   "credit": 0,
-  "exp": 1000,
+  "exp": 0,
   "maxSp": 12,
   "enduranceScale": 1,
   "healDropRate": 0,
@@ -4098,7 +4098,7 @@
       {
         "withElse": false,
         "type": "IF",
-        "condition": "tmp.leaTotalWin >= 2",
+        "condition": "pvp.playerPoints >= 2",
         "thenStep": [
           {
             "attribName": "quickMove",
@@ -4126,7 +4126,7 @@
       {
         "withElse": false,
         "type": "IF",
-        "condition": "tmp.leaTotalWin >= 3",
+        "condition": "pvp.playerPoints >= 3",
         "thenStep": [
           {
             "attribName": "swap",
@@ -4140,7 +4140,7 @@
       {
         "withElse": false,
         "type": "IF",
-        "condition": "!tmp.leaTotalWin",
+        "condition": "!pvp.playerPoints >= 0",
         "thenStep": [
           {
             "withElse": true,
@@ -4166,7 +4166,7 @@
       {
         "withElse": false,
         "type": "IF",
-        "condition": "tmp.leaTotalWin = 1",
+        "condition": "pvp.playerPoints = 1",
         "thenStep": [
           {
             "withElse": true,
@@ -4192,7 +4192,7 @@
       {
         "withElse": false,
         "type": "IF",
-        "condition": "tmp.leaTotalWin = 2",
+        "condition": "pvp.playerPoints = 2",
         "thenStep": [
           {
             "withElse": true,
@@ -4218,7 +4218,7 @@
       {
         "withElse": false,
         "type": "IF",
-        "condition": "tmp.leaTotalWin = 3",
+        "condition": "pvp.playerPoints = 3",
         "thenStep": [
           {
             "withElse": true,
@@ -4244,7 +4244,7 @@
       {
         "withElse": false,
         "type": "IF",
-        "condition": "tmp.leaTotalWin >= 4 && ((tmp.leaTotalWin - 4) % 2) == 0",
+        "condition": "pvp.playerPoints >= 4 && ((pvp.playerPoints - 4) % 2) == 0",
         "thenStep": [
           {
             "withElse": true,
@@ -4270,7 +4270,7 @@
       {
         "withElse": false,
         "type": "IF",
-        "condition": "tmp.leaTotalWin >= 4 && ((tmp.leaTotalWin - 4) % 2) == 1",
+        "condition": "pvp.playerPoints >= 4 && ((pvp.playerPoints - 4) % 2) == 1",
         "thenStep": [
           {
             "withElse": true,
