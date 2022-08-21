@@ -1,3 +1,7 @@
+0.2.3 (08/20/2022)
+### Fixes
+- Fixed crash in 1v1 training arena when setting 3 victory points
+
 0.2.2 (08/20/2022)
 ### Changes
 - Changelog headers reformatted
