@@ -1,9 +1,21 @@
+0.2.2 (08/20/2022)
+### Changes
+- Changelog headers reformatted
+- Created the following patch files and removed modified vanilla files for:
+   - \patches\data\effects\area\arid.json
+   - \patches\data\effects\enemies\designer.json
+   - \patches\data\effects\enemies\gods.json
+   - \patches\data\effects\enemies\jungle.json
+- Arcing Fae now has a sound effect when thrown
+### Balance
+- Triblader League round 1 platinum points reduced from 80,000 to 75,000
+
 0.2.1 (08/20/2022)
-## Fixes ##
+### Fixes
 - Manually fixed git merge conflicts
 
 0.2.0 (08/20/2022)
-## New Content ##
+### New Content
 - Added colored portraits for Triblader2/3/4/5 (likely to be revised in the future)
 - New map: Training Island
    - Highly customizable PVP arena located in dev room
@@ -11,7 +23,7 @@
 - Added a coordinated enemy action on player match point in Triangle Strategy
 - Added text labels to the level up/down switches in triblader training arena
 - Added a new type of OneTimeSwitch called "default2" which is able to be hidden without remaining active
-## Changes ##
+### Changes
 - Removed some unused sprite assets from the files
 - Modded Shizuka enemy now works based off of player points and should unlock higher-tier strats on all maps
 - Vermillion Firestorm now slightly pulls enemies inwards during the laser phase
@@ -22,7 +34,7 @@
 - Added confirmation to Triblader2 party joining in dev room
 - Reduced and standardized all dialogue pauses in all XTM intro maps
 - Dialogue tweaks to basement.json and interior.json maps
-## Fixes ##
+### Fixes
 - Ice Brace, Stasis Stance, Tower of Tranquility now properly set Pin Body factor to zero while active
    - This introduces a bug where pin body will remain at zero afterwards until map reload
 - Fixed PVP enemy Vermillion Firestorm cross lasers coming out at random angles
@@ -30,25 +42,25 @@
 - Added the SET_SLIP_THROUGH property after pvp rounds to prevent awkward navigation collisions for all Rhombus Arena duels
 - Fixed incorrect variable type for map.battleMusic in triblader training arenas
 - Fixed modded apollo-4 and shizuka granting exp
-## Balance ##
+### Balance
 - Rude Buster explosion changed from MASSIVE to HEAVY strength
 
 0.1.5 (08/17/2022)
-## Changes
+### Changes
 - Updated the nav map for triangle strategy
-## Fixes
+### Fixes
 - Fixed issue where some users experienced missing dependencies despite them being present
 - Corrected typo
 - (meta) Corrected changelog filetype for repo
 
 0.1.4 (08/10/2022)
-## New Content ##
+### New Content
 - Added Triblader2/3/4/5 animations for opening chests
 - Lea placeholders for block push/pull animations
 - New ball effect sheets used by Triblader charged VRPs, trail is now rendered below VRP for all players/pvp enemies
 - Added effects boldPre2Tri and boldPreLight for all thunder bolt effects
 - Added a switch in the dev room to "promote growth"
-## Changes ##
+### Changes
 - Created separate files for Triblader 2/3/4/5 portraits
 - Re-arranged triblader2/3/4/5extra.png spritesheet and added more lea placeholders
 - Updated triblader2/3/4/5.json animation sheet to reflect updated spritesheet
@@ -72,7 +84,7 @@
    - Added triangle particles when the icicle appears
    - Screen flash intensity reduced
    - Final explosion reduced in hitbox/visual size
-## Fixes ##
+### Fixes
 - Fixed cases where enemies could remain invisible at the end of PVP rounds
 - Added event steps to "show" (effect that sets alpha=1) all enemies, party members, and player to the end of all PVP rounds/duels in the mod
 - Fixed dmgType, stunType, status descriptions for cold arts
@@ -116,7 +128,7 @@
    - Icicle Tomb melee sweep
    - Ki Spin melee attack
    - Phase Jump landing hitbox
-## Balance ##
+### Balance
    - Vortex Thrust final hit reduced forward travel distance
    - Polar Geyser's proxy now locks enemies just like Sphere Saw
    - Polar Geyser's proxy hit strength increased from LIGHT to MEDIUM
@@ -127,17 +139,17 @@
    - Proxy iceStoneSmallSlow no longer inflicts status
 
 0.1.3 (07/30/2022)
-## New Content ##
+### New Content
 - Added new bonus map accessible from dev room: \maps\xtm\bonus\guild-war.json
 - New bullet sprite for Essence Enchantment proxies
-## Changes ##
+### Changes
 - Added formal dependency on post-game DLC in ccmod.json
 - Assigned proper modded NPC portrait reference in dev.json for all Triblader2 interactions
 - PVP enemy version of Verdant Infection now has unguardable, BREAK, and hitInvincible for the non-damaging stunning DIRECT_HIT when the bomb goes off
 - Re-organized custom-action-steps.js into a module
 - Pain Buckler techShield (after blocking) now has BLOCK_ALL strength
 - Tweaked navigation logic for So'najiz Phalanx clones prior to shooting the final lasers
-## Fixes ##
+### Fixes
 - Fixed a crash experienced by controller users when using Pain Buckler
 - Fixed "bastion" shield upgrade not working for tribladers by fixing GUARD and PERFECT_GUARD json syntax
 - Fixed dmgType, stunType, status descriptions for wave arts
@@ -166,7 +178,7 @@
    - Spectral Legion dash explosion
    - Spectral Legion clone melee attacks
    - Vortex Thrust melee hitboxes
-## Balance ##
+### Balance
 - Lava Sweep now sets user's weight at -1 so they can't be shoved around during the attack
 - Soul Shatter damage reduced by ~40%
 - Soul Shatter no longer inflicts mark at all

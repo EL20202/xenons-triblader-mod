@@ -9644,6 +9644,15 @@
       },
       "action": [
         {
+          "volume": 0.95,
+          "global": false,
+          "variance": 0.1,
+          "speed": 0.80,
+          "loop": false,
+          "type": "PLAY_SOUND",
+          "sound": "media/sound/puzzle/wave-charge-2.ogg"
+        },
+        {
           "duration": -1,
           "align": "BOTTOM",
           "rotateFace": 0,
