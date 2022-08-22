@@ -51541,8 +51541,28 @@
             "fixPos": false,
             "type": "SHOW_EFFECT",
             "effect": {
-              "sheet": "specials.shock",
-              "name": "timeGuardAura"
+              "sheet": "combat.triblader",
+              "name": "shockCounterGuard"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 8
+            }
+          },
+          {
+            "duration": -1,
+            "align": "BOTTOM",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "combat.triblader",
+              "name": "shockCounterGuard2"
             },
             "offset": {
               "x": 0,
@@ -51576,7 +51596,7 @@
             "perfectGuardTime": 5,
             "type": "ADD_SHIELD",
             "shield": {
-              "type": "DIRECTIONAL",
+              "type": "PLAYER",
               "settings": {
                 "baseFactor": 0,
                 "range": 0.5,

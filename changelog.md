@@ -1,3 +1,16 @@
+0.3.0 (08/21/2022)
+### New Content
+- Added remaining sprites for Triblader 2/3/4/5 floating animation
+### Changes
+- Created the following patch files and removed modified vanilla files for:
+   - \patches\data\effects\puzzle\bomb.json
+   - \patches\data\effects\trail.json
+- Removed unused \data\effects\npc.json from mod
+- New shield particle effects for Glitch Time
+### Fixes
+- Gave the dev room a proper navigation map
+- Fixed match point BGM not triggering on training island
+
 0.2.3 (08/20/2022)
 ### Fixes
 - Fixed crash in 1v1 training arena when setting 3 victory points
