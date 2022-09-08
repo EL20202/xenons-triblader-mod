@@ -34,9 +34,9 @@
     "meleeDistance": 32,
     "minDistance": 48,
     "foodSprites": [
-      "SANDWICH",
-      "SANDWICH",
-      "SANDWICH"
+      "STEAK",
+      "STEAK",
+      "STEAK"
     ]
   },
   "walkAnims": {
@@ -1347,17 +1347,6 @@
       },
       "copyOwnerAnims": false,
       "breakType": "NEVER",
-      "attack": {
-        "type": "MEDIUM",
-        "element": "HEAT",
-        "damageFactor": 0.05,
-        "reverse": false,
-        "spFactor": 0,
-        "status": 0.25,
-        "guardable": "",
-        "skillBonus": "RANGED_DMG",
-        "limiter": ""
-      },
       "action": [
         {
           "global": false,
@@ -1475,8 +1464,8 @@
       "stickFaceAlign": false,
       "group": "",
       "size": {
-        "x": 19,
-        "y": 19,
+        "x": 16,
+        "y": 16,
         "z": 4
       },
       "multiHit": true,
@@ -1780,28 +1769,14 @@
       "stickFaceAlign": false,
       "group": "",
       "size": {
-        "x": 19,
-        "y": 19,
+        "x": 16,
+        "y": 16,
         "z": 4
       },
       "multiHit": true,
       "light": "XL",
       "noLightGlow": false,
       "type": "GENERIC",
-      "attack": {
-        "type": "HEAVY",
-        "element": "HEAT",
-        "fly": "MASSIVE",
-        "damageFactor": 2,
-        "reverse": false,
-        "spFactor": 0,
-        "status": 1,
-        "hints": [
-          "CHARGED"
-        ],
-        "guardable": "",
-        "skillBonus": "RANGED_DMG"
-      },
       "timeBoni": null,
       "behaviors": [],
       "config": {
@@ -1945,7 +1920,8 @@
             "status": 1,
             "reverse": false,
             "spFactor": 0,
-            "guardable": ""
+            "guardable": "",
+            "skillBonus": "RANGED_DMG"
           },
           "offset": {
             "x": 0,
@@ -3707,7 +3683,10 @@
             "spFactor": 0,
             "status": 1,
             "guardable": "",
-            "skillBonus": "RANGED_DMG"
+            "skillBonus": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -8137,11 +8116,6 @@
           }
         },
         {
-          "searchType": "CLOSE_RANGE",
-          "distance": 3200,
-          "type": "SET_CLOSE_TEMP_TARGET"
-        },
-        {
           "duration": 1.5,
           "target": "PROXY_OWNER",
           "align": "BOTTOM",
@@ -8291,9 +8265,10 @@
             "element": "HEAT",
             "damageFactor": 0.3,
             "reverse": false,
+            "status": 0.9,
             "spFactor": 0,
             "guardable": "",
-            "skillBonus": "RANGED_DMG"
+            "skillBonus": "MELEE_DMG"
           },
           "offset": {
             "x": 0,
@@ -8350,7 +8325,7 @@
           "thenStep": [
             {
               "align": "BOTTOM",
-              "radius": 96,
+              "radius": 112,
               "yScale": 0,
               "zHeight": 24,
               "centralAngle": 0.6,
@@ -8364,7 +8339,7 @@
               "repeat": false,
               "uniformHitDir": false,
               "fixPos": false,
-              "checkCollision": false,
+              "checkCollision": true,
               "type": "CIRCLE_ATTACK",
               "attack": {
                 "type": "HEAVY",
@@ -8411,7 +8386,7 @@
           "thenStep": [
             {
               "align": "BOTTOM",
-              "radius": 96,
+              "radius": 112,
               "yScale": 0,
               "zHeight": 24,
               "centralAngle": 0.6,
@@ -8425,7 +8400,7 @@
               "repeat": false,
               "uniformHitDir": false,
               "fixPos": false,
-              "checkCollision": false,
+              "checkCollision": true,
               "type": "CIRCLE_ATTACK",
               "attack": {
                 "type": "HEAVY",
@@ -8472,7 +8447,7 @@
           "thenStep": [
             {
               "align": "BOTTOM",
-              "radius": 112,
+              "radius": 124,
               "yScale": 0,
               "zHeight": 24,
               "centralAngle": 1.6,
@@ -8486,7 +8461,7 @@
               "repeat": false,
               "uniformHitDir": false,
               "fixPos": false,
-              "checkCollision": false,
+              "checkCollision": true,
               "type": "CIRCLE_ATTACK",
               "attack": {
                 "type": "HEAVY",
@@ -12639,7 +12614,10 @@
             "status": 0.65,
             "guardable": "",
             "skillBonus": "MELEE_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -12691,7 +12669,10 @@
             "status": 0.65,
             "guardable": "",
             "skillBonus": "MELEE_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -12784,8 +12765,11 @@
             "stunSteps": [],
             "status": 0.5,
             "guardable": "",
-            "skillBonus": "MELEE_DMG",
-            "limiter": ""
+            "skillBonus": "",
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -12865,8 +12849,11 @@
             "status": 0.5,
             "reverse": false,
             "guardable": "",
-            "skillBonus": "RANGED_DMG",
-            "limiter": ""
+            "skillBonus": "",
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -16358,7 +16345,7 @@
           "type": "CLEAR_EFFECTS"
         },
         {
-          "align": "BASE",
+          "align": "BOTTOM",
           "type": "SHOOT_PROXY",
           "proxy": "flameHitS",
           "offset": {
@@ -16624,7 +16611,7 @@
         {
           "min": 0,
           "max": 64,
-          "maxTime": 1.5,
+          "maxTime": 1.4,
           "forceTime": true,
           "type": "MOVE_TO_DISTANCE"
         },
@@ -16733,17 +16720,6 @@
         "relativeVel": 1
       },
       "type": "GENERIC",
-      "attack": {
-        "type": "MEDIUM",
-        "element": "SHOCK",
-        "damageFactor": 0.5,
-        "reverse": false,
-        "hints": [
-          "CHARGED"
-        ],
-        "guardable": "",
-        "skillBonus": "RANGED_DMG"
-      },
       "timeBoni": null,
       "behaviors": []
     },
@@ -16881,7 +16857,7 @@
           "repeat": true,
           "uniformHitDir": false,
           "fixPos": false,
-          "checkCollision": false,
+          "checkCollision": true,
           "type": "CIRCLE_ATTACK",
           "attack": {
             "type": "LIGHT",
@@ -17063,6 +17039,21 @@
           }
         },
         {
+          "duration": 0,
+          "align": "CENTER",
+          "rotateFace": 6,
+          "flipLeftFace": true,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "combat.triblader",
+            "name": "mirageWhirl"
+          }
+        },
+        {
           "align": "BOTTOM",
           "radius": 48,
           "yScale": 0,
@@ -17116,7 +17107,7 @@
             "damageFactor": 0.1,
             "reverse": false,
             "guardable": "",
-            "skillBonus": "RANGED_DMG"
+            "skillBonus": "MELEE_DMG"
           },
           "hit": [
             {
@@ -17182,12 +17173,14 @@
               "attack": {
                 "type": "HEAVY",
                 "element": "HEAT",
-                "damageFactor": 1,
+                "damageFactor": 0.85,
                 "reverse": false,
-                "status": 2,
                 "guardable": "",
-                "skillBonus": "RANGED_DMG",
-                "limiter": ""
+                "skillBonus": "",
+                "limiter": "",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
               },
               "offset": {
                 "x": 0,
@@ -18922,7 +18915,6 @@
       "copyOwnerAnims": false,
       "breakType": "COMBATANT",
       "action": [
-        
         {
           "target": "PROXY_OWNER",
           "type": "ADD_ACTION_BUFF",
@@ -22158,7 +22150,7 @@
           "type": "CLEAR_EFFECTS"
         },
         {
-          "align": "BASE",
+          "align": "BOTTOM",
           "type": "SHOOT_PROXY",
           "proxy": "flameHitSWeak",
           "offset": {
@@ -22219,7 +22211,7 @@
             "fly": "LIGHT",
             "status": 0.35,
             "guardable": "",
-            "skillBonus": "MELEE_DMG",
+            "skillBonus": "RANGED_DMG",
             "limiter": "",
             "hints": [
               "NO_PUZZLE"
@@ -22314,7 +22306,10 @@
             ],
             "status": 0.5,
             "guardable": "",
-            "skillBonus": "RANGED_DMG"
+            "skillBonus": "RANGED_DMG",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -23073,17 +23068,6 @@
       },
       "copyOwnerAnims": false,
       "breakType": "NEVER",
-      "attack": {
-        "type": "MEDIUM",
-        "element": "HEAT",
-        "damageFactor": 0.05,
-        "reverse": false,
-        "spFactor": 0,
-        "status": 0.25,
-        "guardable": "",
-        "skillBonus": "RANGED_DMG",
-        "limiter": ""
-      },
       "action": [
         {
           "type": "SET_ATTRIB_BOOL",
@@ -23153,7 +23137,6 @@
             "type": "MEDIUM",
             "element": "HEAT",
             "damageFactor": 0.05,
-            "status": 0.25,
             "guardable": "",
             "stunSteps": [],
             "skillBonus": "RANGED_DMG"
@@ -23247,11 +23230,13 @@
                 "type": "HEAVY",
                 "element": "HEAT",
                 "damageFactor": 1,
-                "status": 0.5,
                 "reverse": false,
                 "guardable": "",
                 "skillBonus": "RANGED_DMG",
-                "limiter": ""
+                "limiter": "",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
               },
               "offset": {
                 "x": 0,
@@ -23292,8 +23277,8 @@
       "stickFaceAlign": false,
       "group": "",
       "size": {
-        "x": 19,
-        "y": 19,
+        "x": 16,
+        "y": 16,
         "z": 4
       },
       "multiHit": true,
@@ -23461,11 +23446,13 @@
             "type": "HEAVY",
             "element": "HEAT",
             "damageFactor": 1,
-            "status": 0.5,
             "reverse": false,
             "guardable": "",
             "skillBonus": "RANGED_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -32627,7 +32614,7 @@
           {
             "duration": 0,
             "align": "CENTER",
-            "rotateFace": 8,
+            "rotateFace": 6,
             "flipLeftFace": true,
             "wait": false,
             "waitSkip": 0,
@@ -32637,6 +32624,21 @@
             "effect": {
               "sheet": "specials.heat",
               "name": "mediumSweep"
+            }
+          },
+          {
+            "duration": 0,
+            "align": "CENTER",
+            "rotateFace": 6,
+            "flipLeftFace": true,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "combat.triblader",
+              "name": "fireWhirl"
             }
           },
           {
@@ -32967,8 +32969,8 @@
           "en_US": "Attack with a powerful flail that does heavy damage to all enemies it hits. The tip does more damage than the chain."
         },
         "dmgType": "MELEE",
-        "stunType": "LOCK",
-        "status": false,
+        "stunType": "",
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -33605,7 +33607,7 @@
         },
         "dmgType": "MIXED",
         "stunType": "LOCK",
-        "status": true,
+        "status": false,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -33690,7 +33692,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MASSIVE",
@@ -33698,7 +33700,6 @@
               "damageFactor": 2,
               "reverse": true,
               "fly": "MEDIUM",
-              "status": 1,
               "guardable": "",
               "skillBonus": "MELEE_DMG",
               "limiter": ""
@@ -33784,7 +33785,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MASSIVE",
@@ -33792,7 +33793,6 @@
               "damageFactor": 2,
               "reverse": false,
               "fly": "MASSIVE+",
-              "status": 1,
               "guardable": "",
               "skillBonus": "MELEE_DMG",
               "limiter": ""
@@ -34084,7 +34084,7 @@
           "en_US": "A surgical strike against a single close enemy. If hit, follow up with powerful meteors and fireballs."
         },
         "dmgType": "MIXED",
-        "stunType": "INTERRUPT",
+        "stunType": "LOCK",
         "status": true,
         "steps": [
           {
@@ -34531,7 +34531,7 @@
                 "repeat": false,
                 "uniformHitDir": false,
                 "fixPos": false,
-                "checkCollision": false,
+                "checkCollision": true,
                 "type": "CIRCLE_ATTACK",
                 "attack": {
                   "type": "MEDIUM",
@@ -34631,7 +34631,7 @@
                 "repeat": false,
                 "uniformHitDir": false,
                 "fixPos": false,
-                "checkCollision": false,
+                "checkCollision": true,
                 "type": "CIRCLE_ATTACK",
                 "attack": {
                   "type": "MEDIUM",
@@ -34675,7 +34675,7 @@
                 "repeat": false,
                 "uniformHitDir": false,
                 "fixPos": false,
-                "checkCollision": false,
+                "checkCollision": true,
                 "type": "CIRCLE_ATTACK",
                 "attack": {
                   "type": "HEAVY",
@@ -34810,7 +34810,7 @@
         },
         "dmgType": "RANGED",
         "stunType": "",
-        "status": false,
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -34837,7 +34837,7 @@
             "centralAngle": 0.02,
             "angleVary": 0,
             "startDist": 16,
-            "startDistCollide": false,
+            "startDistCollide": "CLOSER",
             "random": false,
             "count": 2,
             "duration": 0.1,
@@ -34873,7 +34873,7 @@
             "centralAngle": 0.03,
             "angleVary": 0,
             "startDist": 16,
-            "startDistCollide": false,
+            "startDistCollide": "CLOSER",
             "random": false,
             "count": 2,
             "duration": 0.1,
@@ -34909,7 +34909,7 @@
             "centralAngle": 0.02,
             "angleVary": 0,
             "startDist": 16,
-            "startDistCollide": false,
+            "startDistCollide": "CLOSER",
             "random": false,
             "count": 2,
             "duration": 0.1,
@@ -34936,7 +34936,7 @@
           "en_US": "Daybreak"
         },
         "description": {
-          "en_US": "Throw a devastating spear forged from raw solar fragments."
+          "en_US": "Throw a devastating spear forged from pure solar fragments. Sticks in enemies and deals damage over time."
         },
         "dmgType": "RANGED",
         "stunType": "",
@@ -34997,7 +34997,7 @@
         },
         "dmgType": "MELEE",
         "stunType": "INTERRUPT",
-        "status": true,
+        "status": false,
         "steps": [
           {
             "wait": false,
@@ -35103,9 +35103,9 @@
                       "type": "START_LOCK"
                     }
                   ],
-                  "status": 1,
+                  "status": 0,
                   "guardable": "NEVER",
-                  "skillBonus": "RANGED_DMG",
+                  "skillBonus": "MELEE_DMG",
                   "limiter": "NO_DAMAGE"
                 }
               },
@@ -35275,7 +35275,7 @@
                 "flipLeftFace": 6,
                 "rectangular": false,
                 "uniformHitDir": false,
-                "checkCollision": false,
+                "checkCollision": true,
                 "repeat": false,
                 "fixPos": false,
                 "attack": {
@@ -35284,7 +35284,7 @@
                   "damageFactor": 6,
                   "fly": "MASSIVE++",
                   "spFactor": 0,
-                  "status": 0.4,
+                  "status": 0,
                   "guardable": "",
                   "skillBonus": "MELEE_DMG"
                 },
@@ -35302,7 +35302,7 @@
                 "flipLeftFace": false,
                 "wait": false,
                 "waitSkip": 0,
-                "actionDetached": false,
+                "actionDetached": true,
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
@@ -35398,8 +35398,8 @@
         "description": {
           "en_US": "Sacrifice \\c[1]-25%\\c[0] of your HP and increase your ATK by \\c[2]+15%\\c[0] for a moderate period. Can be stacked at your own risk."
         },
-        "dmgType": "",
-        "stunType": "INTERRUPT",
+        "dmgType": "NONE",
+        "stunType": "",
         "status": false,
         "steps": [
           {
@@ -35739,7 +35739,7 @@
                   ],
                   "status": 1,
                   "guardable": "NEVER",
-                  "skillBonus": "RANGED_DMG",
+                  "skillBonus": "MELEE_DMG",
                   "limiter": "NO_DAMAGE"
                 }
               },
@@ -36055,7 +36055,7 @@
                 "repeat": false,
                 "uniformHitDir": false,
                 "fixPos": false,
-                "checkCollision": false,
+                "checkCollision": true,
                 "type": "CIRCLE_ATTACK",
                 "attack": {
                   "type": "MASSIVE",
@@ -36099,8 +36099,8 @@
           "en_US": "Draw in enemies and then engulf them in lingering fires."
         },
         "dmgType": "MELEE",
-        "stunType": "LOCK",
-        "status": false,
+        "stunType": "INTERRUPT",
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -36358,8 +36358,8 @@
             "align": "BOTTOM",
             "centralAngle": 1,
             "angleVary": 0,
-            "startDist": 64,
-            "startDistCollide": "CLOSER",
+            "startDist": 58,
+            "startDistCollide": "DROP",
             "random": false,
             "count": 6,
             "duration": 0.5,
@@ -36402,8 +36402,8 @@
         "description": {
           "en_US": "An apocalyptic cacophony of beams, fire, lasers, and explosions that hits everything in the area."
         },
-        "dmgType": "MELEE",
-        "stunType": "LOCK",
+        "dmgType": "MIXED",
+        "stunType": "INTERRUPT",
         "status": true,
         "steps": [
           {
@@ -36937,7 +36937,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": true,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "MASSIVE",
@@ -36946,8 +36946,8 @@
               "fly": "MASSIVE+",
               "reverse": false,
               "status": 0.5,
-              "guardable": "NEVER",
-              "skillBonus": "RANGED_DMG",
+              "guardable": "",
+              "skillBonus": "MELEE_DMG",
               "limiter": ""
             },
             "offset": {
@@ -37017,9 +37017,9 @@
         "description": {
           "en_US": "Summon a sword of holy flames that will supercharge your melee attacks for a short period."
         },
-        "dmgType": "MIXED",
+        "dmgType": "MELEE",
         "stunType": "",
-        "status": false,
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -37204,7 +37204,7 @@
                   "type": "BLOCK_XY"
                 }
               ],
-              "status": 1.2,
+              "status": 1.8,
               "hints": [
                 "NO_PUZZLE"
               ],
@@ -37414,7 +37414,6 @@
               "fly": "MASSIVE",
               "reverse": false,
               "spFactor": 0,
-              "status": 1,
               "guardable": "",
               "skillBonus": "MELEE_DMG",
               "limiter": ""
@@ -37455,7 +37454,7 @@
         },
         "dmgType": "MELEE",
         "stunType": "",
-        "status": false,
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -37637,7 +37636,7 @@
           "en_US": "Blazing Mirage"
         },
         "description": {
-          "en_US": "Dash forward along with a handful of mirage images of yourself that scatter and perform firey slashes or explode if they hit an enemy."
+          "en_US": "Dash forward along with a handful of mirages and perform firey slashes. Mirages will explode if they hit an enemy for greater damage."
         },
         "dmgType": "MELEE",
         "stunType": "",
@@ -37709,6 +37708,21 @@
             "effect": {
               "sheet": "specials.heat",
               "name": "airSweepNoFlash"
+            }
+          },
+          {
+            "duration": 0,
+            "align": "CENTER",
+            "rotateFace": 6,
+            "flipLeftFace": true,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "combat.triblader",
+              "name": "mirageWhirl"
             }
           },
           {
@@ -37819,7 +37833,7 @@
         },
         "dmgType": "MELEE",
         "stunType": "",
-        "status": false,
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -38073,7 +38087,7 @@
             "repeat": false,
             "uniformHitDir": false,
             "fixPos": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "type": "CIRCLE_ATTACK",
             "attack": {
               "type": "HEAVY",
@@ -44730,11 +44744,12 @@
               "reverse": false,
               "guardable": "",
               "skillBonus": "MELEE_DMG",
-              "limiter": ""
+              "limiter": "",
+              "hints": [
+                "NO_PUZZLE"
+              ]
             },
-            "hints": [
-              "NO_PUZZLE"
-            ],
+            
             "offset": {
               "x": 0,
               "y": 0,

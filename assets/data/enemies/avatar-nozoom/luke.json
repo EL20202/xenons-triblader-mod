@@ -1816,17 +1816,6 @@
       },
       "copyOwnerAnims": false,
       "breakType": "NEVER",
-      "attack": {
-        "type": "MEDIUM",
-        "element": "HEAT",
-        "damageFactor": 0.05,
-        "reverse": false,
-        "spFactor": 0,
-        "status": 0.25,
-        "guardable": "",
-        "skillBonus": "RANGED_DMG",
-        "limiter": ""
-      },
       "action": [
         {
           "global": false,
@@ -1944,8 +1933,8 @@
       "stickFaceAlign": false,
       "group": "",
       "size": {
-        "x": 19,
-        "y": 19,
+        "x": 16,
+        "y": 16,
         "z": 4
       },
       "multiHit": true,
@@ -2141,17 +2130,6 @@
       "breakType": "NEVER",
       "action": [
         {
-          "posType": "TARGET",
-          "align": "CENTER",
-          "type": "SET_HIT_PROXY",
-          "proxy": "daybreakStuck",
-          "offset": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          }
-        },
-        {
           "duration": -1,
           "align": "BOTTOM",
           "rotateFace": 0,
@@ -2168,6 +2146,17 @@
           "spriteFilter": [
             1
           ],
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "posType": "TARGET",
+          "align": "CENTER",
+          "type": "SET_HIT_PROXY",
+          "proxy": "daybreakStuck",
           "offset": {
             "x": 0,
             "y": 0,
@@ -2205,7 +2194,7 @@
           "attack": {
             "type": "MASSIVE",
             "element": "HEAT",
-            "damageFactor": 1,
+            "damageFactor": 2,
             "status": 2,
             "guardable": "",
             "stunSteps": [],
@@ -2249,28 +2238,14 @@
       "stickFaceAlign": false,
       "group": "",
       "size": {
-        "x": 19,
-        "y": 19,
+        "x": 16,
+        "y": 16,
         "z": 4
       },
       "multiHit": true,
       "light": "XL",
       "noLightGlow": false,
       "type": "GENERIC",
-      "attack": {
-        "type": "HEAVY",
-        "element": "HEAT",
-        "fly": "MASSIVE",
-        "damageFactor": 2,
-        "reverse": false,
-        "spFactor": 0,
-        "status": 1,
-        "hints": [
-          "CHARGED"
-        ],
-        "guardable": "",
-        "skillBonus": "RANGED_DMG"
-      },
       "timeBoni": null,
       "behaviors": [],
       "config": {
@@ -2414,7 +2389,8 @@
             "status": 1,
             "reverse": false,
             "spFactor": 0,
-            "guardable": ""
+            "guardable": "",
+            "skillBonus": "RANGED_DMG"
           },
           "offset": {
             "x": 0,
@@ -2536,7 +2512,10 @@
             "spFactor": 0,
             "status": 1,
             "guardable": "",
-            "skillBonus": "RANGED_DMG"
+            "skillBonus": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -10190,7 +10169,10 @@
             "status": 0.65,
             "guardable": "",
             "skillBonus": "MELEE_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -10242,7 +10224,10 @@
             "status": 0.65,
             "guardable": "",
             "skillBonus": "MELEE_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -10335,8 +10320,11 @@
             "stunSteps": [],
             "status": 0.5,
             "guardable": "",
-            "skillBonus": "MELEE_DMG",
-            "limiter": ""
+            "skillBonus": "",
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -10416,8 +10404,11 @@
             "status": 0.5,
             "reverse": false,
             "guardable": "",
-            "skillBonus": "RANGED_DMG",
-            "limiter": ""
+            "skillBonus": "",
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -11908,6 +11899,21 @@
           }
         },
         {
+          "duration": 0,
+          "align": "CENTER",
+          "rotateFace": 6,
+          "flipLeftFace": true,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "combat.triblader",
+            "name": "mirageWhirl"
+          }
+        },
+        {
           "align": "BOTTOM",
           "radius": 48,
           "yScale": 0,
@@ -11961,7 +11967,7 @@
             "damageFactor": 0.1,
             "reverse": false,
             "guardable": "",
-            "skillBonus": "RANGED_DMG"
+            "skillBonus": "MELEE_DMG"
           },
           "hit": [
             {
@@ -12027,12 +12033,14 @@
               "attack": {
                 "type": "HEAVY",
                 "element": "HEAT",
-                "damageFactor": 1,
+                "damageFactor": 0.85,
                 "reverse": false,
-                "status": 2,
                 "guardable": "",
-                "skillBonus": "RANGED_DMG",
-                "limiter": ""
+                "skillBonus": "",
+                "limiter": "",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
               },
               "offset": {
                 "x": 0,
@@ -12332,7 +12340,7 @@
           "type": "CLEAR_EFFECTS"
         },
         {
-          "align": "BASE",
+          "align": "BOTTOM",
           "type": "SHOOT_PROXY",
           "proxy": "flameHitSWeak",
           "offset": {
@@ -12393,7 +12401,7 @@
             "fly": "LIGHT",
             "status": 0.35,
             "guardable": "",
-            "skillBonus": "MELEE_DMG",
+            "skillBonus": "RANGED_DMG",
             "limiter": "",
             "hints": [
               "NO_PUZZLE"
@@ -12488,7 +12496,10 @@
             ],
             "status": 0.5,
             "guardable": "",
-            "skillBonus": "RANGED_DMG"
+            "skillBonus": "RANGED_DMG",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -12712,17 +12723,6 @@
       },
       "copyOwnerAnims": false,
       "breakType": "NEVER",
-      "attack": {
-        "type": "MEDIUM",
-        "element": "HEAT",
-        "damageFactor": 0.05,
-        "reverse": false,
-        "spFactor": 0,
-        "status": 0.25,
-        "guardable": "",
-        "skillBonus": "RANGED_DMG",
-        "limiter": ""
-      },
       "action": [
         {
           "type": "SET_ATTRIB_BOOL",
@@ -12792,7 +12792,6 @@
             "type": "MEDIUM",
             "element": "HEAT",
             "damageFactor": 0.05,
-            "status": 0.25,
             "guardable": "",
             "stunSteps": [],
             "skillBonus": "RANGED_DMG"
@@ -12886,11 +12885,13 @@
                 "type": "HEAVY",
                 "element": "HEAT",
                 "damageFactor": 1,
-                "status": 0.5,
                 "reverse": false,
                 "guardable": "",
                 "skillBonus": "RANGED_DMG",
-                "limiter": ""
+                "limiter": "",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
               },
               "offset": {
                 "x": 0,
@@ -12931,8 +12932,8 @@
       "stickFaceAlign": false,
       "group": "",
       "size": {
-        "x": 19,
-        "y": 19,
+        "x": 16,
+        "y": 16,
         "z": 4
       },
       "multiHit": true,
@@ -13100,11 +13101,13 @@
             "type": "HEAVY",
             "element": "HEAT",
             "damageFactor": 1,
-            "status": 0.5,
             "reverse": false,
             "guardable": "",
             "skillBonus": "RANGED_DMG",
-            "limiter": ""
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
           },
           "offset": {
             "x": 0,
@@ -18049,7 +18052,7 @@
       {
         "duration": 0,
         "align": "CENTER",
-        "rotateFace": 8,
+        "rotateFace": 6,
         "flipLeftFace": true,
         "wait": false,
         "waitSkip": 0,
@@ -18059,6 +18062,21 @@
         "effect": {
           "sheet": "specials.heat",
           "name": "mediumSweep"
+        }
+      },
+      {
+        "duration": 0,
+        "align": "CENTER",
+        "rotateFace": 6,
+        "flipLeftFace": true,
+        "wait": false,
+        "waitSkip": 0,
+        "actionDetached": false,
+        "fixPos": false,
+        "type": "SHOW_EFFECT",
+        "effect": {
+          "sheet": "combat.triblader",
+          "name": "fireWhirl"
         }
       },
       {
@@ -18412,7 +18430,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "MASSIVE",
@@ -18420,7 +18438,6 @@
           "damageFactor": 2,
           "reverse": true,
           "fly": "MEDIUM",
-          "status": 1,
           "guardable": "",
           "skillBonus": "MELEE_DMG",
           "limiter": ""
@@ -18513,7 +18530,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": false,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "MASSIVE",
@@ -18521,7 +18538,6 @@
           "damageFactor": 2,
           "reverse": false,
           "fly": "MASSIVE+",
-          "status": 1,
           "guardable": "",
           "skillBonus": "MELEE_DMG",
           "limiter": ""
@@ -19096,8 +19112,8 @@
         "align": "BOTTOM",
         "centralAngle": 1,
         "angleVary": 0,
-        "startDist": 64,
-        "startDistCollide": "CLOSER",
+        "startDist": 58,
+        "startDistCollide": "DROP",
         "random": false,
         "count": 6,
         "duration": 0.5,
@@ -19707,7 +19723,7 @@
         "repeat": false,
         "uniformHitDir": false,
         "fixPos": true,
-        "checkCollision": false,
+        "checkCollision": true,
         "type": "CIRCLE_ATTACK",
         "attack": {
           "type": "MASSIVE",
@@ -19717,7 +19733,7 @@
           "reverse": false,
           "status": 0.5,
           "guardable": "NEVER",
-          "skillBonus": "RANGED_DMG",
+          "skillBonus": "MELEE_DMG",
           "limiter": ""
         },
         "offset": {
@@ -19831,7 +19847,7 @@
         "centralAngle": 0.02,
         "angleVary": 0,
         "startDist": 16,
-        "startDistCollide": false,
+        "startDistCollide": "CLOSER",
         "random": false,
         "count": 2,
         "duration": 0.1,
@@ -19867,7 +19883,7 @@
         "centralAngle": 0.03,
         "angleVary": 0,
         "startDist": 16,
-        "startDistCollide": false,
+        "startDistCollide": "CLOSER",
         "random": false,
         "count": 2,
         "duration": 0.1,
@@ -19903,7 +19919,7 @@
         "centralAngle": 0.02,
         "angleVary": 0,
         "startDist": 16,
-        "startDistCollide": false,
+        "startDistCollide": "CLOSER",
         "random": false,
         "count": 2,
         "duration": 0.1,
@@ -20190,10 +20206,10 @@
                   "type": "START_LOCK"
                 }
               ],
-              "status": 1,
+              "status": 0,
               "guardable": "NEVER",
               "hitInvincible": true,
-              "skillBonus": "RANGED_DMG",
+              "skillBonus": "MELEE_DMG",
               "limiter": "NO_DAMAGE"
             }
           },
@@ -20361,7 +20377,7 @@
             "flipLeftFace": 6,
             "rectangular": false,
             "uniformHitDir": false,
-            "checkCollision": false,
+            "checkCollision": true,
             "repeat": false,
             "fixPos": false,
             "attack": {
@@ -20370,7 +20386,7 @@
               "damageFactor": 6,
               "fly": "MASSIVE++",
               "spFactor": 0,
-              "status": 0.4,
+              "status": 0,
               "guardable": "NEVER",
               "skillBonus": "MELEE_DMG"
             },
@@ -20388,7 +20404,7 @@
             "flipLeftFace": false,
             "wait": false,
             "waitSkip": 0,
-            "actionDetached": false,
+            "actionDetached": true,
             "fixPos": false,
             "type": "SHOW_EFFECT",
             "effect": {
@@ -20623,7 +20639,6 @@
           "fly": "MASSIVE",
           "reverse": false,
           "spFactor": 0,
-          "status": 1,
           "guardable": "",
           "skillBonus": "MELEE_DMG",
           "limiter": ""
@@ -20748,6 +20763,21 @@
         "effect": {
           "sheet": "specials.heat",
           "name": "airSweepNoFlash"
+        }
+      },
+      {
+        "duration": 0,
+        "align": "CENTER",
+        "rotateFace": 6,
+        "flipLeftFace": true,
+        "wait": false,
+        "waitSkip": 0,
+        "actionDetached": false,
+        "fixPos": false,
+        "type": "SHOW_EFFECT",
+        "effect": {
+          "sheet": "combat.triblader",
+          "name": "mirageWhirl"
         }
       },
       {

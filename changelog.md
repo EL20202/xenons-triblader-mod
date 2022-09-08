@@ -1,3 +1,69 @@
+0.4.0 (09/08/2022)
+### New Content
+- New graphical effects for Fire Whirl
+- New graphical effects for Blazing Mirage
+### Changes
+- Triblader2/3/4/5 now eats steak instead of sandwiches as party members (visual only)
+- Proxy subPierce (Scorching Rays) hitboxes now aligned with BOTTOM, not BASE
+- Proxy subPierceWeak (Vermillion Firestorm) hitboxes now aligned with BOTTOM, not BASE
+- Removed unused "attack" attribute from proxy fireDaggerBombThrow
+- Removed unused "attack" attribute from proxy fireDaggerThrow
+- Removed unused "attack" attribute from proxy daybreakThrow
+- Removed unused "attack" attribute from proxy flamethrowerTriangle
+- Kindling Triad flamethrowers shoot for 0.1 seconds shorter
+- Molten Daggers now use startDistCollide CLOSER
+- fireDaggerThrow and fireDaggerBombThrow hitbox size reduced from 19x19 to 16x16
+- daybreakThrow hitbox size reduced from 19x19 to 16x16
+- Updated Daybreak description
+- Updated Blazing Mirage description
+- Searing Twister changed to MELEE_DMG instead of RANGED_DMG
+- Blazing Mirage clones now deal uncategorized heat damage when colliding with an enemy (used to be RANGED_DMG)
+- Rotating spokes from Flame Turbine now deal uncategorized heat damage (main fire plume is still MELEE_DMG)
+- Fires from Lava Sweep now deal ungategorized heat damage
+- Lava Sweep startDistCollide changed from "CLOSER" to "DROP"
+- Lava Sweep lingering fires now spawn in a slightly smaller radius
+- Vermillion Firestorm landing explosion changed to MELEE_DMG instead of RANGED_DMG
+- Vermillion Firestorm landing explosion is no longer guardable: "NEVER" (player only)
+- Proxy subPierceWeak (Vermillion Firestorm) changed to RANGED_DMG instead of MELEE_DMG
+- Blade of E'nel fire ring aura changed to MELEE_DMG instead of RANGED_DMG
+### Fixes
+- Fixed training island duel not working when fighting only Lily and Shizuka
+- Recoil Slash fire trail effect should show more consistently on enemies hit by the parry
+- Heat art skillBonus corrections for all hitboxes and proxies
+- Fixed dmgType, stunType, status descriptions for heat arts
+- Fixed Molten Daggers able to shoot through walls and narrow barriers
+- Fixed Calamity's Advent daggers able to shoot through walls and narrow barriers
+- Fixed an improperly located NO_PUZZLE tag in Tower of Tranquility
+- Removed unused SET_CLOSE_TEMP_TARGET action step from proxy enelSwordSummon
+- Puzzle elements no longer interact with:
+   - Proxy fireDaggerBombThrow when target is missed (hits a wall)
+   - Proxy fireDaggerBombStuck
+   - Splash damage when Blazing Mirage clones explode on contact
+   - Flame Turbine fire plume
+   - Flame Turbine spokes
+   - Flame Turbine ending explosions
+   - Proxy flameWall
+   - Vermillion Firestorm orbiting lasers
+- Added the attribute "checkCollision" for the following (fixes ability to hit through walls):
+   - Calamity's Advent initial two sweep attacks
+   - Sunsteel Strike melee hitboxes when shooting fireballs
+   - Searing Twister repeating proxy hitbox
+   - Trailblazer final spin attack
+   - Recoil Slash parry swing
+   - Kindling Triad final slash
+   - Vermillion Firestorm landing explosion
+   - All large sword attacks from Blade of E'nel
+### Balance
+- Calamity's Advent initial two sweep attacks no longer inflict status
+- Calamity's Advent exploding knives no longer inflict status
+- Fire Saw no longer inflicts status
+- Blazing Mirage no longer inflicts status
+- Blazing Mirage damage reduced by 15% when clones collide with enemies
+- Recoil Slash no longer inflicts status
+- Blade of E'nel inflicts significantly more burn status during the initial summon hitbox
+- Blade of E'nel fire ring aura now inflicts burn status
+- Blade of E'nel hitbox radius increased for all attacks to better match the visual effects
+
 0.3.0 (08/21/2022)
 ### New Content
 - Added remaining sprites for Triblader 2/3/4/5 floating animation
