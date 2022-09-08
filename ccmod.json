@@ -26,6 +26,7 @@
 	"dependencies": {
 		"extendable-severed-heads": "^1.0.0",
 		"crosscode": ">=1.4.0",
+		"ccloader": "^2.21.0",
 		"post-game": ">=1.4.0"
 	}
 }
